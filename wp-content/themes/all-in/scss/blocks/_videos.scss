@@ -1,0 +1,134 @@
+.videos {
+    @include margin();
+    text-align: center;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        @include responsive('tablet-v') {
+            grid-template-columns: repeat(1,1fr)
+        }
+    }
+
+    &__video {
+        @include row();
+        position: relative;
+        padding-top: 54%;
+        overflow: hidden;
+
+        @include responsive('mobile-v') {
+            padding-top: 128% !important;
+        }
+
+
+        video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        float:left;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        }
+
+        .image_placeholder {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            content: '';
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.41) 100%);
+        }
+
+        img {
+            @include row();
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            object-fit: cover;
+        }
+        }
+    }
+
+    .controls {
+        display: none;
+    }
+
+    .video-controls {
+        position: absolute;
+        top:30px;
+        right:30px;
+        color:#fff;
+        font-size: 12px; 
+        text-transform: uppercase; 
+        font-weight: 700; 
+        padding: 5px 10px 4px; 
+        cursor: pointer;
+            
+            &.pause {
+            height: 32px;
+            width: 32px;
+            background: url(images/pause.svg) center/contain no-repeat;
+            z-index: 2;
+            font-size: 0;
+        }
+    }
+
+    &__text-cont {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: 2;
+        margin-top: 25px;
+        width: 435px;
+        padding: 0 20px;
+        max-width: 100%;
+
+        @include responsive('mobile-v') {
+            width: 295px;
+        }
+    }
+
+    &__title {
+        @include h4();
+        color: $white;
+        margin-top: 20px;
+        line-height: 1.3;
+    }
+
+    .play-button {
+      cursor: pointer;
+    }
+
+    &--1 {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        .videos__video {
+            padding-top: 40%;
+        }
+    }
+}
+
+
+.image-text + .videos,
+.videos + .image-text {
+    margin-top: 0;
+}
+

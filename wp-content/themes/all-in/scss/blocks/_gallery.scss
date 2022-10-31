@@ -1,0 +1,46 @@
+.gallery {
+    &__cont {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    &--1 {
+        grid-template-columns: repeat(1,1fr); 
+    }
+
+    &--2,
+    &--4,
+    &--8 {
+        grid-template-columns: repeat(2,1fr); 
+    }    
+
+    &--5,
+    &--7,
+    &--9 {
+        .gallery__item {
+            &:nth-last-child(1) {
+                grid-row: span 2;
+            }
+        }
+    }    
+}
+
+.gallery + .kenmore_products {
+    margin-top: 0;
+
+    .kenmore_products__cont {
+        padding-top: 0;
+
+        .product_grid__cont {
+            margin-top: 0;
+            padding-top: 20px;
+        }
+    }
+    
+}

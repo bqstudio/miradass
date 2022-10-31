@@ -1,0 +1,65 @@
+.image_with_text {
+    padding: 93px 0 174px;
+
+    @include responsive ('mobile-h') {
+        padding: 93px 0 100px;
+    }
+
+    &__cont {
+        display: flex;
+        justify-content: center;
+        grid-gap: 116px;
+        align-items: center;
+
+        @include responsive('tablet-h') {
+            grid-gap: 80px;
+        }
+
+        @include responsive('mobile-h') {
+            flex-direction: column;
+            grid-gap: 20px;
+        }
+
+        
+    }
+
+    &__content {
+        width: 600px;
+        max-width: 100%;
+
+        @include responsive ('tablet-h') {
+            width: 450px;
+        }
+
+        @include responsive ('mobile-h') {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        color: $primary-color;
+        margin: 13px 0;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        width: 510px;
+        max-width: 100%;
+        line-height: 1.25;
+
+        @include responsive ('mobile-h') {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        width: 350px;
+        max-width: 100%;
+        aspect-ratio: 0.74;
+
+        img {
+            object-fit: cover;
+        }
+    }
+}

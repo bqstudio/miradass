@@ -1,0 +1,202 @@
+.post-cont {
+    .post-thumbnail {
+        width: 100%;
+        padding-top: 67.25%;
+        position: relative;
+        margin-bottom: 19px;
+
+        a {
+            @include image-background();
+
+            img {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+    }
+
+    &__date {
+        @include h7();
+        color: $grey;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        display: block;
+        width: 100%;
+        @include h5();
+        color: $primary-color;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+    &__link {
+        @include h7();
+        color: $primary-color;
+        text-decoration: underline;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.archive-cont {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 40px 50px;
+
+        @include responsive('tablet-h') {
+            padding: 0 20px;
+        }
+
+        @include responsive('tablet-v') {
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        @include responsive('mobile-v') {
+            grid-template-columns: repeat(1,1fr);
+        }
+    }    
+}
+
+.single-header {
+    &__title {
+        margin: 0 auto;
+        width: 985px;
+        max-width: 100%;
+        @include h2();
+        text-align: center;
+    }
+
+    &__introduction {
+        margin: 0 auto;
+        width: 773px;
+        max-width: 100%;
+        @include h4();
+        line-height: 1.2;
+        color: $grey;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    &__date {
+        margin: 0 auto;
+        width: 773px;
+        max-width: 100%;
+        @include h7();
+        color: $grey;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .post-thumbnail {
+        margin-top: 70px;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.single-content {
+    padding: 80px 0 168px 0;
+    &__cont {
+        margin: 0 auto;
+        width: 620px;
+        max-width: 100%;
+        @include text-block();
+    }
+}
+
+.latest_news {
+
+    @include responsive('tablet-h') {
+        padding: 0 0 0 33px;
+    }
+    &__cont {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 40px 50px;
+
+        @include responsive('mobile-v') {
+            width: 100%;
+            padding-right: 27%;
+        }
+
+        .slick-list {
+            overflow: visible;
+        }
+
+        .slick-slide {
+            margin-right: 40px;
+        }
+
+        .slick-dots {
+            display: flex;
+            align-items: center;
+            margin: 0 7px 0 23.5px;
+            width: 100vw;
+            padding: 0 30px;
+            margin-left: -30px;
+            margin-top: 48px;
+            text-align: center;
+            justify-content: center;
+
+            li {
+                margin: 0 23.5px;
+                position: relative;
+
+                * {
+                    @include h7();
+                }                    
+
+                &:before {
+                    position: absolute;
+                    left: -17px;
+                    top: 4px;
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid $primary-color;
+                    content: '';
+                    cursor: pointer;
+                }
+
+                &.slick-active {
+                    &:before {
+                        border: 1px solid $secondary-color;
+                        background: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .posts_grid__cont {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .post-cont {
+        .post-thumbnail {
+            width: 100%;
+            padding-top: 67.25%;
+            position: relative;
+            margin-bottom: 19px;
+        
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover;
+            }
+        }
+    }
+}

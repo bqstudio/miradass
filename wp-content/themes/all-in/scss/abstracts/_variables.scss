@@ -1,0 +1,76 @@
+
+/// @type List
+$default-font: 'Rosario', sans-serif !default;
+$secondary-font: 'Merriweather Sans', sans-serif !default;
+$third-font: 'Merriweather', serif !default;
+
+/// @type Color
+$primary-color: #282560 !default;
+$secondary-color: #33aced!default;
+$third-color: #6A2263 !default;
+$grey-light: #727887 !default;
+$grey-light-second:#989898 !default;
+$grey-light-third:#dfdfdf !default;
+$grey: #EEEEEE !default;
+$white: #ffffff !default;
+$black: #000 !default;
+$light-green:#b6d133 !default;
+
+
+/// @type Length
+$site-widths: (
+  'full-width': 100%,
+  'max-width': 1920px,
+) !default;
+
+$font-sizes: (
+  'h1': 55px,
+  'h2': 45px,
+  'h3': 36px,
+  'h4': 30px,
+  'h5': 20px,
+  'h6': 16px,
+  'h7': 12px,
+) !default;
+
+$font-sizes-tablet: (
+  'h1': 45px,
+  'h2': 40px,
+  'h3': 28px,
+  'h4': 26px,
+  'h5': 16px,
+  'h6': 16px,
+  'h7': 12px,
+) !default;
+
+$font-sizes-mobile: (
+  'h1': 40px,
+  'h2': 30px,
+  'h3': 28px,
+  'h4': 24px,
+  'h5': 16px,
+  'h6': 16px,
+  'h7': 12px,
+  ) !default;
+
+$font-weights: (
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700,
+) !default;
+
+
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
+$breakpoints: (
+'mobile-s': 400px,
+'mobile-v': 600px,
+'mobile-h': 750px,
+'tablet-v': 900px,
+'tablet-h': 1050px,
+'desktop-s': 1280px,
+'desktop': 1440px,
+) !default;

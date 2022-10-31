@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="78px" viewBox="0 0 78 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>play-button-svgrepo-com</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NEWS-INTERNAL" transform="translate(-761.000000, -2253.000000)">
+            <g id="play-button-svgrepo-com" transform="translate(761.000000, 2253.000000)">
+                <circle id="Oval" fill="#EA2B7A" cx="39" cy="39" r="39"></circle>
+                <path d="M57.9643653,38.1788737 L32.4743875,22.3510737 C31.7728285,21.9145563 30.9042316,21.8822217 30.169265,22.2702372 C29.4510022,22.6582527 29,23.3857818 29,24.1779802 L29,55.8174127 C29,56.609611 29.4510022,57.3533075 30.169265,57.7251557 C30.5033408,57.9029961 30.8875278,58 31.2550111,58 C31.6726058,58 32.1069042,57.8868288 32.4743875,57.6604864 L57.9643653,41.8326865 C58.6158129,41.4285037 59,40.7333092 59,39.9896128 C59,39.2459163 58.5991091,38.5830565 57.9643653,38.1788737 Z M33.5652174,51.4545455 L33.5652174,27.8909091 L52.4782609,39.6727273 L33.5652174,51.4545455 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

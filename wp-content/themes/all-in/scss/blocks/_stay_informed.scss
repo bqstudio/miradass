@@ -1,0 +1,115 @@
+.stay_informed {
+    position: relative;
+    height: 530px;
+
+    @include responsive ('tablet-h') {
+        height: 500px;
+        max-height: 100%;
+    }
+
+    &::before {
+        content: '';
+        @include absolute();
+        background-image: linear-gradient(to left, rgba(35, 41, 55, 0), #232937);
+        opacity: .6
+    }
+
+    img {
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    &__content {
+        @include absolute();
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 150px;
+        width: 1200px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        @include responsive ('tablet-h') {
+            grid-gap: 80px;
+        }
+
+        @include responsive('tablet-v') {
+            grid-gap: 30px;
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__text-cont {
+        width: 400px;
+        max-width: 100%;
+
+        @include responsive('tablet-h') {
+            width: 100%;
+        }
+
+        .upper_title {
+            color: $white;
+            margin-bottom: 10px;
+            letter-spacing: 5.14px;
+            font-weight: 700;
+
+            @include responsive ('desktop-s') {
+                padding-left: 50px;
+            }
+
+            @include responsive ('tablet-h') {
+                padding-left: 25px;
+            }
+
+            &::before {
+                border-top: 1px solid $white;
+
+                @include responsive ('desktop-s') {
+                    //top: 130%;
+                    left: 0px;
+                }
+
+            }
+        }
+    }
+
+    &__title {
+        color: $white;
+        line-height: 1;
+        margin-bottom: 26px;
+
+        @include responsive('tablet-h') {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.43;
+        color: $white;
+        font-family: $third-font;
+    }
+
+    form {
+        .gform_footer {
+            padding: 16px 0 0 !important;
+            .gform_button {
+                background-color: $third-color;
+                border-radius: 25px;
+                margin-bottom: 0 !important;
+                font-size: 16px !important;
+
+                &:hover {
+                    background-color: $primary-color !important;
+                }
+            }
+        }
+    }
+}

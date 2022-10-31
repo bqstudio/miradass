@@ -1,0 +1,21 @@
+.socials {
+    display: flex;
+    gap: 12px;
+
+    @include responsive ('tablet-h') {
+        gap: 40px;
+    }
+
+    @include responsive('mobile-v') {
+        display: none;
+    }
+
+    a {
+        display: block;
+        width: auto;
+
+        &:hover {
+        opacity: 0.5;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.site-logo {
+    display: block;
+    margin-right: 30px;
+
+    @include responsive ('tablet-h') {
+        margin-right: 0;
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+
+        @include responsive('desktop-s') {
+            width: 180px;
+          }
+    }
+}

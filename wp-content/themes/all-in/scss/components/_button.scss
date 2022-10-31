@@ -1,0 +1,62 @@
+@mixin button() {
+  display: inline-block;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: $secondary-color;
+  color: $white !important;
+  padding: 0 32px;
+  transition: .5s ease;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: $third-color !important;
+    color: $white !important;
+  }
+
+  &--line {
+    border: 2px solid $third-color;
+    background: none;
+    color: $primary-color !important;
+    line-height: 36px;
+
+    &:hover {
+      background: $grey !important;
+      color: $primary-color !important;
+    }
+  }
+
+  &--learnmore {
+    background: $light-green;
+
+
+    &:hover {
+      background-color: $third-color !important;
+      color: $white !important;
+    }
+  }
+}
+
+@mixin button--line() {
+  @include button();
+  color: $primary-color;
+  border: 2px solid $third-color;
+  height: 36px;
+  line-height: 36px;
+
+  &:hover {
+    background: $grey !important;
+    color: $primary-color !important;
+  }
+}
+
+.button,
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button,
+.woocommerce input.button {
+  @include button();
+}

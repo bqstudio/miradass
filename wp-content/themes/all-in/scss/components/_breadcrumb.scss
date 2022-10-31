@@ -1,0 +1,37 @@
+.breadcrumb,
+.woocommerce-breadcrumb {
+  @include h7();
+  color: $grey;;
+  width: 100%;
+  text-align: center;
+
+  span,
+  a {
+    display: inline-block;
+    position: relative;
+    color: $grey;;
+    margin: 0 15px 15px 15px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      width: 1px;
+      height: 100%;
+      background: $grey;
+      content: '';
+    }
+
+    &:nth-child(1) {
+      &:before {
+        display: none;
+      } 
+    }
+  }
+  
+  a {
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

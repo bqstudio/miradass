@@ -1,0 +1,110 @@
+.home .header {
+  background-color: transparent;
+}
+.header {
+  @include row();
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: $white;
+
+  .container {
+    padding: 0 100px;
+
+    @include responsive ('desktop-s') {
+      padding: 0 30px;
+    }
+
+    @include responsive ('mobile-h') {
+      padding: 0 15px;
+    }
+  }
+
+  &__top-bar {
+    width: 100vw;
+    margin-left: -60px;
+    background: #8E9497;
+    padding: 8px 60px;
+    @include h7();
+    color: $white;
+    text-align: center;
+
+    @include responsive('tablet-h') {
+      margin-left: 0;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__top,
+  &__bottom {
+    display: flex;
+    width: 100%;
+    padding: 28px 0 27px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive('tablet-h') {
+      padding: 20px 0; 
+    }
+
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+
+    &__center {
+      display: flex;
+      align-items: center;
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  &__bottom {
+    padding: 0;
+
+    @include responsive('tablet-h') {
+      display: block;
+    }
+  } 
+}
+
+.scrolled {
+  .header {
+    background: $white;
+    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.1));
+
+    &__top-bar {
+      display: none;
+    }
+
+    &__middle {
+      padding: 20px 0;
+
+      @include responsive('tablet-h') {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+.error_template {
+	padding: 200px 0;
+  .page-content {
+    width: 50%;
+    margin-top: 20px;
+    @include responsive('mobile-v') {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.hero_home {
+    min-height: 57vw;
+    display: block;
+    position: relative;
+    &__text-cont {
+        width: 38vw;
+        max-width: 100%;
+        padding-top: 240px;
+
+        @include responsive('desktop-s') {
+            padding-top: 180px;
+            width: 55vw;
+        }
+        @include responsive('tablet-h') {
+            width: 70vw;
+        }
+
+        @include responsive('mobile-h') {
+            width: 100%;
+            padding-top: 85vw;
+        }
+    }
+
+    .container_big {
+        position: relative;
+    }
+
+    .upper_title {
+        padding-left: 50px;
+
+
+        @include responsive('tablet-h') {
+            padding-left: 25px;
+        }
+
+        &::before {
+            left: -15px;
+            left: 0;
+        }
+    }
+    &__title {
+        font-size: 110px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $primary-color;
+        padding: 5px 0 50px;
+
+        @include responsive('desktop-s') {
+            font-size: 60px;
+            padding-bottom: 25px;
+        }
+
+        @include responsive('mobile-h') {
+            font-size: 46px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 65%;
+            left: 0;
+            width: 685px;
+            border-top: 2px solid $primary-color ;
+            margin: 24px 0;
+
+            @include responsive ('desktop-s') {
+                top: 56%;
+                width: 460px;
+                max-width: 100%;
+            }
+
+
+            @include responsive ('mobile-h') {
+                display: none;
+            }
+
+
+        }
+    }
+
+    &__text {
+        font-family: $third-font;
+        font-style: italic;
+        font-size: 30px;
+        color: $primary-color;
+        margin-bottom: 25px;
+
+        @include responsive('desktop-s') {
+            font-size: 25px;
+        }
+    }
+
+    &__description {
+        padding-bottom: 27px;
+        width: 480px;
+        max-width: 100%;
+        line-height: 1.56;
+        font-family: $third-font;
+    }
+    &__image {
+        position: absolute;
+        top: -13%;
+        right: 0;
+        max-width: 60%;
+
+        @include responsive('mobile-h') {
+            max-width: 100%;
+        }
+        img {
+            object-fit: cover;
+            width: 60vw;
+            z-index: -1;
+            position: relative;
+
+            @include responsive ('tablet-h') {
+                width: 75vw;
+            }
+
+            @include responsive ('mobile-h') {
+                width: 100vw;
+            }
+        }
+    }
+}

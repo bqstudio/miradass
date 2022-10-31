@@ -1,0 +1,2 @@
+[18-Jul-2022 11:40:12 UTC] PHP Warning:  Undefined array key "wp-migrate-db-pro-theme-plugin-files" in /nas/content/live/pwmigratestg/wp-content/plugins/wp-migrate-db-pro/class/Pro/TPF/ThemePluginFilesRemote.php on line 131
+[18-Jul-2022 11:40:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /nas/content/live/pwmigratestg/wp-content/plugins/wp-migrate-db-pro/class/Pro/TPF/ThemePluginFilesRemote.php on line 131
