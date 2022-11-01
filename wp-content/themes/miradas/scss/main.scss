@@ -1,0 +1,60 @@
+@charset 'UTF-8';
+/*
+Theme Name: Miradas
+Text Domain: twentysixteen
+*/
+
+// Configuration and helpers
+@import
+  'abstracts/_variables',
+  'abstracts/_functions',
+  'abstracts/_mixins_custom',
+  'abstracts/_mixins_theme';
+
+// Base stuff
+@import
+  'base/_typography',
+  'base/_base';
+
+// Components
+@import
+  'components/_site-logo',
+  'components/_menu',
+  'components/_socials',
+  'components/_button',
+  'components/_forms',
+  'components/_posts',
+  'components/_animations',
+  'components/_breadcrumb';
+
+// Hero
+@import
+  'hero/home',
+  'hero/_simple';
+
+// Header
+@import
+  'header/_base';
+
+// Footer
+@import
+  'footer/_base';
+
+// Blocks
+@import
+  'blocks/_videos',
+  'blocks/_text_block',
+  'blocks/_gallery',
+  'blocks/stay_informed',
+  'blocks/image_with_text',
+  'blocks/our_partners',
+  'blocks/_contact',
+  'blocks/_buttons';
+
+  // Posts
+  @import
+  'posts/single_post',
+  'posts/_filter_post',
+  'posts/_featured_posts',
+  'posts/_item';
+
