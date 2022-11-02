@@ -1841,6 +1841,15 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
     font-size: 40px;
   }
 }
+.hero-home__big_text::after {
+  content: "";
+  border-top: 4px solid #ffffff;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0 20px 0;
+}
 .hero-home__bottom_text {
   font-size: 30px;
   font-family: "Rosario", sans-serif;

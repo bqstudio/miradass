@@ -133,3 +133,15 @@
     color: $white;
   }
 }
+
+@mixin overlay() {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(48, 35, 8, .40);
+  width: 100%;
+  height: 100%;
+}
