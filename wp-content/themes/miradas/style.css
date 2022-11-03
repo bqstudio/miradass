@@ -1816,8 +1816,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translate(6%, -50%);
-          transform: translate(6%, -50%);
   z-index: 4;
   width: 100%;
   max-width: 100%;
