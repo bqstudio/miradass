@@ -1,6 +1,11 @@
 jQuery.noConflict();
 jQuery(document).ready(function($){
 
+	AOS.init({
+		duration: 800,
+		easing: 'ease-in-sine',
+	  });
+
 	$(window).scroll(function(){
 		$(window).scrollTop() >= 5 ? $('body').addClass('scrolled') : $('body').removeClass('scrolled');
 	});

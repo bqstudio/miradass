@@ -24,6 +24,7 @@
 </head>
 
 <body>
+
 <?php wp_body_open(); ?>
 
 <div id="page" class="site">
