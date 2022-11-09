@@ -353,23 +353,6 @@ strong * {
   }
 }
 
-.read_more {
-  letter-spacing: 3px;
-}
-
-.home .site-content {
-  margin-top: 0;
-}
-
-.site-content {
-  margin-top: 136px;
-}
-@media only screen and (max-width: 1050px) {
-  .site-content {
-    margin-top: 114px;
-  }
-}
-
 .mejs-overlay-button {
   background: url("images/play.svg") no-repeat !important;
 }
@@ -1815,10 +1798,11 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .hero-home__content {
   position: absolute;
   top: 50%;
-  left: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  right: 50%;
   z-index: 4;
   width: 100%;
-  max-width: 100%;
 }
 .hero-home__big_text {
   font-size: 55px;
@@ -2698,107 +2682,15 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   background-color: #282560 !important;
 }
 
-.image_with_text {
-  padding: 93px 0 174px;
-}
-@media only screen and (max-width: 750px) {
-  .image_with_text {
-    padding: 93px 0 100px;
-  }
-}
-.image_with_text__cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-gap: 116px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media only screen and (max-width: 1050px) {
-  .image_with_text__cont {
-    grid-gap: 80px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .image_with_text__cont {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 20px;
-  }
-}
-.image_with_text__content {
-  width: 600px;
-  max-width: 100%;
-}
-@media only screen and (max-width: 1050px) {
-  .image_with_text__content {
-    width: 450px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .image_with_text__content {
-    width: 100%;
-  }
-}
-.image_with_text__title {
-  color: #282560;
-  margin: 13px 0;
-  font-weight: 700;
-}
-.image_with_text__text {
-  margin-bottom: 25px;
-  width: 510px;
-  max-width: 100%;
-  line-height: 1.25;
-}
-@media only screen and (max-width: 750px) {
-  .image_with_text__text {
-    width: 100%;
-  }
-}
-.image_with_text__img {
-  width: 350px;
-  max-width: 100%;
-  aspect-ratio: 0.74;
-}
-.image_with_text__img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.our_partners {
+.logos {
   padding-bottom: 130px;
 }
 @media only screen and (max-width: 1050px) {
-  .our_partners {
+  .logos {
     padding-bottom: 60px;
   }
 }
-.our_partners .container_big {
-  padding: 0 273px;
-}
-@media only screen and (max-width: 1440px) {
-  .our_partners .container_big {
-    padding: 0 100px;
-  }
-}
-@media only screen and (max-width: 1050px) {
-  .our_partners .container_big {
-    padding: 0 30px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .our_partners .container_big {
-    padding: 0 15px;
-  }
-}
-.our_partners__title {
+.logos__title {
   font-size: 55px;
   font-family: "Rosario", sans-serif;
   line-height: 1.09;
@@ -2807,25 +2699,25 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   margin-bottom: 35px;
 }
 @media only screen and (max-width: 1050px) {
-  .our_partners__title {
+  .logos__title {
     font-size: 45px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .our_partners__title {
+  .logos__title {
     font-size: 40px;
   }
 }
 @media only screen and (max-width: 750px) {
-  .our_partners__title {
+  .logos__title {
     margin-bottom: 20px;
   }
 }
-.our_partners__text {
+.logos__text {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
 }
-.our_partners__cont {
+.logos__cont {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
@@ -2834,23 +2726,15 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   padding: 70px 0 48px;
 }
 @media only screen and (max-width: 1050px) {
-  .our_partners__cont {
+  .logos__cont {
     padding: 40px 0;
   }
 }
 @media only screen and (max-width: 600px) {
-  .our_partners__cont {
+  .logos__cont {
     -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
   }
-}
-.our_partners__bottom_text {
-  font-family: "Merriweather Sans", sans-serif;
-  line-height: 1.94;
-  font-weight: 300;
-}
-.our_partners__bottom_text span {
-  font-weight: 700;
 }
 
 .contact {
