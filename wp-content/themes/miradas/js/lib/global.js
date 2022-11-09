@@ -29,4 +29,11 @@ jQuery(document).ready(function($){
 		$('.site-menu').fadeToggle();
 	});
 
+	$('.buttom_suscribe').on('click', function(){
+		$('.popup').fadeIn();
+	});
+
+	$('.close_popup').on('click', function(){
+		$('.popup').fadeOut();
+	});
 });

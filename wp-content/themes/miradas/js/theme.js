@@ -1,9 +1,2 @@
-// Vendors
-jQuery.noConflict();
-
-import './lib/global';
-import './lib/slider';
-//import './lib/toggles';
-//import './lib/dropdowns';
-//import './lib/accordion'; 
-
+!function(){var o=[,function(){jQuery.noConflict(),jQuery(document).ready((function(o){AOS.init({duration:800,easing:"ease-in-sine"}),o(window).scroll((function(){o(window).scrollTop()>=5?o("body").addClass("scrolled"):o("body").removeClass("scrolled")})),o('a[href^="#"]').on("click",(function(n){n.preventDefault();var e=o(this).attr("href");return o(e).length&&o(e).scrollTo(o(this).data("scrolldiff")?o(this).data("scrolldiff"):0,o(this).data("duration")),!1})),o(".js-go-top").on("click",(function(){o([document.documentElement,document.body]).animate({scrollTop:o("body").offset().top},400)})),o(".responsive__btn").on("click",(()=>o("body").toggleClass("menu-responsive-open"))),o(".js-open-block").click((function(){o(".site-menu").fadeToggle()})),o(".buttom_suscribe").on("click",(function(){o(".popup").fadeIn()})),o(".close_popup").on("click",(function(){o(".popup").fadeOut()})),alert("Hello world!")}))},function(){jQuery.noConflict(),jQuery(document).ready((function(o){o(".fts-instagram-inline-block-centered").flickity({cellAlign:"left"})}))}],n={};function e(t){var r=n[t];if(void 0!==r)return r.exports;var i=n[t]={exports:{}};return o[t](i,i.exports,e),i.exports}e.n=function(o){var n=o&&o.__esModule?function(){return o.default}:function(){return o};return e.d(n,{a:n}),n},e.d=function(o,n){for(var t in n)e.o(n,t)&&!e.o(o,t)&&Object.defineProperty(o,t,{enumerable:!0,get:n[t]})},e.o=function(o,n){return Object.prototype.hasOwnProperty.call(o,n)},e.r=function(o){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(o,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(o,"__esModule",{value:!0})};var t={};!function(){"use strict";e.r(t),e(1),e(2),jQuery.noConflict()}()}();
+//# sourceMappingURL=theme.js.map
