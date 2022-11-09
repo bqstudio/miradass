@@ -192,8 +192,9 @@ strong * {
   display: flex;
   align-items: center;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  padding: 70px 60px;
+  background-color: $white;
+  padding: 20px;
+  justify-content: center;
 
   @include responsive('tablet-h') {
       padding: 30px;
@@ -201,6 +202,49 @@ strong * {
 
   img {
       object-fit: cover;
+      max-height: 250px;
   }
 }
 
+.popup {
+  display: none; //TODO: Seguir conestilos del popup
+}
+
+//Styles Home
+.quienes_somos {
+  position: relative;
+  
+  &__image {
+    position: relative;
+    height: 600px;
+
+  &::before {
+    @include overlay();
+  }
+
+  img {
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+  }
+
+  &__cont {
+    position: absolute;
+    //top: 50%; sin AOS
+    top: 37%;
+    transform: translate(50%, -50%);
+    //right: 50%; sin AOS
+    right: 0;
+    width: 100%;
+    z-index: 4;
+    color: $white;
+    @include text_block();
+    
+  }
+
+  &__title {
+    @include h2();
+  }
+}

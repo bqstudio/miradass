@@ -226,6 +226,9 @@
     }
   }
 
+  .buttom_suscribe {
+    @extend .button;
+  }
 }
 .scrolled {
   .site-menu .submenu--banners {

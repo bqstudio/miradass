@@ -384,8 +384,11 @@ strong * {
           align-items: center;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  padding: 70px 60px;
+  background-color: #ffffff;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media only screen and (max-width: 1050px) {
   .item {
@@ -395,6 +398,206 @@ strong * {
 .item img {
   -o-object-fit: cover;
      object-fit: cover;
+  max-height: 250px;
+}
+
+.popup {
+  display: none;
+}
+
+.quienes_somos {
+  position: relative;
+}
+.quienes_somos__image {
+  position: relative;
+  height: 600px;
+}
+.quienes_somos__image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(48, 35, 8, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.quienes_somos__image img {
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.quienes_somos__cont {
+  position: absolute;
+  top: 37%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  right: 0;
+  width: 100%;
+  z-index: 4;
+  color: #ffffff;
+}
+.quienes_somos__cont h1, .quienes_somos__cont h2, .quienes_somos__cont h3, .quienes_somos__cont h4, .quienes_somos__cont h5, .quienes_somos__cont h6 {
+  color: #282560;
+  margin-bottom: 20px;
+}
+.quienes_somos__cont h1 {
+  font-size: 55px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .quienes_somos__cont h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .quienes_somos__cont h1 {
+    font-size: 40px;
+  }
+}
+.quienes_somos__cont h2 {
+  font-size: 45px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .quienes_somos__cont h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .quienes_somos__cont h2 {
+    font-size: 30px;
+  }
+}
+.quienes_somos__cont h3 {
+  font-size: 36px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .quienes_somos__cont h3 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .quienes_somos__cont h3 {
+    font-size: 28px;
+  }
+}
+.quienes_somos__cont h4 {
+  font-size: 30px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .quienes_somos__cont h4 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .quienes_somos__cont h4 {
+    font-size: 24px;
+  }
+}
+.quienes_somos__cont h5 {
+  font-size: 20px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .quienes_somos__cont h5 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .quienes_somos__cont h5 {
+    font-size: 16px;
+  }
+}
+.quienes_somos__cont h6 {
+  font-size: 16px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .quienes_somos__cont h6 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .quienes_somos__cont h6 {
+    font-size: 16px;
+  }
+}
+.quienes_somos__cont p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+@media only screen and (max-width: 750px) {
+  .quienes_somos__cont p {
+    font-size: 16px;
+  }
+}
+.quienes_somos__cont .wp-video {
+  padding: 20px 0;
+}
+.quienes_somos__cont ul, .quienes_somos__cont ol {
+  padding-left: 15px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+.quienes_somos__cont ul li {
+  list-style: disc;
+}
+.quienes_somos__cont a {
+  color: #282560;
+}
+.quienes_somos__cont a:hover {
+  text-decoration: underline;
+}
+.quienes_somos__cont blockquote {
+  padding-left: 30px;
+  border-left: 3px solid #282560;
+}
+.quienes_somos__cont blockquote p {
+  font-size: 30px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .quienes_somos__cont blockquote p {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .quienes_somos__cont blockquote p {
+    font-size: 24px;
+  }
+}
+.quienes_somos__cont .alignleft {
+  float: left;
+  margin-right: 30px;
+}
+.quienes_somos__cont .aligncenter {
+  margin: 30px auto;
+  display: block;
+}
+.quienes_somos__cont .alignright {
+  float: right;
+  margin-left: 30px;
+}
+.quienes_somos__title {
+  font-size: 45px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .quienes_somos__title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .quienes_somos__title {
+    font-size: 30px;
+  }
 }
 
 .site-logo {
@@ -668,7 +871,6 @@ strong * {
     height: 100vh;
   }
 }
-
 .scrolled .site-menu .submenu--banners {
   top: 25px;
 }
@@ -781,7 +983,7 @@ strong * {
   opacity: 0.5;
 }
 
-.button,
+.button, .header__top__right .buttom_suscribe,
 .woocommerce #respond input#submit,
 .woocommerce a.button,
 .woocommerce button.button,
@@ -800,7 +1002,7 @@ strong * {
   transition: 0.5s ease;
   border-radius: 25px;
 }
-.button:hover,
+.button:hover, .header__top__right .buttom_suscribe:hover,
 .woocommerce #respond input#submit:hover,
 .woocommerce a.button:hover,
 .woocommerce button.button:hover,
@@ -840,347 +1042,6 @@ strong * {
 .woocommerce input.button--learnmore:hover {
   background-color: #6A2263 !important;
   color: #ffffff !important;
-}
-
-.site .gform_wrapper,
-.woocommerce .gform_wrapper,
-.woocommerce .site .gform_wrapper {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.site .gform_wrapper .top_label .gfield_label,
-.site .gform_wrapper legend.gfield_label,
-.woocommerce .gform_wrapper .top_label .gfield_label,
-.woocommerce .gform_wrapper legend.gfield_label,
-.woocommerce .site .gform_wrapper .top_label .gfield_label,
-.woocommerce .site .gform_wrapper legend.gfield_label {
-  display: none !important;
-}
-.site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.site .gform_wrapper textarea,
-.woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.woocommerce .gform_wrapper textarea,
-.woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.woocommerce .site .gform_wrapper textarea {
-  height: 50px;
-  line-height: 50px;
-  background: none;
-  padding: 0 22px;
-  font-size: 16px;
-  font-family: "Rosario", sans-serif;
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-@media only screen and (max-width: 1050px) {
-  .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.site .gform_wrapper textarea,
-.woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.woocommerce .gform_wrapper textarea,
-.woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.woocommerce .site .gform_wrapper textarea {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.site .gform_wrapper textarea,
-.woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.woocommerce .gform_wrapper textarea,
-.woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.woocommerce .site .gform_wrapper textarea {
-    font-size: 16px;
-  }
-}
-.site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-webkit-input-placeholder, .site .gform_wrapper textarea::-webkit-input-placeholder, .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-webkit-input-placeholder, .woocommerce .gform_wrapper textarea::-webkit-input-placeholder, .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-webkit-input-placeholder, .woocommerce .site .gform_wrapper textarea::-webkit-input-placeholder {
-  color: #ffffff;
-}
-.site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-moz-placeholder, .site .gform_wrapper textarea::-moz-placeholder, .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-moz-placeholder, .woocommerce .gform_wrapper textarea::-moz-placeholder, .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-moz-placeholder, .woocommerce .site .gform_wrapper textarea::-moz-placeholder {
-  color: #ffffff;
-}
-.site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):-ms-input-placeholder, .site .gform_wrapper textarea:-ms-input-placeholder, .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):-ms-input-placeholder, .woocommerce .gform_wrapper textarea:-ms-input-placeholder, .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):-ms-input-placeholder, .woocommerce .site .gform_wrapper textarea:-ms-input-placeholder {
-  color: #ffffff;
-}
-.site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-ms-input-placeholder, .site .gform_wrapper textarea::-ms-input-placeholder, .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-ms-input-placeholder, .woocommerce .gform_wrapper textarea::-ms-input-placeholder, .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-ms-input-placeholder, .woocommerce .site .gform_wrapper textarea::-ms-input-placeholder {
-  color: #ffffff;
-}
-.site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder,
-.site .gform_wrapper textarea::placeholder,
-.woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder,
-.woocommerce .gform_wrapper textarea::placeholder,
-.woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder,
-.woocommerce .site .gform_wrapper textarea::placeholder {
-  color: #ffffff;
-}
-.site .gform_wrapper .gfmc-column,
-.woocommerce .gform_wrapper .gfmc-column,
-.woocommerce .site .gform_wrapper .gfmc-column {
-  padding-right: 48px;
-}
-.site .gform_wrapper .gfmc-column:nth-last-child(1),
-.woocommerce .gform_wrapper .gfmc-column:nth-last-child(1),
-.woocommerce .site .gform_wrapper .gfmc-column:nth-last-child(1) {
-  padding-right: 0;
-}
-.site .gform_wrapper .gfmc-column h4,
-.woocommerce .gform_wrapper .gfmc-column h4,
-.woocommerce .site .gform_wrapper .gfmc-column h4 {
-  margin-bottom: 4px;
-  font-size: 20px;
-  font-family: "Rosario", sans-serif;
-}
-@media only screen and (max-width: 1050px) {
-  .site .gform_wrapper .gfmc-column h4,
-.woocommerce .gform_wrapper .gfmc-column h4,
-.woocommerce .site .gform_wrapper .gfmc-column h4 {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .site .gform_wrapper .gfmc-column h4,
-.woocommerce .gform_wrapper .gfmc-column h4,
-.woocommerce .site .gform_wrapper .gfmc-column h4 {
-    font-size: 16px;
-  }
-}
-.site .gform_wrapper .gfmc-column .form__text,
-.woocommerce .gform_wrapper .gfmc-column .form__text,
-.woocommerce .site .gform_wrapper .gfmc-column .form__text {
-  font-size: 12px;
-  font-family: "Rosario", sans-serif;
-  margin-top: 15px;
-}
-@media only screen and (max-width: 1050px) {
-  .site .gform_wrapper .gfmc-column .form__text,
-.woocommerce .gform_wrapper .gfmc-column .form__text,
-.woocommerce .site .gform_wrapper .gfmc-column .form__text {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .site .gform_wrapper .gfmc-column .form__text,
-.woocommerce .gform_wrapper .gfmc-column .form__text,
-.woocommerce .site .gform_wrapper .gfmc-column .form__text {
-    font-size: 12px;
-  }
-}
-.site .gform_wrapper .gfmc-column .form__text a,
-.woocommerce .gform_wrapper .gfmc-column .form__text a,
-.woocommerce .site .gform_wrapper .gfmc-column .form__text a {
-  color: #282560;
-  text-decoration: underline;
-}
-.site .gform_wrapper .gfmc-column .form__text a:hover,
-.woocommerce .gform_wrapper .gfmc-column .form__text a:hover,
-.woocommerce .site .gform_wrapper .gfmc-column .form__text a:hover {
-  color: #33aced;
-}
-.site .gform_wrapper .gfmc-column input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.site .gform_wrapper .gfmc-column textarea,
-.woocommerce .gform_wrapper .gfmc-column input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.woocommerce .gform_wrapper .gfmc-column textarea,
-.woocommerce .site .gform_wrapper .gfmc-column input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.woocommerce .site .gform_wrapper .gfmc-column textarea {
-  width: 100%;
-}
-.site .gform_wrapper .ginput_complex.ginput_container_address span,
-.site .gform_wrapper .ginput_complex.ginput_container_address span.ginput_right + span.ginput_left,
-.woocommerce .gform_wrapper .ginput_complex.ginput_container_address span,
-.woocommerce .gform_wrapper .ginput_complex.ginput_container_address span.ginput_right + span.ginput_left,
-.woocommerce .site .gform_wrapper .ginput_complex.ginput_container_address span,
-.woocommerce .site .gform_wrapper .ginput_complex.ginput_container_address span.ginput_right + span.ginput_left {
-  width: 100%;
-  padding-right: 0 !important;
-  margin-right: 0 !important;
-  margin-bottom: 10px;
-  display: block;
-}
-.site .gform_wrapper .ginput_complex.ginput_container_address label,
-.woocommerce .gform_wrapper .ginput_complex.ginput_container_address label,
-.woocommerce .site .gform_wrapper .ginput_complex.ginput_container_address label {
-  display: none !important;
-}
-.site .gform_wrapper .gform_footer input.button,
-.site .gform_wrapper .gform_footer input[type=submit],
-.site .gform_wrapper .gform_page_footer input.button,
-.site .gform_wrapper .gform_page_footer input[type=submit],
-.woocommerce .gform_wrapper .gform_footer input.button,
-.woocommerce .gform_wrapper .gform_footer input[type=submit],
-.woocommerce .gform_wrapper .gform_page_footer input.button,
-.woocommerce .gform_wrapper .gform_page_footer input[type=submit],
-.woocommerce .site .gform_wrapper .gform_footer input.button,
-.woocommerce .site .gform_wrapper .gform_footer input[type=submit],
-.woocommerce .site .gform_wrapper .gform_page_footer input.button,
-.woocommerce .site .gform_wrapper .gform_page_footer input[type=submit] {
-  font-size: 12px;
-  font-family: "Rosario", sans-serif;
-}
-@media only screen and (max-width: 1050px) {
-  .site .gform_wrapper .gform_footer input.button,
-.site .gform_wrapper .gform_footer input[type=submit],
-.site .gform_wrapper .gform_page_footer input.button,
-.site .gform_wrapper .gform_page_footer input[type=submit],
-.woocommerce .gform_wrapper .gform_footer input.button,
-.woocommerce .gform_wrapper .gform_footer input[type=submit],
-.woocommerce .gform_wrapper .gform_page_footer input.button,
-.woocommerce .gform_wrapper .gform_page_footer input[type=submit],
-.woocommerce .site .gform_wrapper .gform_footer input.button,
-.woocommerce .site .gform_wrapper .gform_footer input[type=submit],
-.woocommerce .site .gform_wrapper .gform_page_footer input.button,
-.woocommerce .site .gform_wrapper .gform_page_footer input[type=submit] {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .site .gform_wrapper .gform_footer input.button,
-.site .gform_wrapper .gform_footer input[type=submit],
-.site .gform_wrapper .gform_page_footer input.button,
-.site .gform_wrapper .gform_page_footer input[type=submit],
-.woocommerce .gform_wrapper .gform_footer input.button,
-.woocommerce .gform_wrapper .gform_footer input[type=submit],
-.woocommerce .gform_wrapper .gform_page_footer input.button,
-.woocommerce .gform_wrapper .gform_page_footer input[type=submit],
-.woocommerce .site .gform_wrapper .gform_footer input.button,
-.woocommerce .site .gform_wrapper .gform_footer input[type=submit],
-.woocommerce .site .gform_wrapper .gform_page_footer input.button,
-.woocommerce .site .gform_wrapper .gform_page_footer input[type=submit] {
-    font-size: 12px;
-  }
-}
-.site .gform_wrapper li.gfield.gfield_error,
-.site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.woocommerce .gform_wrapper li.gfield.gfield_error,
-.woocommerce .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.woocommerce .site .gform_wrapper li.gfield.gfield_error,
-.woocommerce .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-  border: none;
-  background: none;
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  font-family: "Rosario", sans-serif;
-}
-@media only screen and (max-width: 1050px) {
-  .site .gform_wrapper li.gfield.gfield_error,
-.site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.woocommerce .gform_wrapper li.gfield.gfield_error,
-.woocommerce .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.woocommerce .site .gform_wrapper li.gfield.gfield_error,
-.woocommerce .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .site .gform_wrapper li.gfield.gfield_error,
-.site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.woocommerce .gform_wrapper li.gfield.gfield_error,
-.woocommerce .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.woocommerce .site .gform_wrapper li.gfield.gfield_error,
-.woocommerce .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-    font-size: 12px;
-  }
-}
-.site .gform_wrapper .validation_message,
-.woocommerce .gform_wrapper .validation_message,
-.woocommerce .site .gform_wrapper .validation_message {
-  padding-top: 8px !important;
-}
-.site .gform_wrapper div.validation_error,
-.woocommerce .gform_wrapper div.validation_error,
-.woocommerce .site .gform_wrapper div.validation_error {
-  padding: 8px 0;
-  font-size: 12px;
-  font-family: "Rosario", sans-serif;
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
-@media only screen and (max-width: 1050px) {
-  .site .gform_wrapper div.validation_error,
-.woocommerce .gform_wrapper div.validation_error,
-.woocommerce .site .gform_wrapper div.validation_error {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .site .gform_wrapper div.validation_error,
-.woocommerce .gform_wrapper div.validation_error,
-.woocommerce .site .gform_wrapper div.validation_error {
-    font-size: 12px;
-  }
-}
-.site .gform_wrapper .gfield_checkbox li input,
-.site .gform_wrapper .gfield_checkbox li input[type=checkbox],
-.site .gform_wrapper .gfield_radio li input[type=radio],
-.woocommerce .gform_wrapper .gfield_checkbox li input,
-.woocommerce .gform_wrapper .gfield_checkbox li input[type=checkbox],
-.woocommerce .gform_wrapper .gfield_radio li input[type=radio],
-.woocommerce .site .gform_wrapper .gfield_checkbox li input,
-.woocommerce .site .gform_wrapper .gfield_checkbox li input[type=checkbox],
-.woocommerce .site .gform_wrapper .gfield_radio li input[type=radio] {
-  display: none;
-}
-.site .gform_wrapper ul.gfield_checkbox li label,
-.site .gform_wrapper ul.gfield_radio li label,
-.woocommerce .gform_wrapper ul.gfield_checkbox li label,
-.woocommerce .gform_wrapper ul.gfield_radio li label,
-.woocommerce .site .gform_wrapper ul.gfield_checkbox li label,
-.woocommerce .site .gform_wrapper ul.gfield_radio li label {
-  font-size: 12px;
-  font-family: "Rosario", sans-serif;
-  color: #EEEEEE;
-  padding-left: 30px;
-  line-height: 20px;
-  position: relative;
-}
-@media only screen and (max-width: 1050px) {
-  .site .gform_wrapper ul.gfield_checkbox li label,
-.site .gform_wrapper ul.gfield_radio li label,
-.woocommerce .gform_wrapper ul.gfield_checkbox li label,
-.woocommerce .gform_wrapper ul.gfield_radio li label,
-.woocommerce .site .gform_wrapper ul.gfield_checkbox li label,
-.woocommerce .site .gform_wrapper ul.gfield_radio li label {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .site .gform_wrapper ul.gfield_checkbox li label,
-.site .gform_wrapper ul.gfield_radio li label,
-.woocommerce .gform_wrapper ul.gfield_checkbox li label,
-.woocommerce .gform_wrapper ul.gfield_radio li label,
-.woocommerce .site .gform_wrapper ul.gfield_checkbox li label,
-.woocommerce .site .gform_wrapper ul.gfield_radio li label {
-    font-size: 12px;
-  }
-}
-.site .gform_wrapper ul.gfield_checkbox li label:before,
-.site .gform_wrapper ul.gfield_radio li label:before,
-.woocommerce .gform_wrapper ul.gfield_checkbox li label:before,
-.woocommerce .gform_wrapper ul.gfield_radio li label:before,
-.woocommerce .site .gform_wrapper ul.gfield_checkbox li label:before,
-.woocommerce .site .gform_wrapper ul.gfield_radio li label:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #282560;
-  content: "";
-}
-.site .gform_wrapper .gchoice_select_all:after,
-.site .gform_wrapper ul.gfield_checkbox li input[type=checkbox]:checked + label:after,
-.site .gform_wrapper ul.gfield_radio li input[type=radio]:checked + label:after,
-.woocommerce .gform_wrapper .gchoice_select_all:after,
-.woocommerce .gform_wrapper ul.gfield_checkbox li input[type=checkbox]:checked + label:after,
-.woocommerce .gform_wrapper ul.gfield_radio li input[type=radio]:checked + label:after,
-.woocommerce .site .gform_wrapper .gchoice_select_all:after,
-.woocommerce .site .gform_wrapper ul.gfield_checkbox li input[type=checkbox]:checked + label:after,
-.woocommerce .site .gform_wrapper ul.gfield_radio li input[type=radio]:checked + label:after {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 16px;
-  height: 16px;
-  background: #33aced;
-  content: "";
 }
 
 .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
@@ -1300,6 +1161,12 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   display: none !important;
   position: absolute !important;
   left: -9000px;
+}
+
+.gform-body input, .gform-body textarea {
+  border-radius: 3px;
+  border: 1px solid #727887;
+  color: #282560;
 }
 
 .post-cont .post-thumbnail {
@@ -1575,7 +1442,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .single-content__cont p {
   font-size: 18px;
-  line-height: 1.94;
+  line-height: 1.6;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {
@@ -2442,7 +2309,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .text_block__cont p {
   font-size: 18px;
-  line-height: 1.94;
+  line-height: 1.6;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {
@@ -2592,6 +2459,17 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
       -ms-flex-align: center;
           align-items: center;
 }
+.stay_informed__content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(48, 35, 8, 0.4);
+  width: 100%;
+  height: 100%;
+}
 .stay_informed .container {
   display: -ms-grid;
   display: grid;
@@ -2606,6 +2484,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1;
 }
 @media only screen and (max-width: 1050px) {
   .stay_informed .container {
@@ -2720,14 +2599,22 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .logos__cont {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   padding: 70px 0 48px;
+}
+@media only screen and (max-width: 1680px) {
+  .logos__cont {
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media only screen and (max-width: 1050px) {
   .logos__cont {
     padding: 40px 0;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2895,7 +2782,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .contact__text p {
   font-size: 18px;
-  line-height: 1.94;
+  line-height: 1.6;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {
@@ -2975,7 +2862,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   margin-top: 90px;
   text-align: center;
 }
-.buttons-block .button {
+.buttons-block .button, .buttons-block .header__top__right .buttom_suscribe, .header__top__right .buttons-block .buttom_suscribe {
   margin: 10px;
 }
 
@@ -3075,7 +2962,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .single_post__text p {
   font-size: 18px;
-  line-height: 1.94;
+  line-height: 1.6;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {

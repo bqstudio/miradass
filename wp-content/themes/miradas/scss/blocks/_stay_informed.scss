@@ -24,6 +24,10 @@
         @include absolute();
         display: flex;
         align-items: center;
+
+        &::before {
+            @include overlay();
+        }
     }
 
     .container {
@@ -34,6 +38,7 @@
         max-width: 100%;
         align-items: center;
         justify-content: center;
+        z-index: 1;
 
         @include responsive ('tablet-h') {
             grid-gap: 80px;

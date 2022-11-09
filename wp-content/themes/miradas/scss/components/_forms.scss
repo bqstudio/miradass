@@ -83,3 +83,16 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	position: absolute !important;
 	left: -9000px;
 }
+
+
+//contact
+.gform-body {
+	
+		input, textarea {
+			border-radius: 3px;
+			border: 1px solid $grey-light;
+			color: $primary-color;
+		}
+		
+	
+}
