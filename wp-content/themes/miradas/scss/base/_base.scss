@@ -166,21 +166,6 @@ strong * {
   }
 }
 
-.read_more {
-  letter-spacing: 3px;
-}
-
-.home .site-content {
-  margin-top: 0;
-}
-.site-content {
-  margin-top: 136px;
-
-  @include responsive ('tablet-h') {
-    margin-top: 114px;
-  }
-}
-
 .mejs-overlay-button {
   background: url('images/play.svg') no-repeat !important;
 }

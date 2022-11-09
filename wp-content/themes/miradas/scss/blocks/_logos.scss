@@ -1,24 +1,8 @@
-.our_partners {
+.logos {
     padding-bottom: 130px;
     
     @include responsive('tablet-h') {
         padding-bottom: 60px;
-    }
-
-    .container_big {
-        padding: 0 273px;
-
-        @include responsive('desktop') {
-            padding: 0 100px;
-        }
-
-        @include responsive('tablet-h') {
-            padding: 0 30px
-        }
-
-        @include responsive('mobile-h') {
-            padding: 0 15px
-        }
     }
 
     &__title {
@@ -49,16 +33,6 @@
 
         @include responsive('mobile-v') {
             grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-    &__bottom_text {
-        font-family: $secondary-font;
-        line-height: 1.94;
-        font-weight: 300;
-        
-        span {
-            font-weight: 700;
         }
     }
 }
