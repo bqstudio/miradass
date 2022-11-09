@@ -38,6 +38,14 @@
 						<span></span><span></span><span></span><span></span>
 					</div>
 					<?php get_template_part('modules/components/menu'); ?>
+					<?php echo ($buttom_suscribe = get_field('buttom_suscribe','options'))? '<div class="buttom_suscribe">'.$buttom_suscribe.'</div>':''; ?>
+					<?php if ($popup_id = get_field('popup_id','options')): ?> 
+						<div class="popup">
+							<div class="container">
+								<div class="formBox" ><?php echo do_shortcode('[gravityform id="'.$popup_id.'" title="false" description="false" ajax="true"]'); ?></div>
+							</div>
+						</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
