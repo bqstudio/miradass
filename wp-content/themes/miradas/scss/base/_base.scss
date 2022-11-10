@@ -34,6 +34,7 @@ body {
 
   p {
     font-family: $third-font;
+    font-weight: 400;
   }
 }
 
@@ -119,6 +120,10 @@ strong * {
     align-items: center;
 }
 
+.title {
+  @include title();
+}
+
 .iframe-wrapper {
   @include row();
   padding-top: 56.25%;
@@ -191,7 +196,7 @@ strong * {
 .item {
   display: flex;
   align-items: center;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  //box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   background-color: $white;
   padding: 20px;
   justify-content: center;
@@ -208,7 +213,24 @@ strong * {
 
 .popup {
   display: none; //TODO: Seguir conestilos del popup
+  display: none;
+    position: fixed;
+    z-index: 100;
+    top: 16vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 755px;
+    height: 40vh;
+    background: #ffffff;
+    padding: 30px;
+    text-align: left;
+    -webkit-box-shadow: 9px 10px 48px 0px rgb(0 0 0 / 75%);
+    box-shadow: 9px 10px 48px 0px rgb(0 0 0 / 75%);
+    z-index: 101;
 }
+
+
 
 //Styles Home
 .quienes_somos {
@@ -233,18 +255,25 @@ strong * {
   &__cont {
     position: absolute;
     //top: 50%; sin AOS
-    top: 37%;
+    top: 30%;
     transform: translate(50%, -50%);
     //right: 50%; sin AOS
-    right: 0;
+    left: 0;
     width: 100%;
     z-index: 4;
     color: $white;
     @include text_block();
+    width: 1200px;
+    max-width: 100%;
+
+    @include responsive ('mobile-h') {
+      width: 100%;
+    }
     
   }
 
   &__title {
     @include h2();
+    color: #D1F5AB;
   }
 }

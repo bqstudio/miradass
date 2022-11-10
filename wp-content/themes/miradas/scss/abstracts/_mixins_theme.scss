@@ -24,6 +24,15 @@
 
 .site__title {@include site__title();}
 
+@mixin title() {
+  font-size: 55px;
+  font-family: "Rosario", sans-serif;
+  line-height: 1.09;
+  font-weight: 700;
+  color: #282560;
+  margin-bottom: 35px;
+}
+
 @mixin site__text() {
   @include h5();
   color: $primary-color;
@@ -43,7 +52,7 @@
 
 @mixin text_block() {
 	h1,h2,h3,h4,h5,h6 {
-		color: $primary-color;
+		//color: $primary-color;
     margin-bottom: 20px 
 	}
 
@@ -71,7 +80,7 @@
       margin: 20px 0;
 
       @include responsive('mobile-h') {
-         font-size: 16px;
+        font-size: 16px;
       }
   }
   .wp-video {
@@ -144,4 +153,12 @@
   background: rgba(48, 35, 8, .40);
   width: 100%;
   height: 100%;
+}
+
+@mixin padding-section {
+  padding: 90px 0;
+
+  @include responsive ('mobile-h') {
+    padding: 40px 0;
+  }
 }

@@ -2,6 +2,14 @@
     display: flex;
     gap: 12px;
 
+    svg {
+        path {
+            fill {
+                color: red;    
+            }
+        }
+    }
+
     @include responsive ('tablet-h') {
         gap: 40px;
     }

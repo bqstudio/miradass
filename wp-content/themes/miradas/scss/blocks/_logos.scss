@@ -1,5 +1,5 @@
 .logos {
-    padding-bottom: 130px;
+    @include padding-section();
     
     @include responsive('tablet-h') {
         padding-bottom: 60px;
@@ -20,12 +20,13 @@
     &__text {
         font-family: $secondary-font;
         font-weight: 300;
+        font-size: 20px;
     }
     &__cont {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 20px;
-        padding: 70px 0 48px;
+        padding: 30px 0 30px;
 
         @include responsive ('desktop-m') {
             grid-template-columns: repeat(3, 1fr);

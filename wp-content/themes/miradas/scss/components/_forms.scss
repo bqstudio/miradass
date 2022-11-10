@@ -27,11 +27,26 @@
 	.formBox {
 		margin: 0 auto;
 		width: 337px;
-		max-width: 100%;
+		max-width: 100%;	
+		position: relative;
 
 		.gform_footer {
 			text-align: center;
 		}		
+
+		.close_popup {
+      position: absolute;
+      right: 2%;
+      top: 2%;
+      z-index: 100;
+      cursor: pointer;
+      background-image: url(images/close-form.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: transparent;
+      width: 20px;
+      height: 30px;
+    }
 	}
 }
 

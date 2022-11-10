@@ -102,6 +102,7 @@ body ul li {
 }
 body p {
   font-family: "Merriweather", serif;
+  font-weight: 400;
 }
 
 section {
@@ -293,6 +294,15 @@ strong * {
   align-items: center;
 }
 
+.title {
+  font-size: 55px;
+  font-family: "Rosario", sans-serif;
+  line-height: 1.09;
+  font-weight: 700;
+  color: #282560;
+  margin-bottom: 35px;
+}
+
 .iframe-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,8 +392,6 @@ strong * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   padding: 20px;
   -webkit-box-pack: center;
@@ -403,6 +411,21 @@ strong * {
 
 .popup {
   display: none;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 16vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  width: 755px;
+  height: 40vh;
+  background: #ffffff;
+  padding: 30px;
+  text-align: left;
+  -webkit-box-shadow: 9px 10px 48px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 10px 48px 0px rgba(0, 0, 0, 0.75);
+  z-index: 101;
 }
 
 .quienes_somos {
@@ -432,16 +455,17 @@ strong * {
 }
 .quienes_somos__cont {
   position: absolute;
-  top: 37%;
+  top: 30%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  right: 0;
+  left: 0;
   width: 100%;
   z-index: 4;
   color: #ffffff;
+  width: 1200px;
+  max-width: 100%;
 }
 .quienes_somos__cont h1, .quienes_somos__cont h2, .quienes_somos__cont h3, .quienes_somos__cont h4, .quienes_somos__cont h5, .quienes_somos__cont h6 {
-  color: #282560;
   margin-bottom: 20px;
 }
 .quienes_somos__cont h1 {
@@ -585,9 +609,15 @@ strong * {
   float: right;
   margin-left: 30px;
 }
+@media only screen and (max-width: 750px) {
+  .quienes_somos__cont {
+    width: 100%;
+  }
+}
 .quienes_somos__title {
   font-size: 45px;
   font-family: "Rosario", sans-serif;
+  color: #D1F5AB;
 }
 @media only screen and (max-width: 1050px) {
   .quienes_somos__title {
@@ -965,6 +995,9 @@ strong * {
   display: flex;
   gap: 12px;
 }
+.socials svg path fill {
+  color: red;
+}
 @media only screen and (max-width: 1050px) {
   .socials {
     gap: 40px;
@@ -1114,9 +1147,23 @@ strong * {
   margin: 0 auto;
   width: 337px;
   max-width: 100%;
+  position: relative;
 }
 .form_block .formBox .gform_footer {
   text-align: center;
+}
+.form_block .formBox .close_popup {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  z-index: 100;
+  cursor: pointer;
+  background-image: url(images/close-form.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  width: 20px;
+  height: 30px;
 }
 
 .gform_wrapper.gravity-theme .gform_validation_errors,
@@ -1353,7 +1400,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   max-width: 100%;
 }
 .single-content__cont h1, .single-content__cont h2, .single-content__cont h3, .single-content__cont h4, .single-content__cont h5, .single-content__cont h6 {
-  color: #282560;
   margin-bottom: 20px;
 }
 .single-content__cont h1 {
@@ -1644,7 +1690,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .hero-home {
-  min-height: 57vw;
+  min-height: 55vw;
   display: block;
   position: relative;
 }
@@ -2209,7 +2255,15 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .text_block {
-  padding: 20px 214px;
+  padding: 90px 0;
+  /*  &__title {
+       color: #282560;
+   } */
+}
+@media only screen and (max-width: 750px) {
+  .text_block {
+    padding: 40px 0;
+  }
 }
 @media only screen and (max-width: 1050px) {
   .text_block {
@@ -2220,7 +2274,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   width: 100%;
 }
 .text_block__cont h1, .text_block__cont h2, .text_block__cont h3, .text_block__cont h4, .text_block__cont h5, .text_block__cont h6 {
-  color: #282560;
   margin-bottom: 20px;
 }
 .text_block__cont h1 {
@@ -2364,26 +2417,33 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   float: right;
   margin-left: 30px;
 }
-
-.page-who-we-are .text_block, .page-contact-us .text_block {
-  padding: 100px 250px;
-}
-@media only screen and (max-width: 1440px) {
-  .page-who-we-are .text_block, .page-contact-us .text_block {
-    padding: 50px 100px;
-  }
-}
-@media only screen and (max-width: 1050px) {
-  .page-who-we-are .text_block, .page-contact-us .text_block {
-    padding: 50px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .page-who-we-are .text_block, .page-contact-us .text_block {
-    padding: 20px 0;
-  }
+.text_block__cont img {
+  display: block;
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+/* 
+.page-who-we-are, .page-contact-us   {
+    .text_block {
+        padding: 100px 250px;
+
+        @include responsive('desktop') {
+            padding: 50px 100px;
+        }
+
+        @include responsive('tablet-h') {
+            padding: 50px;
+        }
+
+        @include responsive('mobile-h') {
+            padding: 20px 0;
+        }
+    }
+} */
 .gallery__cont {
   display: -ms-grid;
   display: grid;
@@ -2562,7 +2622,12 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .logos {
-  padding-bottom: 130px;
+  padding: 90px 0;
+}
+@media only screen and (max-width: 750px) {
+  .logos {
+    padding: 40px 0;
+  }
 }
 @media only screen and (max-width: 1050px) {
   .logos {
@@ -2595,6 +2660,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .logos__text {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
+  font-size: 20px;
 }
 .logos__cont {
   display: -ms-grid;
@@ -2602,7 +2668,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
-  padding: 70px 0 48px;
+  padding: 30px 0 30px;
 }
 @media only screen and (max-width: 1680px) {
   .logos__cont {
@@ -2693,7 +2759,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   }
 }
 .contact__text h1, .contact__text h2, .contact__text h3, .contact__text h4, .contact__text h5, .contact__text h6 {
-  color: #282560;
   margin-bottom: 20px;
 }
 .contact__text h1 {
@@ -2873,7 +2938,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   padding: 0 214px;
 }
 .single_post__text h1, .single_post__text h2, .single_post__text h3, .single_post__text h4, .single_post__text h5, .single_post__text h6 {
-  color: #282560;
   margin-bottom: 20px;
 }
 .single_post__text h1 {

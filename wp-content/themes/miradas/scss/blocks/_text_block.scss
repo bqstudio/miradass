@@ -1,5 +1,5 @@
 .text_block {
-    padding: 20px 214px;
+    @include padding-section();
 
     @include responsive('tablet-h') {
         padding: 0;
@@ -8,9 +8,21 @@
     &__cont {
         @include text-block();
         width: 100%;
-    }
-}
 
+        img {
+            display: block;
+            width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+    }
+
+   /*  &__title {
+        color: #282560;
+    } */
+}
+/* 
 .page-who-we-are, .page-contact-us   {
     .text_block {
         padding: 100px 250px;
@@ -27,4 +39,4 @@
             padding: 20px 0;
         }
     }
-}
+} */
