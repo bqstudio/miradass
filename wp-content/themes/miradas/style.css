@@ -417,15 +417,49 @@ strong * {
   top: 16vh;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   width: 755px;
   height: 40vh;
   background: #ffffff;
   padding: 30px;
   text-align: left;
   -webkit-box-shadow: 9px 10px 48px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 9px 10px 48px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 9px 10px 48px 0px rgba(0, 0, 0, 0.75);
   z-index: 101;
+  /* &::before {
+    content: "";
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: rgba(48, 35, 8, 0.8);
+  width: 100%;
+  height: 100%;
+  } */
+}
+.popup .close_popup {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  z-index: 100;
+  cursor: pointer;
+  background-image: url(images/close-form.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  width: 20px;
+  height: 30px;
+}
+.popup .formBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .quienes_somos {
@@ -1148,22 +1182,17 @@ strong * {
   width: 337px;
   max-width: 100%;
   position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 0 20px;
 }
 .form_block .formBox .gform_footer {
   text-align: center;
-}
-.form_block .formBox .close_popup {
-  position: absolute;
-  right: 2%;
-  top: 2%;
-  z-index: 100;
-  cursor: pointer;
-  background-image: url(images/close-form.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: transparent;
-  width: 20px;
-  height: 30px;
 }
 
 .gform_wrapper.gravity-theme .gform_validation_errors,
@@ -1944,6 +1973,11 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+@media only screen and (max-width: 1050px) {
+  .header__top__right .buttom_suscribe, .header__bottom__right .buttom_suscribe {
+    display: none;
+  }
+}
 .header__bottom {
   padding: 0;
 }
@@ -2263,11 +2297,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 @media only screen and (max-width: 750px) {
   .text_block {
     padding: 40px 0;
-  }
-}
-@media only screen and (max-width: 1050px) {
-  .text_block {
-    padding: 0;
   }
 }
 .text_block__cont {

@@ -1,10 +1,6 @@
 .text_block {
     @include padding-section();
 
-    @include responsive('tablet-h') {
-        padding: 0;
-    }
-
     &__cont {
         @include text-block();
         width: 100%;

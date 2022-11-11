@@ -45,3 +45,5 @@ Para titles usamos class .title ya llama al mixins
 Overlay use mixins overlay
 
 Padding top bottom para sections - use mixins padding-section
+
+Center whith position - use mixin center-position
