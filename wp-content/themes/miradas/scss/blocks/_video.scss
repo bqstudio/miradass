@@ -1,0 +1,19 @@
+.video {
+
+  &__cont {
+
+    &__subtitle {
+      @include h3();
+      margin: 0 0 20px 0;
+      color: $primary-color;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+
+  &__file {
+    margin: 20px auto;
+    max-width: 1024px;
+
+  }
+}

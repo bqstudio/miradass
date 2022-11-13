@@ -31,6 +31,7 @@
   font-weight: 700;
   color: #282560;
   margin-bottom: 35px;
+  text-transform: capitalize;
 }
 
 @mixin site__text() {
@@ -75,8 +76,8 @@
 		@include h6();
 	}
   p {
-      font-size: 18px;
-      line-height: 1.6;
+      font-size: 20px;
+      line-height: 1.8;
       margin: 20px 0;
 
       @include responsive('mobile-h') {

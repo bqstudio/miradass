@@ -24,7 +24,7 @@ Text Domain: twentysixteen
 .site__title {
   font-size: 45px;
   font-family: "Rosario", sans-serif;
-  color: #282560;
+  color: #282570;
   font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
@@ -44,7 +44,7 @@ Text Domain: twentysixteen
 .site__text {
   font-size: 20px;
   font-family: "Rosario", sans-serif;
-  color: #282560;
+  color: #282570;
   text-align: center;
   margin: 0 auto;
   width: 700px;
@@ -301,6 +301,7 @@ strong * {
   font-weight: 700;
   color: #282560;
   margin-bottom: 35px;
+  text-transform: capitalize;
 }
 
 .iframe-wrapper {
@@ -462,14 +463,14 @@ strong * {
   padding: 0 20px;
 }
 
-.quienes_somos {
+.vision {
   position: relative;
 }
-.quienes_somos__image {
+.vision__image {
   position: relative;
   height: 600px;
 }
-.quienes_somos__image::before {
+.vision__image::before {
   content: "";
   display: block;
   position: absolute;
@@ -480,14 +481,14 @@ strong * {
   width: 100%;
   height: 100%;
 }
-.quienes_somos__image img {
+.vision__image img {
   height: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-.quienes_somos__cont {
+.vision__cont {
   position: absolute;
   top: 30%;
   -webkit-transform: translate(50%, -50%);
@@ -499,167 +500,167 @@ strong * {
   width: 1200px;
   max-width: 100%;
 }
-.quienes_somos__cont h1, .quienes_somos__cont h2, .quienes_somos__cont h3, .quienes_somos__cont h4, .quienes_somos__cont h5, .quienes_somos__cont h6 {
+.vision__cont h1, .vision__cont h2, .vision__cont h3, .vision__cont h4, .vision__cont h5, .vision__cont h6 {
   margin-bottom: 20px;
 }
-.quienes_somos__cont h1 {
+.vision__cont h1 {
   font-size: 55px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .quienes_somos__cont h1 {
+  .vision__cont h1 {
     font-size: 45px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .quienes_somos__cont h1 {
+  .vision__cont h1 {
     font-size: 40px;
   }
 }
-.quienes_somos__cont h2 {
+.vision__cont h2 {
   font-size: 45px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .quienes_somos__cont h2 {
+  .vision__cont h2 {
     font-size: 40px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .quienes_somos__cont h2 {
+  .vision__cont h2 {
     font-size: 30px;
   }
 }
-.quienes_somos__cont h3 {
+.vision__cont h3 {
   font-size: 36px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .quienes_somos__cont h3 {
+  .vision__cont h3 {
     font-size: 28px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .quienes_somos__cont h3 {
+  .vision__cont h3 {
     font-size: 28px;
   }
 }
-.quienes_somos__cont h4 {
+.vision__cont h4 {
   font-size: 30px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .quienes_somos__cont h4 {
+  .vision__cont h4 {
     font-size: 26px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .quienes_somos__cont h4 {
+  .vision__cont h4 {
     font-size: 24px;
   }
 }
-.quienes_somos__cont h5 {
+.vision__cont h5 {
   font-size: 20px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .quienes_somos__cont h5 {
+  .vision__cont h5 {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .quienes_somos__cont h5 {
+  .vision__cont h5 {
     font-size: 16px;
   }
 }
-.quienes_somos__cont h6 {
+.vision__cont h6 {
   font-size: 16px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .quienes_somos__cont h6 {
+  .vision__cont h6 {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .quienes_somos__cont h6 {
+  .vision__cont h6 {
     font-size: 16px;
   }
 }
-.quienes_somos__cont p {
-  font-size: 18px;
-  line-height: 1.6;
+.vision__cont p {
+  font-size: 20px;
+  line-height: 1.8;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {
-  .quienes_somos__cont p {
+  .vision__cont p {
     font-size: 16px;
   }
 }
-.quienes_somos__cont .wp-video {
+.vision__cont .wp-video {
   padding: 20px 0;
 }
-.quienes_somos__cont ul, .quienes_somos__cont ol {
+.vision__cont ul, .vision__cont ol {
   padding-left: 15px;
   margin-bottom: 28px;
   line-height: 1.6;
 }
-.quienes_somos__cont ul li {
+.vision__cont ul li {
   list-style: disc;
 }
-.quienes_somos__cont a {
-  color: #282560;
+.vision__cont a {
+  color: #282570;
 }
-.quienes_somos__cont a:hover {
+.vision__cont a:hover {
   text-decoration: underline;
 }
-.quienes_somos__cont blockquote {
+.vision__cont blockquote {
   padding-left: 30px;
-  border-left: 3px solid #282560;
+  border-left: 3px solid #282570;
 }
-.quienes_somos__cont blockquote p {
+.vision__cont blockquote p {
   font-size: 30px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .quienes_somos__cont blockquote p {
+  .vision__cont blockquote p {
     font-size: 26px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .quienes_somos__cont blockquote p {
+  .vision__cont blockquote p {
     font-size: 24px;
   }
 }
-.quienes_somos__cont .alignleft {
+.vision__cont .alignleft {
   float: left;
   margin-right: 30px;
 }
-.quienes_somos__cont .aligncenter {
+.vision__cont .aligncenter {
   margin: 30px auto;
   display: block;
 }
-.quienes_somos__cont .alignright {
+.vision__cont .alignright {
   float: right;
   margin-left: 30px;
 }
 @media only screen and (max-width: 750px) {
-  .quienes_somos__cont {
+  .vision__cont {
     width: 100%;
   }
 }
-.quienes_somos__title {
+.vision__title {
   font-size: 45px;
   font-family: "Rosario", sans-serif;
   color: #D1F5AB;
 }
 @media only screen and (max-width: 1050px) {
-  .quienes_somos__title {
+  .vision__title {
     font-size: 40px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .quienes_somos__title {
+  .vision__title {
     font-size: 30px;
   }
 }
@@ -697,7 +698,7 @@ strong * {
   position: relative;
 }
 .site-menu__item {
-  margin: 0 22px;
+  margin: 0 10px;
 }
 @media only screen and (max-width: 1280px) {
   .site-menu__item {
@@ -712,9 +713,9 @@ strong * {
   }
 }
 .site-menu__item--text {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 0.9;
-  color: #282560;
+  color: #282570;
   font-weight: 700;
 }
 .site-menu .submenu {
@@ -797,7 +798,7 @@ strong * {
   width: 100%;
   font-size: 16px;
   font-family: "Rosario", sans-serif;
-  color: #282560;
+  color: #282570;
 }
 @media only screen and (max-width: 1050px) {
   .site-menu .submenu__title {
@@ -935,6 +936,10 @@ strong * {
     height: 100vh;
   }
 }
+.header__top__right .buttom_suscribe {
+  margin-left: 20px;
+}
+
 .scrolled .site-menu .submenu--banners {
   top: 25px;
 }
@@ -959,7 +964,7 @@ strong * {
 }
 .responsive__btn span {
   display: inline-block;
-  background: #282560;
+  background: #282570;
   width: 100%;
   height: 2px;
   -webkit-transition: all 0.5s ease;
@@ -986,7 +991,7 @@ strong * {
 }
 
 .menu-responsive-open .responsive__btn span {
-  background: #282560;
+  background: #282570;
 }
 .menu-responsive-open .responsive__btn span:nth-child(1) {
   top: 9px;
@@ -1062,20 +1067,22 @@ strong * {
   letter-spacing: 3px;
   font-size: 16px;
   text-transform: uppercase;
-  background: #33aced;
+  background: #282570;
   color: #ffffff !important;
   padding: 0 32px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   border-radius: 25px;
+  border: 1px solid #282570;
 }
 .button:hover, .header__top__right .buttom_suscribe:hover,
 .woocommerce #respond input#submit:hover,
 .woocommerce a.button:hover,
 .woocommerce button.button:hover,
 .woocommerce input.button:hover {
-  background-color: #6A2263 !important;
-  color: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #282570 !important;
+  border: 1px solid #282570;
 }
 .button--line,
 .woocommerce #respond input#submit--line,
@@ -1084,7 +1091,7 @@ strong * {
 .woocommerce input.button--line {
   border: 2px solid #6A2263;
   background: none;
-  color: #282560 !important;
+  color: #282570 !important;
   line-height: 36px;
 }
 .button--line:hover,
@@ -1093,7 +1100,7 @@ strong * {
 .woocommerce button.button--line:hover,
 .woocommerce input.button--line:hover {
   background: #EEEEEE !important;
-  color: #282560 !important;
+  color: #282570 !important;
 }
 .button--learnmore,
 .woocommerce #respond input#submit--learnmore,
@@ -1170,7 +1177,7 @@ strong * {
   }
 }
 .formBox p a {
-  color: #282560;
+  color: #282570;
   text-decoration: underline;
 }
 .formBox p a:hover {
@@ -1242,7 +1249,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .gform-body input, .gform-body textarea {
   border-radius: 3px;
   border: 1px solid #727887;
-  color: #282560;
+  color: #282570;
 }
 
 .post-cont .post-thumbnail {
@@ -1291,7 +1298,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   width: 100%;
   font-size: 20px;
   font-family: "Rosario", sans-serif;
-  color: #282560;
+  color: #282570;
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 1050px) {
@@ -1310,7 +1317,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .post-cont__link {
   font-size: 12px;
   font-family: "Rosario", sans-serif;
-  color: #282560;
+  color: #282570;
   text-decoration: underline;
 }
 @media only screen and (max-width: 1050px) {
@@ -1516,8 +1523,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   }
 }
 .single-content__cont p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.8;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {
@@ -1537,14 +1544,14 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   list-style: disc;
 }
 .single-content__cont a {
-  color: #282560;
+  color: #282570;
 }
 .single-content__cont a:hover {
   text-decoration: underline;
 }
 .single-content__cont blockquote {
   padding-left: 30px;
-  border-left: 3px solid #282560;
+  border-left: 3px solid #282570;
 }
 .single-content__cont blockquote p {
   font-size: 30px;
@@ -1638,7 +1645,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   top: 4px;
   width: 12px;
   height: 12px;
-  border: 1px solid #282560;
+  border: 1px solid #282570;
   content: "";
   cursor: pointer;
 }
@@ -1715,7 +1722,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .breadcrumb a:hover,
 .woocommerce-breadcrumb a:hover {
-  color: #282560;
+  color: #282570;
 }
 
 .hero-home {
@@ -1750,7 +1757,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   font-size: 55px;
   font-family: "Rosario", sans-serif;
   font-size: 100px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #ffffff;
   font-weight: 700;
   z-index: 10;
@@ -1779,6 +1786,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   font-family: "Rosario", sans-serif;
   color: #ffffff;
   z-index: 10;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 1050px) {
   .hero-home__bottom_text {
@@ -1933,7 +1941,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 28px 0 27px 0;
+  padding: 20px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2068,7 +2076,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .site-footer__title {
   font-size: 12px;
   font-family: "Rosario", sans-serif;
-  color: #282560;
+  color: #282570;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1050px) {
@@ -2290,9 +2298,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 
 .text_block {
   padding: 90px 0;
-  /*  &__title {
-       color: #282560;
-   } */
 }
 @media only screen and (max-width: 750px) {
   .text_block {
@@ -2390,8 +2395,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   }
 }
 .text_block__cont p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.8;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {
@@ -2411,14 +2416,14 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   list-style: disc;
 }
 .text_block__cont a {
-  color: #282560;
+  color: #282570;
 }
 .text_block__cont a:hover {
   text-decoration: underline;
 }
 .text_block__cont blockquote {
   padding-left: 30px;
-  border-left: 3px solid #282560;
+  border-left: 3px solid #282570;
 }
 .text_block__cont blockquote p {
   font-size: 30px;
@@ -2455,24 +2460,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
      object-fit: cover;
 }
 
-/* 
-.page-who-we-are, .page-contact-us   {
-    .text_block {
-        padding: 100px 250px;
-
-        @include responsive('desktop') {
-            padding: 50px 100px;
-        }
-
-        @include responsive('tablet-h') {
-            padding: 50px;
-        }
-
-        @include responsive('mobile-h') {
-            padding: 20px 0;
-        }
-    }
-} */
 .gallery__cont {
   display: -ms-grid;
   display: grid;
@@ -2641,13 +2628,16 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   padding: 16px 0 0 !important;
 }
 .stay_informed form .gform_footer .gform_button {
-  background-color: #6A2263;
+  background-color: #282570;
   border-radius: 25px;
   margin-bottom: 0 !important;
   font-size: 16px !important;
+  border: 1px solid #282570;
 }
 .stay_informed form .gform_footer .gform_button:hover {
-  background-color: #282560 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff;
+  color: #282570;
 }
 
 .logos {
@@ -2668,7 +2658,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   font-family: "Rosario", sans-serif;
   line-height: 1.09;
   font-weight: 700;
-  color: #282560;
+  color: #282570;
   margin-bottom: 35px;
 }
 @media only screen and (max-width: 1050px) {
@@ -2774,7 +2764,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
-  color: #282560;
+  color: #282570;
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 1050px) {
@@ -2875,8 +2865,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   }
 }
 .contact__text p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.8;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {
@@ -2896,14 +2886,14 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   list-style: disc;
 }
 .contact__text a {
-  color: #282560;
+  color: #282570;
 }
 .contact__text a:hover {
   text-decoration: underline;
 }
 .contact__text blockquote {
   padding-left: 30px;
-  border-left: 3px solid #282560;
+  border-left: 3px solid #282570;
 }
 .contact__text blockquote p {
   font-size: 30px;
@@ -2958,6 +2948,29 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .buttons-block .button, .buttons-block .header__top__right .buttom_suscribe, .header__top__right .buttons-block .buttom_suscribe {
   margin: 10px;
+}
+
+.video__cont__subtitle {
+  font-size: 36px;
+  font-family: "Rosario", sans-serif;
+  margin: 0 0 20px 0;
+  color: #282570;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 1050px) {
+  .video__cont__subtitle {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .video__cont__subtitle {
+    font-size: 28px;
+  }
+}
+.video__file {
+  margin: 20px auto;
+  max-width: 1024px;
 }
 
 .single_post {
@@ -3054,8 +3067,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   }
 }
 .single_post__text p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.8;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {
@@ -3075,14 +3088,14 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   list-style: disc;
 }
 .single_post__text a {
-  color: #282560;
+  color: #282570;
 }
 .single_post__text a:hover {
   text-decoration: underline;
 }
 .single_post__text blockquote {
   padding-left: 30px;
-  border-left: 3px solid #282560;
+  border-left: 3px solid #282570;
 }
 .single_post__text blockquote p {
   font-size: 30px;
@@ -3155,7 +3168,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   font-size: 40px;
   line-height: 0.88;
   font-weight: 700;
-  color: #282560;
+  color: #282570;
 }
 .single-post .featured_post__grid {
   padding-top: 42px;
@@ -3177,7 +3190,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .links_filter__title {
   font-size: 18px;
-  color: #282560;
+  color: #282570;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 3.38px;
@@ -3296,28 +3309,30 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   letter-spacing: 3px;
   font-size: 16px;
   text-transform: uppercase;
-  background: #33aced;
+  background: #282570;
   color: #ffffff !important;
   padding: 0 32px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   border-radius: 25px;
+  border: 1px solid #282570;
   background: #b6d133;
   position: initial;
 }
 .featured_post__grid--first .featured_post__item .learnmore:hover {
-  background-color: #6A2263 !important;
-  color: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #282570 !important;
+  border: 1px solid #282570;
 }
 .featured_post__grid--first .featured_post__item .learnmore--line {
   border: 2px solid #6A2263;
   background: none;
-  color: #282560 !important;
+  color: #282570 !important;
   line-height: 36px;
 }
 .featured_post__grid--first .featured_post__item .learnmore--line:hover {
   background: #EEEEEE !important;
-  color: #282560 !important;
+  color: #282570 !important;
 }
 .featured_post__grid--first .featured_post__item .learnmore--learnmore {
   background: #b6d133;
@@ -3441,7 +3456,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   font-size: 30px;
   line-height: 1.17;
   font-weight: 700;
-  color: #282560;
+  color: #282570;
   margin-bottom: 10px;
 }
 .featured_post__item__text {
@@ -3501,7 +3516,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   }
 }
 .post-item__title a {
-  color: #282560;
+  color: #282570;
   font-weight: 700;
 }
 .post-item__text {

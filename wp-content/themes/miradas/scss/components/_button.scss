@@ -6,15 +6,17 @@
   letter-spacing: 3px;
   font-size: 16px;
   text-transform: uppercase;
-  background: $secondary-color;
+  background: $primary-color;
   color: $white !important;
   padding: 0 32px;
   transition: .5s ease;
   border-radius: 25px;
+  border: 1px solid $primary-color;
 
   &:hover {
-    background-color: $third-color !important;
-    color: $white !important;
+    background-color: $white !important;
+    color: $primary-color !important;
+    border: 1px solid $primary-color;
   }
 
   &--line {
