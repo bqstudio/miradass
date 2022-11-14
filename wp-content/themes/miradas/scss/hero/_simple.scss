@@ -63,6 +63,7 @@
     &__title {
         color: $white;
         line-height: 1.2;
+        letter-spacing: 5px;
     }
 
     &__text,
@@ -76,5 +77,5 @@
 }
 
 .hero_simple + section {
-   margin-top: 0; 
+    margin-top: 0; 
 }

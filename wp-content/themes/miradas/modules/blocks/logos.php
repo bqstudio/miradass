@@ -1,5 +1,5 @@
 <section class="logos">
-    <div class="container">
+    <div class="container_big">
         <?php echo ($title = get_sub_field('title'))? '<div class="logos__title">'.$title.'</div>':'';
         echo ($text = get_sub_field('text'))? '<div class="logos__text">'.$text.'</div>':''; 
 

@@ -28,11 +28,24 @@
   font-size: 55px;
   font-family: "Rosario", sans-serif;
   line-height: 1.09;
-  font-weight: 700;
-  color: #282560;
+  font-weight: 600;
+  color: $primary-color;
   margin-bottom: 35px;
   text-transform: capitalize;
 }
+
+@mixin subtitle() {
+  @include h3();
+  margin: 0 0 20px 0;
+  color: $primary-color;
+  text-align: center;
+  text-transform: capitalize;
+
+  &--left {
+    text-align: left;
+  }
+}
+
 
 @mixin cover() {
   background-size: cover;
@@ -101,6 +114,8 @@
 	ul {
 		li {
 			list-style: disc;
+      margin-bottom: 15px;
+      font-size: 20px;
 		}
 	}
 	a {

@@ -42,6 +42,8 @@ palermo includes support for WooCommerce and for Infinite Scroll in Jetpack.
 -------------
 Para titles usamos class .title ya llama al mixins
 
+Para subtitle usamos class .subtitle ya llama al mixins
+
 Overlay use mixins overlay
 
 Padding top bottom para sections - use mixins padding-section

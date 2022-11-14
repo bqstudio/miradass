@@ -124,6 +124,10 @@ strong * {
   @include title();
 }
 
+.subtitle {
+  @include subtitle();
+}
+
 .iframe-wrapper {
   @include row();
   padding-top: 56.25%;
@@ -289,7 +293,7 @@ strong * {
   &__cont {
     position: absolute;
     //top: 50%; sin AOS
-    top: 30%;
+    top: 26%;
     transform: translate(50%, -50%);
     //right: 50%; sin AOS
     left: 0;
@@ -311,4 +315,6 @@ strong * {
     color: #D1F5AB;
   }
 }
+
+
 

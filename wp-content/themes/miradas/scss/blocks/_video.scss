@@ -3,18 +3,13 @@
   &__cont {
     @include row();
     position: relative;
-    padding-top: 54%;
+    padding-top: 30%;
     overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
 
     @include responsive('mobile-v') {
         padding-top: 128% !important;
-    }
-    &__subtitle {
-      @include h3();
-      margin: 0 0 20px 0;
-      color: $primary-color;
-      text-align: center;
-      text-transform: capitalize;
     }
   }
 
@@ -64,7 +59,7 @@
         top:30px;
         right:30px;
         color:#fff;
-        font-size: 12px; 
+        font-size: 26px; 
         text-transform: uppercase; 
         font-weight: 700; 
         padding: 5px 10px 4px; 
