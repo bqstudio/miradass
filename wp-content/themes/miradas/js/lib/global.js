@@ -37,13 +37,13 @@ jQuery(document).ready(function($){
 		$('.popup').fadeOut();
 	});
 
-	$('.play-button').click(function(){
+	$('.play-button').on('click', function(){
 		$(this).hide();
 		$(this).parent().find('.image_placeholder').hide();
 	  	$(this).parent().find('video').get(0).play();
 		$(this).parent().find('.controls').show();
 	});
-	$('.pause').click(function(){
+	$('.pause').on('click', function(){
 		$(this).parent().hide();
 		$(this).parent().parent().find('video').get(0).pause();
 		$(this).parent().parent().find('.play-button').show();

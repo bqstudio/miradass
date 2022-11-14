@@ -2900,34 +2900,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .video .controls .video-controls:hover {
   background: #000;
 }
-.video .controls .video-controls.pause {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-image: url(images/pause-solid.svg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 60%;
-  font-size: 0;
-  z-index: 2;
-}
-.video .controls .video-controls.pause:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-@media only screen and (max-width: 900px) {
-  .video .controls .video-controls.pause {
-    height: 50px;
-    width: 50px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .video .controls .video-controls.pause {
-    height: 35px;
-    width: 35px;
-  }
-}
 .video .play-button {
   cursor: pointer;
   position: absolute;
