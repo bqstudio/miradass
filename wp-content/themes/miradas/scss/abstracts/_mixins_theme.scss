@@ -34,6 +34,12 @@
   text-transform: capitalize;
 }
 
+@mixin cover() {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 @mixin site__text() {
   @include h5();
   color: $primary-color;

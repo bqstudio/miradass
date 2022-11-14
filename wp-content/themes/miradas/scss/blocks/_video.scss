@@ -1,7 +1,14 @@
 .video {
 
   &__cont {
+    @include row();
+    position: relative;
+    padding-top: 54%;
+    overflow: hidden;
 
+    @include responsive('mobile-v') {
+        padding-top: 128% !important;
+    }
     &__subtitle {
       @include h3();
       margin: 0 0 20px 0;
@@ -11,9 +18,112 @@
     }
   }
 
-  &__file {
-    margin: 20px auto;
-    max-width: 1024px;
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      float:left;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+      
+    .image_placeholder {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
 
+      &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          content: '';
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.41) 100%);
+      }
+
+      img {
+        @include row();
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  .controls {
+    display: none;
+    .video-controls {
+        position: absolute;
+        top:30px;
+        right:30px;
+        color:#fff;
+        font-size: 12px; 
+        text-transform: uppercase; 
+        font-weight: 700; 
+        padding: 5px 10px 4px; 
+        cursor: pointer;
+        background: red;
+        @include responsive('mobile-h') {
+            font-size: 10px;
+            font-weight: 600;
+            bottom: 15px;
+            right: 15px;
+        }
+        &:hover {
+              background: #000;
+        }
+        &.pause {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          background-color:rgba(0,0,0,.1);
+          background-image: url(images/pause-solid.svg);
+          @include cover();
+          background-size: 60%;
+          font-size: 0;
+          z-index: 2;
+          &:hover {
+              background-color:rgba(0,0,0,.1);
+          }
+        @include responsive('tablet-v') {
+            height: 50px;
+            width: 50px;
+        }
+        @include responsive('mobile-h') {
+            height: 35px;
+            width: 35px;
+        }
+      }
+    }
+  }
+  .play-button {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      z-index: 2;
+      @include responsive('mobile-h') {
+            width: 60px;
+            height: 60px;
+      }
+      @include responsive('mobile-v') {
+            top: 35%;
+            transform: translateX(-50%) scale(.5) translateY(-50%);
+      }
+      &:hover {
+            .stroke-solid {
+                  opacity: 1;
+                  stroke-dashoffset: 300;
+            }
+      }
   }
 }
+

@@ -36,4 +36,17 @@ jQuery(document).ready(function($){
 	$('.close_popup').on('click', function(){
 		$('.popup').fadeOut();
 	});
+
+	$('.play-button').click(function(){
+		$(this).hide();
+		$(this).parent().find('.image_placeholder').hide();
+	  	$(this).parent().find('video').get(0).play();
+		$(this).parent().find('.controls').show();
+	});
+	$('.pause').click(function(){
+		$(this).parent().hide();
+		$(this).parent().parent().find('video').get(0).pause();
+		$(this).parent().parent().find('.play-button').show();
+	  	$(this).parent().parent().find('.image_placeholder').show();
+	});
 });
