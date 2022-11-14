@@ -5,9 +5,7 @@
 
         if( have_rows('logos') ): ?>
             <div class="logos__cont">
-                <?php while( have_rows('logos') ): the_row(); 
-                    $image = get_sub_field('image'); 
-                    
+                <?php while( have_rows('logos') ): the_row();                     
                     if( $link = get_sub_field('link')): ?>
                         <a class="item" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>">
                             <?php get_template_part('modules/components/image',NULL,array('image' => get_sub_field('image')) ); ?>
