@@ -11,7 +11,7 @@
               </figure>
               <div class="overlay-text">
                 <?php echo ($title = get_sub_field('title'))? '<h3 class="que_ofrecemos__title">'.$title.'</h3>':''; ?>
-                <?php echo ($description = get_sub_field('description'))? '<div class="que_ofrecemos__description">'.$description.'</div>':''; ?>
+                <?php echo ($Description = get_sub_field('Description'))? '<div class="que_ofrecemos__description">'.$Description.'</div>':''; ?>
               </div>
             </div>   
           <?php endwhile; ?>
