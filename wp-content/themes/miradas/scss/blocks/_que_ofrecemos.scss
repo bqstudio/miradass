@@ -40,6 +40,8 @@
       opacity: 0;
       text-align: center;
       height: 100%;
+      padding: 50px 20px;
+      overflow: hidden;
     }
 
     &:hover > .overlay-text {
@@ -50,9 +52,8 @@
   }
 
   &__title {
-    @include h5();
+    @include h4();
     color: $third-color;
-    font-size: 20px;
   }
 
   &__description {
@@ -61,7 +62,6 @@
     color: $primary-color;
     font-weight: 400;
     margin-top: 20px;
-    margin-bottom: 50px;
     transition: all 0.3s ease-out;
   }
 }

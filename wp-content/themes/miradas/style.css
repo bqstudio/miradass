@@ -3004,6 +3004,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   opacity: 0;
   text-align: center;
   height: 100%;
+  padding: 50px 20px;
+  overflow: hidden;
 }
 .que_ofrecemos__item:hover > .overlay-text {
   opacity: 1;
@@ -3011,19 +3013,18 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   cursor: pointer;
 }
 .que_ofrecemos__title {
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Rosario", sans-serif;
   color: #6A2263;
-  font-size: 20px;
 }
 @media only screen and (max-width: 1050px) {
   .que_ofrecemos__title {
-    font-size: 16px;
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 600px) {
   .que_ofrecemos__title {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 .que_ofrecemos__description {
@@ -3032,9 +3033,82 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   color: #282570;
   font-weight: 400;
   margin-top: 20px;
-  margin-bottom: 50px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+.image_with_text {
+  padding: 93px 0 174px;
+}
+@media only screen and (max-width: 750px) {
+  .image_with_text {
+    padding: 93px 0 100px;
+  }
+}
+.image_with_text__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 116px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 1050px) {
+  .image_with_text__cont {
+    grid-gap: 80px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .image_with_text__cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 20px;
+  }
+}
+.image_with_text__content {
+  width: 600px;
+  max-width: 100%;
+}
+@media only screen and (max-width: 1050px) {
+  .image_with_text__content {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .image_with_text__content {
+    width: 100%;
+  }
+}
+.image_with_text__title {
+  color: #282570;
+  margin: 13px 0;
+  font-weight: 700;
+}
+.image_with_text__text {
+  margin-bottom: 25px;
+  width: 510px;
+  max-width: 100%;
+  line-height: 1.25;
+}
+@media only screen and (max-width: 750px) {
+  .image_with_text__text {
+    width: 100%;
+  }
+}
+.image_with_text__img {
+  width: 350px;
+  max-width: 100%;
+  aspect-ratio: 0.74;
+}
+.image_with_text__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .single_post {
