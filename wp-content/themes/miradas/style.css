@@ -305,7 +305,7 @@ strong * {
 }
 
 .subtitle {
-  font-size: 36px;
+  font-size: 45px;
   font-family: "Rosario", sans-serif;
   margin: 0 0 20px 0;
   color: #282570;
@@ -314,12 +314,12 @@ strong * {
 }
 @media only screen and (max-width: 1050px) {
   .subtitle {
-    font-size: 28px;
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 600px) {
   .subtitle {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 .subtitle--left {
@@ -699,12 +699,12 @@ strong * {
   }
 }
 .site-logo img {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 @media only screen and (max-width: 1280px) {
   .site-logo img {
-    width: 180px;
+    width: 130px;
   }
 }
 
@@ -2165,7 +2165,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .text_block {
-  padding: 90px 0;
+  padding: 100px 0;
 }
 @media only screen and (max-width: 750px) {
   .text_block {
@@ -2511,7 +2511,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .logos {
-  padding: 90px 0;
+  padding: 100px 0;
 }
 @media only screen and (max-width: 750px) {
   .logos {
@@ -2943,7 +2943,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .que_ofrecemos {
-  padding: 90px 0;
+  padding: 100px 0;
 }
 @media only screen and (max-width: 750px) {
   .que_ofrecemos {
@@ -3038,7 +3038,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .image_with_text {
-  padding: 93px 0 174px;
+  padding: 60px 0 30px 0;
 }
 @media only screen and (max-width: 750px) {
   .image_with_text {
@@ -3052,10 +3052,11 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-gap: 116px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-gap: 60px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 60px 0 30px 0;
 }
 @media only screen and (max-width: 1050px) {
   .image_with_text__cont {
@@ -3087,8 +3088,9 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .image_with_text__title {
   color: #282570;
-  margin: 13px 0;
-  font-weight: 700;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+  font-size: 28px;
 }
 .image_with_text__text {
   margin-bottom: 25px;
@@ -3104,11 +3106,12 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .image_with_text__img {
   width: 350px;
   max-width: 100%;
-  aspect-ratio: 0.74;
+  aspect-ratio: 1;
 }
 .image_with_text__img img {
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 1;
 }
 
 .single_post {

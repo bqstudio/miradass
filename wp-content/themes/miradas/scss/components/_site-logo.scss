@@ -7,11 +7,11 @@
     }
 
     img {
-        width: 200px;
+        width: 150px;
         height: auto;
 
         @include responsive('desktop-s') {
-            width: 180px;
+            width: 130px;
           }
     }
 }

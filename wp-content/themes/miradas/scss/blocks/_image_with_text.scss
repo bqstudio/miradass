@@ -1,5 +1,5 @@
 .image_with_text {
-    padding: 93px 0 174px;
+    padding: 60px 0 30px 0;
 
     @include responsive ('mobile-h') {
         padding: 93px 0 100px;
@@ -8,8 +8,9 @@
     &__cont {
         display: flex;
         justify-content: center;
-        grid-gap: 116px;
-        align-items: center;
+        grid-gap: 60px;
+        align-items: flex-start;
+        margin: 60px 0 30px 0;
 
         @include responsive('tablet-h') {
             grid-gap: 80px;
@@ -38,8 +39,9 @@
 
     &__title {
         color: $primary-color;
-        margin: 13px 0;
-        font-weight: 700;
+        margin: 0 0 10px 0;
+        font-weight: 400;
+        font-size: 28px;
     }
 
     &__text {
@@ -56,10 +58,11 @@
     &__img {
         width: 350px;
         max-width: 100%;
-        aspect-ratio: 0.74;
+        aspect-ratio: 1;
 
         img {
             object-fit: cover;
+            aspect-ratio: 1;
         }
     }
 }

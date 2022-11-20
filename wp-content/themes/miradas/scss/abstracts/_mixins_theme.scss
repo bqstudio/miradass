@@ -35,7 +35,7 @@
 }
 
 @mixin subtitle() {
-  @include h3();
+  @include h2();
   margin: 0 0 20px 0;
   color: $primary-color;
   text-align: center;
@@ -178,7 +178,7 @@
 }
 
 @mixin padding-section() {
-  padding: 90px 0;
+  padding: 100px 0;
 
   @include responsive ('mobile-h') {
     padding: 40px 0;
