@@ -1,50 +1,19 @@
 <section class="nuestro_equipo">
     <div class="container">
-        <div class="title">Nuestro Equipo </div>
-        <div class="nuestro_equipo__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur est itaque neque eaque porro hic ut culpa, voluptas officiis quam, recusandae corporis sit obcaecati deleniti aut dolore assumenda! Rem eius, corporis odit facere voluptas officia. Recusandae in pariatur accusamus! Aperiam aliquam inventore corrupti obcaecati nesciunt deleniti beatae officiis aliquid cum!</div>
-
-        <div class="nuestro_equipo__cont">
-            <div class="nuestro_equipo__item">
-                <img src="<?php echo get_template_directory_uri();?>/images/staff.jpg" alt="">
-                <div class="nuestro_equipo__persona">Fernanda Espinoza</div>
-                <div class="nuestro_equipo__especializacion">Médica</div>
+        <?php echo ($title = get_sub_field('title'))? '<div class="title">'.$title.'</div>':''; ?>
+        <?php echo ($subtitle = get_sub_field('subtitle'))? '<div class="nuestro_equipo__subtitle">'.$subtitle.'</div>':''; ?>
+       
+        <?php if( have_rows('nuestro_equipo') ): ?>
+            <div class="nuestro_equipo__cont">
+            <?php while( have_rows('nuestro_equipo') ): the_row();?>
+                <div class="nuestro_equipo__item">
+                    <?php get_template_part('modules/components/image',NULL,array('image' => get_sub_field('Image')) ); ?>
+                    <?php echo ($persona = get_sub_field('persona'))? '<div class="nuestro_equipo__persona">'.$persona.'</div>':''; ?>
+                    <?php echo ($especificacion = get_sub_field('especificacion'))? '<div class="nuestro_equipo__especializacion">'.$especificacion.'</div>':''; ?>
+                </div>
+            <?php endwhile; ?>
             </div>
-            <div class="nuestro_equipo__item">
-                <img src="<?php echo get_template_directory_uri();?>/images/staff.jpg" alt="">
-                <div class="nuestro_equipo__persona">Fernanda Espinoza</div>
-                <div class="nuestro_equipo__especializacion">Médica</div>
-            </div>
-            <div class="nuestro_equipo__item">
-                <img src="<?php echo get_template_directory_uri();?>/images/staff.jpg" alt="">
-                <div class="nuestro_equipo__persona">Fernanda Espinoza</div>
-                <div class="nuestro_equipo__especializacion">Médica</div>
-            </div>
-            <div class="nuestro_equipo__item">
-                <img src="<?php echo get_template_directory_uri();?>/images/staff.jpg" alt="">
-                <div class="nuestro_equipo__persona">Fernanda Espinoza</div>
-                <div class="nuestro_equipo__especializacion">Médica</div>
-            </div>
-            <div class="nuestro_equipo__item">
-                <img src="<?php echo get_template_directory_uri();?>/images/staff.jpg" alt="">
-                <div class="nuestro_equipo__persona">Fernanda Espinoza</div>
-                <div class="nuestro_equipo__especializacion">Médica</div>
-            </div>
-            <div class="nuestro_equipo__item">
-                <img src="<?php echo get_template_directory_uri();?>/images/staff.jpg" alt="">
-                <div class="nuestro_equipo__persona">Fernanda Espinoza</div>
-                <div class="nuestro_equipo__especializacion">Médica</div>
-            </div>
-            <div class="nuestro_equipo__item">
-                <img src="<?php echo get_template_directory_uri();?>/images/staff.jpg" alt="">
-                <div class="nuestro_equipo__persona">Fernanda Espinoza</div>
-                <div class="nuestro_equipo__especializacion">Médica</div>
-            </div>
-            <div class="nuestro_equipo__item">
-                <img src="<?php echo get_template_directory_uri();?>/images/staff.jpg" alt="">
-                <div class="nuestro_equipo__persona">Fernanda Espinoza</div>
-                <div class="nuestro_equipo__especializacion">Médica</div>
-            </div>
+        <?php endif; ?>
             
-        </div>
     </div>
 </section>
