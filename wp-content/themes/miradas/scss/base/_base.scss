@@ -20,7 +20,7 @@ html {
 
 body {
   @include default-font();
-  font-size: 16px;
+  font-size: 20px;
   color: $grey-light;
 
   img {
@@ -107,6 +107,22 @@ strong * {
 
   @include responsive('mobile-h') {
     padding: 0 15px;
+  }
+
+  &--extra {
+    padding: 0 360px;
+
+    @include responsive ('desktop-m') {
+      padding: 0 120px;
+    }
+
+    @include responsive('desktop-s') {
+      padding: 0 30px;
+    }
+  
+    @include responsive('mobile-h') {
+      padding: 0 15px;
+    }
   }
 }
 

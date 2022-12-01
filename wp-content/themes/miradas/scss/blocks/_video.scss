@@ -8,9 +8,11 @@
     width: 70%;
     margin: 0 auto;
 
-    @include responsive('mobile-v') {
-        padding-top: 128% !important;
+    @include responsive('tablet-h') {
+        width: 100%;
+        padding-top: 50%;
     }
+  
   }
 
     video {
@@ -89,7 +91,7 @@
     }
 
     @include responsive('mobile-v') {
-      top: 35%;
+      top: 50%;
       transform: translateX(-50%) scale(.5) translateY(-50%);
     }
     

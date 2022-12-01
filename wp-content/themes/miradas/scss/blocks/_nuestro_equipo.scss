@@ -1,0 +1,65 @@
+.nuestro_equipo {
+  @include padding-section();
+
+  &__subtitle {
+    @include text_block();
+    padding-bottom: 40px;
+  }
+
+  &__cont {
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+    @include responsive ('tablet-h') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive ('mobile-h') {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0;
+    }
+  }
+
+  &__item {
+    min-height: 500px;
+    padding: 20px;
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+      width: 100%;
+      object-fit: cover;
+      width: 350px;
+      max-width: 100%;
+    }
+
+    &:hover {
+      background-color: $dark-green;
+      border-radius: 20px;
+
+      .nuestro_equipo__persona {
+        color: $white;
+        font-size: 26px;
+      }
+
+      .nuestro_equipo__especializacion {
+        color: $white;
+      }
+
+    }
+  }
+
+  &__persona {
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: 700;
+  }
+
+  &__especializacion {
+    font-size: 20px;
+    text-align: center;
+  }
+
+}

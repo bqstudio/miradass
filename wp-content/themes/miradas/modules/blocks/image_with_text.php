@@ -1,5 +1,5 @@
 <section class="image_with_text">
-    <div class="container_big">
+    <div class="container_big container_big--extra ">
     <?php echo ($title_block = get_sub_field('title_block'))? '<div class="subtitle subtitle--left">'.$title_block.'</div>':''; ?>
         <div class="image_with_text__cont">
             <div class="image_with_text__img">

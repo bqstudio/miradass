@@ -2,6 +2,7 @@
 Theme Name: Miradas
 Text Domain: twentysixteen
 */
+/* Colores logo */
 @import url("https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,300&display=swap");
@@ -90,7 +91,7 @@ html {
 
 body {
   font-family: "Rosario", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   color: #727887;
 }
 body img {
@@ -281,6 +282,24 @@ strong * {
 }
 @media only screen and (max-width: 750px) {
   .container_big {
+    padding: 0 15px;
+  }
+}
+.container_big--extra {
+  padding: 0 360px;
+}
+@media only screen and (max-width: 1680px) {
+  .container_big--extra {
+    padding: 0 120px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .container_big--extra {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .container_big--extra {
     padding: 0 15px;
   }
 }
@@ -948,7 +967,7 @@ strong * {
     left: 0;
     top: 0;
     width: 100%;
-    background: #EEEEEE;
+    background: #ffffff;
     height: calc(100vh - 114px);
     overflow-y: scroll;
     overflow-x: hidden;
@@ -1044,11 +1063,11 @@ strong * {
 }
 
 .menu-responsive-open .header {
-  background: #EEEEEE !important;
+  background: #ffffff !important;
   height: 100%;
 }
 .menu-responsive-open.scrolled .header {
-  background: #EEEEEE;
+  background: #ffffff;
   height: 100%;
 }
 
@@ -1831,9 +1850,9 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   position: relative;
 }
 .hero_simple .container_big {
-  text-align: left;
+  text-align: center;
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -1890,6 +1909,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   color: #ffffff;
   line-height: 1.2;
   letter-spacing: 5px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 .hero_simple__text,
 .hero_simple .term-description {
@@ -2375,6 +2396,11 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
     max-height: 100%;
   }
 }
+@media only screen and (max-width: 750px) {
+  .stay_informed {
+    height: 600px;
+  }
+}
 .stay_informed::before {
   content: "";
   position: absolute;
@@ -2837,9 +2863,10 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   width: 70%;
   margin: 0 auto;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1050px) {
   .video__cont {
-    padding-top: 128% !important;
+    width: 100%;
+    padding-top: 50%;
   }
 }
 .video video {
@@ -2932,7 +2959,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 @media only screen and (max-width: 600px) {
   .video .play-button {
-    top: 35%;
+    top: 50%;
     -webkit-transform: translateX(-50%) scale(0.5) translateY(-50%);
             transform: translateX(-50%) scale(0.5) translateY(-50%);
   }
@@ -2956,13 +2983,17 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .que_ofrecemos__layout__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
   grid-template-columns: repeat(3, 1fr);
-  -ms-grid-column: 40;
-  grid-column: 40px;
+  grid-gap: 40px;
+}
+@media only screen and (max-width: 1050px) {
+  .que_ofrecemos__layout__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .que_ofrecemos__item {
-  border: 1px solid red;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2975,7 +3006,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
           align-items: center;
 }
 .que_ofrecemos__item figure {
-  height: 250px;
+  height: 350px;
   width: 100%;
   overflow: hidden;
   border-radius: 3px;
@@ -2988,6 +3019,9 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   height: 100%;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 .que_ofrecemos__item .overlay-text {
   position: absolute;
@@ -2998,7 +3032,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   z-index: 2;
   width: 100%;
   padding: 0 20px;
-  background: rgba(11, 103, 123, 0.6);
+  background: rgba(249, 206, 234, 0.85);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   opacity: 0;
@@ -3013,26 +3047,26 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   cursor: pointer;
 }
 .que_ofrecemos__title {
-  font-size: 30px;
+  font-size: 36px;
   font-family: "Rosario", sans-serif;
   color: #6A2263;
 }
 @media only screen and (max-width: 1050px) {
   .que_ofrecemos__title {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 600px) {
   .que_ofrecemos__title {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 .que_ofrecemos__description {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.3;
   color: #282570;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 40px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -3042,16 +3076,16 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 @media only screen and (max-width: 750px) {
   .image_with_text {
-    padding: 93px 0 100px;
+    padding: 60px 0 50px;
   }
 }
 .image_with_text__cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   grid-gap: 60px;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -3060,7 +3094,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 @media only screen and (max-width: 1050px) {
   .image_with_text__cont {
-    grid-gap: 80px;
+    grid-gap: 30px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -3070,10 +3104,18 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
         -ms-flex-direction: column;
             flex-direction: column;
     grid-gap: 20px;
+    margin: 30px 0 15px 0;
   }
 }
+.image_with_text__cont--revert {
+  text-align: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
 .image_with_text__content {
-  width: 600px;
+  width: 770px;
   max-width: 100%;
 }
 @media only screen and (max-width: 1050px) {
@@ -3094,9 +3136,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .image_with_text__text {
   margin-bottom: 25px;
-  width: 510px;
   max-width: 100%;
-  line-height: 1.25;
+  line-height: 1.8;
 }
 @media only screen and (max-width: 750px) {
   .image_with_text__text {
@@ -3108,10 +3149,227 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   max-width: 100%;
   aspect-ratio: 1;
 }
+@media only screen and (max-width: 750px) {
+  .image_with_text__img {
+    width: 100%;
+  }
+}
 .image_with_text__img img {
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 1;
+}
+
+.nuestro_equipo {
+  padding: 100px 0;
+}
+@media only screen and (max-width: 750px) {
+  .nuestro_equipo {
+    padding: 40px 0;
+  }
+}
+.nuestro_equipo__subtitle {
+  padding-bottom: 40px;
+}
+.nuestro_equipo__subtitle h1, .nuestro_equipo__subtitle h2, .nuestro_equipo__subtitle h3, .nuestro_equipo__subtitle h4, .nuestro_equipo__subtitle h5, .nuestro_equipo__subtitle h6 {
+  margin-bottom: 20px;
+}
+.nuestro_equipo__subtitle h1 {
+  font-size: 55px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .nuestro_equipo__subtitle h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nuestro_equipo__subtitle h1 {
+    font-size: 40px;
+  }
+}
+.nuestro_equipo__subtitle h2 {
+  font-size: 45px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .nuestro_equipo__subtitle h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nuestro_equipo__subtitle h2 {
+    font-size: 30px;
+  }
+}
+.nuestro_equipo__subtitle h3 {
+  font-size: 36px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .nuestro_equipo__subtitle h3 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nuestro_equipo__subtitle h3 {
+    font-size: 28px;
+  }
+}
+.nuestro_equipo__subtitle h4 {
+  font-size: 30px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .nuestro_equipo__subtitle h4 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nuestro_equipo__subtitle h4 {
+    font-size: 24px;
+  }
+}
+.nuestro_equipo__subtitle h5 {
+  font-size: 20px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .nuestro_equipo__subtitle h5 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nuestro_equipo__subtitle h5 {
+    font-size: 16px;
+  }
+}
+.nuestro_equipo__subtitle h6 {
+  font-size: 16px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .nuestro_equipo__subtitle h6 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nuestro_equipo__subtitle h6 {
+    font-size: 16px;
+  }
+}
+.nuestro_equipo__subtitle p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+@media only screen and (max-width: 750px) {
+  .nuestro_equipo__subtitle p {
+    font-size: 16px;
+  }
+}
+.nuestro_equipo__subtitle .wp-video {
+  padding: 20px 0;
+}
+.nuestro_equipo__subtitle ul, .nuestro_equipo__subtitle ol {
+  padding-left: 15px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+.nuestro_equipo__subtitle ul li {
+  list-style: disc;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.nuestro_equipo__subtitle a {
+  color: #282570;
+}
+.nuestro_equipo__subtitle a:hover {
+  text-decoration: underline;
+}
+.nuestro_equipo__subtitle blockquote {
+  padding-left: 30px;
+  border-left: 3px solid #282570;
+}
+.nuestro_equipo__subtitle blockquote p {
+  font-size: 30px;
+  font-family: "Rosario", sans-serif;
+}
+@media only screen and (max-width: 1050px) {
+  .nuestro_equipo__subtitle blockquote p {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nuestro_equipo__subtitle blockquote p {
+    font-size: 24px;
+  }
+}
+.nuestro_equipo__subtitle .alignleft {
+  float: left;
+  margin-right: 30px;
+}
+.nuestro_equipo__subtitle .aligncenter {
+  margin: 30px auto;
+  display: block;
+}
+.nuestro_equipo__subtitle .alignright {
+  float: right;
+  margin-left: 30px;
+}
+.nuestro_equipo__cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+@media only screen and (max-width: 1050px) {
+  .nuestro_equipo__cont {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 750px) {
+  .nuestro_equipo__cont {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}
+.nuestro_equipo__item {
+  min-height: 500px;
+  padding: 20px;
+  text-align: center;
+}
+.nuestro_equipo__item img {
+  border-radius: 50%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 350px;
+  max-width: 100%;
+}
+.nuestro_equipo__item:hover {
+  background-color: #D2E7A2;
+  border-radius: 20px;
+}
+.nuestro_equipo__item:hover .nuestro_equipo__persona {
+  color: #ffffff;
+  font-size: 26px;
+}
+.nuestro_equipo__item:hover .nuestro_equipo__especializacion {
+  color: #ffffff;
+}
+.nuestro_equipo__persona {
+  text-align: center;
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+.nuestro_equipo__especializacion {
+  font-size: 20px;
+  text-align: center;
 }
 
 .single_post {

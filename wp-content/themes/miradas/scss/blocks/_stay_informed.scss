@@ -7,6 +7,10 @@
         max-height: 100%;
     }
 
+    @include responsive ('mobile-h') {
+        height: 600px;
+    }
+
     &::before {
         content: '';
         @include absolute();

@@ -2,30 +2,34 @@
     padding: 60px 0 30px 0;
 
     @include responsive ('mobile-h') {
-        padding: 93px 0 100px;
+        padding: 60px 0 50px;
     }
 
     &__cont {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         grid-gap: 60px;
         align-items: flex-start;
         margin: 60px 0 30px 0;
 
         @include responsive('tablet-h') {
-            grid-gap: 80px;
+            grid-gap: 30px;
         }
 
         @include responsive('mobile-h') {
             flex-direction: column;
             grid-gap: 20px;
+            margin: 30px 0 15px 0;
         }
 
-        
+        &--revert { //TODO: clase apra el del medio ponerlo al reves. Habria que hacer  un repeater? para este bloque?
+            text-align: right;
+            flex-direction: row-reverse;
+        }
     }
 
     &__content {
-        width: 600px;
+        width: 770px;
         max-width: 100%;
 
         @include responsive ('tablet-h') {
@@ -46,9 +50,9 @@
 
     &__text {
         margin-bottom: 25px;
-        width: 510px;
+        //width: 600px;
         max-width: 100%;
-        line-height: 1.25;
+        line-height: 1.8;
 
         @include responsive ('mobile-h') {
             width: 100%;
@@ -59,6 +63,10 @@
         width: 350px;
         max-width: 100%;
         aspect-ratio: 1;
+
+        @include responsive ('mobile-h') {
+            width: 100%;
+        }
 
         img {
             object-fit: cover;

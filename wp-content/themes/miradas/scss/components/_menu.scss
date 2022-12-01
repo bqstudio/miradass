@@ -214,7 +214,7 @@
       left: 0;
       top: 0;
       width: 100%;
-      background: $grey;
+      background: $white;
       height: calc(100vh - 114px);
       overflow-y: scroll;
       overflow-x: hidden ;
@@ -336,13 +336,13 @@
 } 
 .menu-responsive-open {
   .header {
-    background: $grey !important;
+    background: $white !important;
     height: 100%;
   }
 
   &.scrolled {
     .header {
-      background: #EEEEEE;
+      background: $white;
       height: 100%;
     }
   }
