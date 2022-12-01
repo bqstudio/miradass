@@ -49,4 +49,23 @@ jQuery(document).ready(function($){
 		$(this).parent().parent().find('.play-button').show();
 	  	$(this).parent().parent().find('.image_placeholder').show();
 	});
+
+	$('.js-open-equipo').click(function(e){
+        e.preventDefault();
+        let elem = $(this);
+        let elem_id = elem.attr('data-id');
+        let popup_equipo = $('.popup_equipo[data-id="'+ elem_id +'"]');
+
+        $('.popup_equipo').removeClass('js-active');
+        $('.popup_equipo').addClass('js-active');
+        $('body').addClass('js-popup-active');
+        $('.popup-fade').fadeIn();
+    });
+
+		$('.close_popup').click(() => {$('body').removeClass('js-popup-active').find('.popup_equipo').removeClass('js-active'); $('.popup-fade').fadeOut();});
+	
+		$(document).mouseup(e => ( !$('.popup_equipo').is(e.target) && $('.popup_equipo').has(e.target).length === 0 ) && $('.close_popup').click());
+	
+		$(document).keyup(e => ( e.which == 27 ) && $('.close_popup').click());
+	
 });

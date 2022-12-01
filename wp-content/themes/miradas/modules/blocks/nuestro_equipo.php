@@ -3,17 +3,29 @@
         <?php echo ($title = get_sub_field('title'))? '<div class="title">'.$title.'</div>':''; ?>
         <?php echo ($subtitle = get_sub_field('subtitle'))? '<div class="nuestro_equipo__subtitle">'.$subtitle.'</div>':''; ?>
        
-        <?php if( have_rows('nuestro_equipo') ): ?>
-            <div class="nuestro_equipo__cont">
-            <?php while( have_rows('nuestro_equipo') ): the_row();?>
-                <div class="nuestro_equipo__item">
-                    <?php get_template_part('modules/components/image',NULL,array('image' => get_sub_field('image')) ); ?>
-                    <?php echo ($persona = get_sub_field('persona'))? '<div class="nuestro_equipo__persona">'.$persona.'</div>':''; ?>
-                    <?php echo ($especificacion = get_sub_field('especificacion'))? '<div class="nuestro_equipo__especializacion">'.$especificacion.'</div>':''; ?>
-                </div>
-            <?php endwhile; ?>
+        <?php $args = array(  
+            'post_type' => 'equipo',
+            'post_status' => 'publish',
+            'posts_per_page' => -1, 
+            'orderby' => 'title', 
+            'order' => 'ASC', 
+        );
+
+        $loop = new WP_Query( $args ); ?>
+        <div class="nuestro_equipo__cont">
+            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <div class="nuestro_equipo__item js-open-equipo">
+                <?php if( has_post_thumbnail() ): ?>
+                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail');?>" alt="<?php echo get_the_title();?>" />
+                <?php endif; ?>
+                <div class="nuestro_equipo__persona"><?php the_title();?></div>
+                <div class="nuestro_equipo__especializacion"><?php the_content();?></div>
             </div>
-        <?php endif; ?>
-            
+            <?php endwhile; ?>
+            <?php while( $loop->have_posts() ): $loop->the_post();?>
+                    <?php get_template_part('modules/popup_equipo'); ?> 
+                <?php endwhile; ?>
+        </div>
+        <?php wp_reset_postdata();  ?>
     </div>
 </section>
