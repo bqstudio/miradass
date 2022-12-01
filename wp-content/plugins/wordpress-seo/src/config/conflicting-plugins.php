@@ -90,7 +90,7 @@ class Conflicting_Plugins {
 	];
 
 	const SEO_PLUGINS = [
-		'palermo-one-seo-pack/all_in_one_seo_pack.php',           // All in One SEO Pack.
+		'all-in-one-seo-pack/all_in_one_seo_pack.php',           // All in One SEO Pack.
 		'seo-ultimate/seo-ultimate.php',                         // SEO Ultimate.
 		'seo-by-rank-math/rank-math.php',                        // Rank Math.
 	];

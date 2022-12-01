@@ -8,9 +8,9 @@
  *
  * @wordpress-plugin
  * Plugin Name: Yoast SEO
- * Version:     19.7.1
+ * Version:     19.11
  * Plugin URI:  https://yoa.st/1uj
- * Description: The first true palermo-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.
+ * Description: The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.
  * Author:      Team Yoast
  * Author URI:  https://yoa.st/1uk
  * Text Domain: wordpress-seo

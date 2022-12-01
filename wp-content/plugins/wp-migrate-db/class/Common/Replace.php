@@ -326,6 +326,10 @@ class Replace
             $i = 1;
             foreach ($custom_pairs as $pair) {
                 $index = $i + $standard_pairs_count;
+                if (empty($pair['replace_old']) && empty($pair['replace_new'])) {
+                    $i++;
+                    continue;
+                }
                 $tmp_find_replace_pairs[$pair['replace_old']] = $pair['replace_new'];
 
                 if(empty($migration_options['regex']) && isset($pair['regex'])) {
@@ -582,7 +586,12 @@ class Replace
         }
 
         if ('find_replace' === $this->intent) {
-            $this->diff_interpreter->compute(DiffEntity::create($original, $subject, $this->column, is_object($this->row) ? reset($this->row) : null));
+            $row = null;
+            if (is_object($this->row) ) {
+                $get_vars = function_exists('get_mangled_object_vars') ? get_mangled_object_vars($this->row) : $this->row;
+                $row      = reset($get_vars);
+            }
+            $this->diff_interpreter->compute(DiffEntity::create($original, $subject, $this->column, $row));
         }
 
         return $subject;
