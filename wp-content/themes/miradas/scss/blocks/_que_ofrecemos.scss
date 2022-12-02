@@ -59,6 +59,7 @@
   &__title {
     @include h3();
     color: $third-color;
+    font-weight: 700;
   }
 
   &__description {
