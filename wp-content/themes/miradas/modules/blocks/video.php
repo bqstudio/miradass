@@ -1,6 +1,6 @@
 <?php $video = get_sub_field('video');
 $image_placeholder = get_sub_field('image_placeholder');?>
-<section class="video">
+<section class="video" id="video">
   <div class="container">
       <?php echo ($subtitle = get_sub_field('subtitle'))? '<div class="subtitle">'.$subtitle.'</div>':''; ?>
     <div class="video__cont">

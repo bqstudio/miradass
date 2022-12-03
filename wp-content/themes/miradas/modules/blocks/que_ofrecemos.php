@@ -1,4 +1,4 @@
-<section class="que_ofrecemos">
+<section class="que_ofrecemos" id="que_ofrecemos">
   <div class="container_big">
     <div class="que_ofrecemos__cont">
       <?php echo ($title_block = get_sub_field('title_block'))? '<div class="title">'.$title_block.'</div>':''; ?>
