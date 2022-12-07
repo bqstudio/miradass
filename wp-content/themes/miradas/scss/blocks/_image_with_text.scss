@@ -27,6 +27,10 @@
         &--revert { //TODO: clase apra el del medio ponerlo al reves. Habria que hacer  un repeater? para este bloque?
             text-align: right;
             flex-direction: row-reverse;
+
+            @include responsive ('tablet-h') {
+                flex-direction: column-reverse;
+            }
         }
     }
 

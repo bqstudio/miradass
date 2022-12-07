@@ -1256,22 +1256,6 @@ strong * {
     font-size: 16px;
   }
 }
-.formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-webkit-input-placeholder, .formBox textarea::-webkit-input-placeholder {
-  color: #ffffff;
-}
-.formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-moz-placeholder, .formBox textarea::-moz-placeholder {
-  color: #ffffff;
-}
-.formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):-ms-input-placeholder, .formBox textarea:-ms-input-placeholder {
-  color: #ffffff;
-}
-.formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-ms-input-placeholder, .formBox textarea::-ms-input-placeholder {
-  color: #ffffff;
-}
-.formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder,
-.formBox textarea::placeholder {
-  color: #ffffff;
-}
 .formBox p {
   font-size: 12px;
   font-family: "Rosario", sans-serif;
@@ -2618,29 +2602,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
     padding-bottom: 60px;
   }
 }
-.logos__title {
-  font-size: 55px;
-  font-family: "Rosario", sans-serif;
-  line-height: 1.09;
-  font-weight: 700;
-  color: #282570;
-  margin-bottom: 35px;
-}
-@media only screen and (max-width: 1050px) {
-  .logos__title {
-    font-size: 45px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .logos__title {
-    font-size: 40px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .logos__title {
-    margin-bottom: 20px;
-  }
-}
 .logos__text {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
@@ -3321,6 +3282,14 @@ body.js-popup-active .close_popup {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+@media only screen and (max-width: 1050px) {
+  .image_with_text__cont--revert {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 .image_with_text__content {
   width: 100%;
   max-width: 100%;
@@ -3561,13 +3530,13 @@ body.js-popup-active .close_popup {
 .nuestro_equipo__item:hover {
   background-color: #D2E7A2;
   border-radius: 20px;
-}
-.nuestro_equipo__item:hover .nuestro_equipo__persona {
-  color: #ffffff;
-  font-size: 26px;
-}
-.nuestro_equipo__item:hover .nuestro_equipo__especializacion {
-  color: #ffffff;
+  /* .nuestro_equipo__persona {
+    color: $white;
+  }
+
+  .nuestro_equipo__especializacion {
+    color: $white;
+  } */
 }
 .nuestro_equipo__persona {
   text-align: center;

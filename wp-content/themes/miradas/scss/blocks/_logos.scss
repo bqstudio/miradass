@@ -5,18 +5,6 @@
         padding-bottom: 60px;
     }
 
-    &__title {
-        @include h1();
-        line-height: 1.09;
-        font-weight: 700;
-        color: $primary-color;
-        margin-bottom: 35px;
-
-        @include responsive('mobile-h') {
-            margin-bottom: 20px;
-        }
-    }
-
     &__text {
         font-family: $secondary-font;
         font-weight: 300;
