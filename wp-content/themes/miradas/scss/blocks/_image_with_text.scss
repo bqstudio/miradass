@@ -6,6 +6,8 @@
     }
 
     &__cont {
+       /*  display: grid;
+        grid-template-columns: repeat(2, 1fr); */
         display: flex;
         justify-content: flex-start;
         grid-gap: 60px;
@@ -29,7 +31,7 @@
     }
 
     &__content {
-        width: 770px;
+        width: 100%;
         max-width: 100%;
 
         @include responsive ('tablet-h') {
@@ -60,7 +62,7 @@
     }
 
     &__img {
-        width: 350px;
+        width: 100%;
         max-width: 100%;
         aspect-ratio: 1;
 

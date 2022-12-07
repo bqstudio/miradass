@@ -321,6 +321,7 @@ strong * {
   color: #282570;
   margin-bottom: 35px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .subtitle {
@@ -330,6 +331,7 @@ strong * {
   color: #282570;
   text-align: center;
   text-transform: capitalize;
+  text-align: center;
 }
 @media only screen and (max-width: 1050px) {
   .subtitle {
@@ -3226,7 +3228,6 @@ body.js-popup-active .close_popup {
   z-index: 2;
   width: 100%;
   padding: 0 20px;
-  background: rgba(249, 206, 234, 0.85);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   opacity: 0;
@@ -3239,6 +3240,15 @@ body.js-popup-active .close_popup {
   opacity: 1;
   overflow: visible;
   cursor: pointer;
+}
+.que_ofrecemos__item:nth-child(1) .overlay-text {
+  background: rgba(210, 231, 162, 0.9);
+}
+.que_ofrecemos__item:nth-child(2) .overlay-text {
+  background: rgba(251, 217, 208, 0.9);
+}
+.que_ofrecemos__item:nth-child(3) .overlay-text {
+  background: rgba(249, 206, 234, 0.9);
 }
 .que_ofrecemos__title {
   font-size: 36px;
@@ -3275,6 +3285,8 @@ body.js-popup-active .close_popup {
   }
 }
 .image_with_text__cont {
+  /*  display: grid;
+   grid-template-columns: repeat(2, 1fr); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3310,7 +3322,7 @@ body.js-popup-active .close_popup {
           flex-direction: row-reverse;
 }
 .image_with_text__content {
-  width: 770px;
+  width: 100%;
   max-width: 100%;
 }
 @media only screen and (max-width: 1050px) {
@@ -3340,7 +3352,7 @@ body.js-popup-active .close_popup {
   }
 }
 .image_with_text__img {
-  width: 350px;
+  width: 100%;
   max-width: 100%;
   aspect-ratio: 1;
 }
@@ -3563,9 +3575,48 @@ body.js-popup-active .close_popup {
   margin: 10px 0;
   font-weight: 700;
 }
-.nuestro_equipo__especializacion {
+.nuestro_equipo__especializacion p {
   font-size: 20px;
   text-align: center;
+}
+.nuestro_equipo--home .nuestro_equipo__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nuestro_equipo--home .nuestro_equipo__subtitle {
+  text-align: center;
+}
+.nuestro_equipo--home .nuestro_equipo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  aspect-ratio: 1;
+  overflow: hidden;
+  min-height: 310px;
+}
+.nuestro_equipo--home .nuestro_equipo__item:hover {
+  background: rgba(249, 206, 234, 0.9);
+}
+.nuestro_equipo--home img {
+  width: 150px;
+  max-width: 100%;
 }
 
 .single_post {

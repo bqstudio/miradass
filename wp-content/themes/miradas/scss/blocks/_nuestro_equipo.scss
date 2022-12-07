@@ -58,9 +58,40 @@
     font-weight: 700;
   }
 
-  &__especializacion {
+  &__especializacion p{
     font-size: 20px;
     text-align: center;
   }
 
+  &--home {
+
+    .nuestro_equipo__cont {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nuestro_equipo__subtitle {
+      text-align: center;
+    }
+
+    .nuestro_equipo__item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      aspect-ratio: 1;
+      overflow: hidden;
+      min-height: 310px;
+
+      &:hover {
+        background: rgba(249, 206, 234, 0.90);
+      }
+    }
+
+    img {
+      width: 150px;
+      max-width: 100%;
+    }
+  }
 }

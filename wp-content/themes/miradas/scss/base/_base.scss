@@ -138,10 +138,12 @@ strong * {
 
 .title {
   @include title();
+  text-align: center;
 }
 
 .subtitle {
   @include subtitle();
+  text-align: center;
 }
 
 .iframe-wrapper {
