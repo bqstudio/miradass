@@ -1,6 +1,6 @@
 <section class="image_with_text"> <!-- TODO: chequear cambio de lado -->
     <div class="container_big container_big--extra ">
-    <?php echo ($title_block = get_sub_field('title_block'))? '<div class="subtitle">'.$title_block.'</div>':''; ?>
+    <?php echo ($title_block = get_sub_field('title_block'))? '<div class="title">'.$title_block.'</div>':''; ?>
         <div class="image_with_text__cont <?php if (get_sub_field('posicion') =='izquierda'):?>image_with_text__cont--revert <?php endif; ?>">
             <div class="image_with_text__img">
                 <?php get_template_part('modules/components/image',NULL,array('image' => get_sub_field('image')) ); ?>

@@ -2,7 +2,7 @@
 $image_placeholder = get_sub_field('image_placeholder');?>
 <section class="video" id="video">
   <div class="container">
-      <?php echo ($subtitle = get_sub_field('subtitle'))? '<div class="subtitle">'.$subtitle.'</div>':''; ?>
+      <?php echo ($subtitle = get_sub_field('subtitle'))? '<div class="title">'.$subtitle.'</div>':''; ?>
     <div class="video__cont">
       <video preload playsinline loop>
             <source src="<?php echo $video['url']; ?>#t=0.1" type="video/mp4">

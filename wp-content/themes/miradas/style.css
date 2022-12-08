@@ -710,73 +710,6 @@ strong * {
   }
 }
 
-.notas_de_interes__cont {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-}
-@media only screen and (max-width: 1050px) {
-  .notas_de_interes__cont {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 750px) {
-  .notas_de_interes__cont {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0;
-  }
-}
-.notas_de_interes__cont img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 1;
-}
-.notas_de_interes__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
-  outline: 2px solid #F9CEEA;
-  outline-offset: 10px;
-}
-.notas_de_interes__title {
-  font-size: 30px;
-  font-family: "Rosario", sans-serif;
-  margin-bottom: 20px;
-}
-@media only screen and (max-width: 1050px) {
-  .notas_de_interes__title {
-    font-size: 26px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .notas_de_interes__title {
-    font-size: 24px;
-  }
-}
-.notas_de_interes__description {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-.notas_de_interes .fuente {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.notas_de_interes .read_more {
-  font-size: 16px;
-}
-
 .site-logo {
   display: block;
   margin-right: 30px;
@@ -2238,164 +2171,164 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   margin: 0;
 }
 
-.text_block {
+.text_block, .quienes_somos {
   padding: 100px 0;
 }
 @media only screen and (max-width: 750px) {
-  .text_block {
+  .text_block, .quienes_somos {
     padding: 40px 0;
   }
 }
-.text_block__cont {
+.text_block__cont, .quienes_somos__cont {
   width: 100%;
 }
-.text_block__cont h1, .text_block__cont h2, .text_block__cont h3, .text_block__cont h4, .text_block__cont h5, .text_block__cont h6 {
+.text_block__cont h1, .text_block__cont h2, .text_block__cont h3, .text_block__cont h4, .text_block__cont h5, .text_block__cont h6, .quienes_somos__cont h1, .quienes_somos__cont h2, .quienes_somos__cont h3, .quienes_somos__cont h4, .quienes_somos__cont h5, .quienes_somos__cont h6 {
   margin-bottom: 20px;
 }
-.text_block__cont h1 {
+.text_block__cont h1, .quienes_somos__cont h1 {
   font-size: 55px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .text_block__cont h1 {
+  .text_block__cont h1, .quienes_somos__cont h1 {
     font-size: 45px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .text_block__cont h1 {
+  .text_block__cont h1, .quienes_somos__cont h1 {
     font-size: 40px;
   }
 }
-.text_block__cont h2 {
+.text_block__cont h2, .quienes_somos__cont h2 {
   font-size: 45px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .text_block__cont h2 {
+  .text_block__cont h2, .quienes_somos__cont h2 {
     font-size: 40px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .text_block__cont h2 {
+  .text_block__cont h2, .quienes_somos__cont h2 {
     font-size: 30px;
   }
 }
-.text_block__cont h3 {
+.text_block__cont h3, .quienes_somos__cont h3 {
   font-size: 36px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .text_block__cont h3 {
+  .text_block__cont h3, .quienes_somos__cont h3 {
     font-size: 28px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .text_block__cont h3 {
+  .text_block__cont h3, .quienes_somos__cont h3 {
     font-size: 28px;
   }
 }
-.text_block__cont h4 {
+.text_block__cont h4, .quienes_somos__cont h4 {
   font-size: 30px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .text_block__cont h4 {
+  .text_block__cont h4, .quienes_somos__cont h4 {
     font-size: 26px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .text_block__cont h4 {
+  .text_block__cont h4, .quienes_somos__cont h4 {
     font-size: 24px;
   }
 }
-.text_block__cont h5 {
+.text_block__cont h5, .quienes_somos__cont h5 {
   font-size: 20px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .text_block__cont h5 {
+  .text_block__cont h5, .quienes_somos__cont h5 {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .text_block__cont h5 {
+  .text_block__cont h5, .quienes_somos__cont h5 {
     font-size: 16px;
   }
 }
-.text_block__cont h6 {
+.text_block__cont h6, .quienes_somos__cont h6 {
   font-size: 16px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .text_block__cont h6 {
+  .text_block__cont h6, .quienes_somos__cont h6 {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .text_block__cont h6 {
+  .text_block__cont h6, .quienes_somos__cont h6 {
     font-size: 16px;
   }
 }
-.text_block__cont p {
+.text_block__cont p, .quienes_somos__cont p {
   font-size: 20px;
   line-height: 1.8;
   margin: 20px 0;
 }
 @media only screen and (max-width: 750px) {
-  .text_block__cont p {
+  .text_block__cont p, .quienes_somos__cont p {
     font-size: 16px;
   }
 }
-.text_block__cont .wp-video {
+.text_block__cont .wp-video, .quienes_somos__cont .wp-video {
   padding: 20px 0;
 }
-.text_block__cont ul, .text_block__cont ol {
+.text_block__cont ul, .text_block__cont ol, .quienes_somos__cont ul, .quienes_somos__cont ol {
   padding-left: 15px;
   margin-bottom: 28px;
   line-height: 1.6;
 }
-.text_block__cont ul li {
+.text_block__cont ul li, .quienes_somos__cont ul li {
   list-style: disc;
   margin-bottom: 15px;
   font-size: 20px;
 }
-.text_block__cont a {
+.text_block__cont a, .quienes_somos__cont a {
   color: #282570;
 }
-.text_block__cont a:hover {
+.text_block__cont a:hover, .quienes_somos__cont a:hover {
   text-decoration: underline;
 }
-.text_block__cont blockquote {
+.text_block__cont blockquote, .quienes_somos__cont blockquote {
   padding-left: 30px;
   border-left: 3px solid #282570;
 }
-.text_block__cont blockquote p {
+.text_block__cont blockquote p, .quienes_somos__cont blockquote p {
   font-size: 30px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
-  .text_block__cont blockquote p {
+  .text_block__cont blockquote p, .quienes_somos__cont blockquote p {
     font-size: 26px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .text_block__cont blockquote p {
+  .text_block__cont blockquote p, .quienes_somos__cont blockquote p {
     font-size: 24px;
   }
 }
-.text_block__cont .alignleft {
+.text_block__cont .alignleft, .quienes_somos__cont .alignleft {
   float: left;
   margin-right: 30px;
 }
-.text_block__cont .aligncenter {
+.text_block__cont .aligncenter, .quienes_somos__cont .aligncenter {
   margin: 30px auto;
   display: block;
 }
-.text_block__cont .alignright {
+.text_block__cont .alignright, .quienes_somos__cont .alignright {
   float: right;
   margin-left: 30px;
 }
-.text_block__cont img {
+.text_block__cont img, .quienes_somos__cont img {
   display: block;
   width: 1000px;
   height: 500px;
@@ -3003,6 +2936,73 @@ body.js-popup-active .close_popup {
 }
 .buttons-block .button, .buttons-block .header__top__right .buttom_suscribe, .header__top__right .buttons-block .buttom_suscribe {
   margin: 10px;
+}
+
+.notas_de_interes__cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+@media only screen and (max-width: 1050px) {
+  .notas_de_interes__cont {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 750px) {
+  .notas_de_interes__cont {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}
+.notas_de_interes__cont img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 2;
+}
+.notas_de_interes__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  outline: 2px solid #F9CEEA;
+  outline-offset: 10px;
+}
+.notas_de_interes__title {
+  font-size: 30px;
+  font-family: "Rosario", sans-serif;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1050px) {
+  .notas_de_interes__title {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .notas_de_interes__title {
+    font-size: 24px;
+  }
+}
+.notas_de_interes__description {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.notas_de_interes .fuente {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.notas_de_interes .read_more {
+  font-size: 16px;
 }
 
 .video__cont {

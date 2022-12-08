@@ -14,7 +14,7 @@
         $loop = new WP_Query( $args ); ?>
         <div class="nuestro_equipo__cont">
             <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <div class="nuestro_equipo__item js-open-equipo">
+                <div class="nuestro_equipo__item js-open-equipo" data-id="<?php the_ID(); ?>">
                 <?php if( has_post_thumbnail() ): ?>
                     <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail');?>" alt="<?php echo get_the_title();?>" />
                 <?php endif; ?>
@@ -23,8 +23,8 @@
             </div>
             <?php endwhile; ?>
             <?php while( $loop->have_posts() ): $loop->the_post();?>
-                    <?php get_template_part('modules/popup_equipo'); ?> 
-                <?php endwhile; ?>
+                <?php get_template_part('modules/popup_equipo'); ?> 
+            <?php endwhile; ?>
         </div>
         <?php wp_reset_postdata();  ?>
     </div>
