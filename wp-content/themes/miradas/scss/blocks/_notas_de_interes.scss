@@ -3,7 +3,7 @@
     &__cont {
       display: grid;  
       grid-template-columns: repeat(4, 1fr);
-      gap: 40px;
+      grid-gap: 40px;
   
       @include responsive ('tablet-h') {
         grid-template-columns: repeat(2, 1fr);
@@ -11,7 +11,7 @@
   
       @include responsive ('mobile-h') {
         grid-template-columns: repeat(1, 1fr);
-        gap: 0;
+        grid-gap: 60px;
       }
   
       img {
@@ -28,6 +28,18 @@
       column-gap: 10px;
       outline: 2px solid $violet;
       outline-offset: 10px;
+
+      @include responsive ('tablet-h') {
+        column-gap: inherit;
+        outline: none;
+        border: 2px solid $violet;
+        outline-offset: inherit;
+        padding: 30px;
+      }
+
+      @include responsive ('mobile-h') {
+        padding: 15px;
+      }
     }
   
     &__title {

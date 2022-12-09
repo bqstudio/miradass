@@ -3,8 +3,13 @@
     display: block;
     position: relative;
 
+    /* @include responsive ('mobile-h') {
+        min-height: 70vw;
+    } */
+
     video {
         width: 100%;
+        display: block;
     }
 
     &::before {
@@ -14,10 +19,14 @@
     &__content {
         position: absolute;
         top: 50%;
-        transform: translate(50%, -50%);
+        transform: translate(50%, -25%);
         right: 50%;
         z-index: 4;
         width: 100%;
+
+        @include responsive ('mobile-h') {
+            transform: translate(50%, -6%);
+        }
     }
 
     &__big_text {
@@ -34,6 +43,11 @@
             width: 150px;
             display: flex;
             margin: 10px 0 20px 0;
+
+            @include responsive ('mobile-h') {
+                border-top: 2px solid $white;
+                width: 80px;
+            }
         }
     }
 

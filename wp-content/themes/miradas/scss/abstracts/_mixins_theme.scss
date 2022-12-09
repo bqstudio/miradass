@@ -32,6 +32,10 @@
   color: $primary-color;
   margin-bottom: 35px;
   text-transform: capitalize;
+
+  @include responsive('mobile-h') {
+    font-size: 42px
+  }
 }
 
 @mixin subtitle() {

@@ -27,6 +27,7 @@
       width: 280px;
       @include responsive('desktop-s') {
         width: 180px;
+        text-align: center;
       }
     }
   }

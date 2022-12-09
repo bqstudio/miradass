@@ -67,6 +67,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include responsive ('mobile-h') {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include responsive ('mobile-v') {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
 
     .nuestro_equipo__subtitle {
@@ -81,6 +90,11 @@
       aspect-ratio: 1;
       overflow: hidden;
       min-height: 310px;
+
+      @include responsive ('tablet-h') {
+        aspect-ratio: inherit;
+        min-height: auto;
+      }
 
       &:hover {
         background: rgba(249, 206, 234, 0.90);

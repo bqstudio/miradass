@@ -10,7 +10,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
 
-    @include responsive ('tablet-h') {
+    @include responsive ('desktop-s') {
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -47,6 +47,13 @@
       height: 100%;
       padding: 50px 20px;
       overflow: hidden;
+
+      @include responsive ('desktop-s') {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
     }
 
     &:hover > .overlay-text {
@@ -90,5 +97,9 @@
     font-weight: 400;
     margin-top: 40px;
     transition: all 0.3s ease-out;
+
+    @include responsive ('desktop-s') {
+      font-size: 28px;
+    }
   }
 }
