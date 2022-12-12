@@ -66,15 +66,15 @@ jQuery(document).ready(function($){
 
 	$('.close_popup').click(() => {$('body').removeClass('js-popup-active').find('.popup_equipo').removeClass('js-active'); $('.popup-fade').fadeOut();});
 
-	$(document).mouseup(e => ( !$('.popup_equipo').is(e.target) && $('.popup_equipo').has(e.target).length === 0 ) && $('.close_popup').click());
+	//$(document).mouseup(e => ( !$('.popup_equipo').is(e.target) && $('.popup_equipo').has(e.target).length === 0 ) && $('.close_popup').click());
 
 	$(document).keyup(e => ( e.which == 27 ) && $('.close_popup').click());
 
 	$(document).on('click', 'a[href^="#"]', function (event) {
 		event.preventDefault();
-	
-		$('html, body').animate({
-			scrollTop: $($.attr(this, 'href')).offset().top
-		}, 500);
 	});
+
+	$('html, body').animate({
+		scrollTop: $($.attr(this, 'href')).offset().top
+	}, 500)
 });
