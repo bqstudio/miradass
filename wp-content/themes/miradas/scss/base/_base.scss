@@ -44,8 +44,7 @@ section { @include row();}
 
 input[type="text"],input[type="email"],input[type="search"], input[type="submit"], textarea, button {
   @include default-font();
-  -webkit-appearance:none;
-  border-radius:0;
+  //border-radius:0;
 }
 
 select {  @include default-font();}
@@ -247,19 +246,27 @@ strong * {
   text-align: left;
   box-shadow: 9px 10px 48px 0px rgb(0 0 0 / 75%);
   z-index: 101;
+  border-radius: 5px;
 
   .close_popup {
     position: absolute;
-    right: 2%;
-    top: 2%;
+    right: 28%;
+    top: 3%;
     z-index: 100;
     cursor: pointer;
     background-image: url(images/close-form.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
-    width: 20px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+
+    &:hover {
+      background: rgb(255, 255, 255) url(images/close-form-color.svg) center no-repeat;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .formBox {

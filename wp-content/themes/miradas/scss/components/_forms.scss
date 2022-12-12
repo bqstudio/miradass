@@ -5,11 +5,12 @@
 		width: 100%;
 		margin-bottom: 8px;
 		background: $white !important;
+		color: $primary-color;
 	}
 
 	p {
 		@include h7();
-		color: $grey;;
+		color: $grey;
 		line-height: 1.2;
 
 		a {
@@ -20,6 +21,12 @@
 				color: $secondary-color;
 			}
 		}
+	}
+
+	.gform_title {
+		font-size: 36px;
+		margin-bottom: 20px;
+		color: $primary-color;
 	}
 }
 

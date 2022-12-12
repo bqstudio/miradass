@@ -123,8 +123,6 @@ section {
 
 input[type=text], input[type=email], input[type=search], input[type=submit], textarea, button {
   font-family: "Rosario", sans-serif;
-  -webkit-appearance: none;
-  border-radius: 0;
 }
 
 select {
@@ -474,19 +472,26 @@ strong * {
   -webkit-box-shadow: 9px 10px 48px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 9px 10px 48px 0px rgba(0, 0, 0, 0.75);
   z-index: 101;
+  border-radius: 5px;
 }
 .popup .close_popup {
   position: absolute;
-  right: 2%;
-  top: 2%;
+  right: 28%;
+  top: 3%;
   z-index: 100;
   cursor: pointer;
   background-image: url(images/close-form.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
-  width: 20px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+.popup .close_popup:hover {
+  background: rgb(255, 255, 255) url(images/close-form-color.svg) center no-repeat;
+  width: 40px;
+  height: 40px;
 }
 .popup .formBox {
   position: absolute;
@@ -1173,6 +1178,7 @@ strong * {
   width: 100%;
   margin-bottom: 8px;
   background: #ffffff !important;
+  color: #282570;
 }
 @media only screen and (max-width: 1050px) {
   .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
@@ -1208,6 +1214,11 @@ strong * {
 }
 .formBox p a:hover {
   color: #33aced;
+}
+.formBox .gform_title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #282570;
 }
 
 .form_block .formBox {
