@@ -1,4 +1,4 @@
-<section class="nuestro_equipo nuestro_equipo--home" id="nuestro_equipo--home">
+<section class="nuestro_equipo nuestro_equipo--home" id="nuestro_equipo--home" data-aos="fade-left">
     <div class="container">
         <?php echo ($title = get_sub_field('title'))? '<div class="title">'.$title.'</div>':''; ?>
         <?php echo ($subtitle = get_sub_field('subtitle'))? '<div class="nuestro_equipo__subtitle">'.$subtitle.'</div>':''; ?>

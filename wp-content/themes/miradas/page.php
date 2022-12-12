@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main wrapper">
 		<?php while ( have_posts() ) : the_post(); 
 
 			if(is_home() || is_front_page()):

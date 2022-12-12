@@ -25,7 +25,7 @@
 
 <body>
 
-<?php wp_body_open(); ?>
+<?php wp_body_open(); ?> 
 <div class="popup-fade"></div>
 
 <div id="page" class="site">

@@ -1,4 +1,4 @@
-<section class="image_with_text"> <!-- TODO: chequear cambio de lado -->
+<section class="image_with_text" data-aos="fade-right">
     <div class="container_big container_big--extra ">
     <?php echo ($title_block = get_sub_field('title_block'))? '<div class="title">'.$title_block.'</div>':''; ?>
         <div class="image_with_text__cont <?php if (get_sub_field('posicion') =='izquierda'):?>image_with_text__cont--revert <?php endif; ?>">

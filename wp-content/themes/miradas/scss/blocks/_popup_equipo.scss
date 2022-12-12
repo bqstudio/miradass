@@ -10,7 +10,7 @@
 }
 .popup_equipo {
     position: fixed;
-    background: white;
+    background: $white;
     width: 1520px;
     max-width: 90%;
     right: 0;
@@ -21,6 +21,8 @@
     opacity: 0;
     transition: all .3s ease;
     transition-delay: 0s;
+    margin-top: 3%;
+    border-radius: 50px 0 0 0;
 
     .container {
         width: 100%;
@@ -48,7 +50,9 @@
     &__cont {
         width: 100%;
         display: block;
-        padding: 150px 0;
+        padding: 100px 0;
+        z-index: 10;
+        position: relative;
 
         @include responsive('mobile-v') {
             padding: 220px 0 90px 0;
@@ -56,8 +60,9 @@
 
         &__title {
             color: $primary-color; 
-            font-size: 60px;
+            @include h2();
             font-weight: 700;
+            padding: 20px 0;
         }
 
         &__text {
@@ -76,6 +81,10 @@
                 margin: 30  px 0 20px 0;
             }
         }
+
+        img {
+            border-radius: 50%;
+        }
     }
 }
 
@@ -86,7 +95,7 @@
     width: 46px;
     height: 46px;
     background: rgba(255,255,255,1) url(images/close-form.svg) center no-repeat;
-    background-size: 22px auto;
+    background-size: 40px auto;
     cursor: pointer;
     transform: translateX(200px);
     border-radius: 50%;

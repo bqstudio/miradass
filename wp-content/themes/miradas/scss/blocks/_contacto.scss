@@ -1,0 +1,25 @@
+.contacto {
+  @include padding-section();
+
+  &__cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    @include text_block();
+  }
+
+  &__date__title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: capitalize; 
+    margin-bottom: 30px;
+  }
+
+  ul li {
+    font-size: 25px; 
+  }
+} 

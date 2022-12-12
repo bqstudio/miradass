@@ -28,6 +28,7 @@
       column-gap: 10px;
       outline: 2px solid $violet;
       outline-offset: 10px;
+      border-radius: 1px;
 
       @include responsive ('tablet-h') {
         column-gap: inherit;
@@ -43,8 +44,9 @@
     }
   
     &__title {
-      @include h4();
+      @include h5();
       margin-bottom: 20px;
+      font-weight: 700;
     }
   
     &__description {
