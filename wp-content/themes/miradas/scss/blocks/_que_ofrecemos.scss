@@ -101,5 +101,10 @@
     @include responsive ('desktop-s') {
       font-size: 28px;
     }
+
+    @include responsive ('mobile-h') {
+      font-size: 16px;
+      margin-top: 20px;
+    }
   }
 }

@@ -8,14 +8,16 @@
           </video>
       </div>
     <?php elseif($image = get_field('image')): ?>
-          <div class="hero-home__cont">
-            <img 
-                srcset="<?php echo esc_url($image['sizes']['thumbnail']); ?> 500w,
-                        <?php echo esc_url($image['sizes']['medium']); ?> 800w,
-                        <?php echo esc_url($image['sizes']['large']); ?> 2000w"
-                src="<?php echo esc_url($image['sizes']['full-width']); ?>" 
-                alt="<?php echo esc_attr($image['alt']); ?>"
-            />
+          <div class="hero-home__image">
+            <div class="image-background">
+              <img 
+                  srcset="<?php echo esc_url($image['sizes']['thumbnail']); ?> 500w,
+                          <?php echo esc_url($image['sizes']['medium']); ?> 800w,
+                          <?php echo esc_url($image['sizes']['large']); ?> 2000w"
+                  src="<?php echo esc_url($image['sizes']['full-width']); ?>" 
+                  alt="<?php echo esc_attr($image['alt']); ?>"
+              />
+            </div>
           </div>
     <?php endif; ?>
 

@@ -2,7 +2,7 @@
     padding: 60px 0 30px 0;
 
     @include responsive ('mobile-h') {
-        padding: 60px 0 50px;
+        padding: 30px 0 25px;
     }
 
     &__cont {
@@ -21,7 +21,7 @@
 
         @include responsive('mobile-h') {
             grid-gap: 20px;
-            margin: 30px 0 15px 0;
+            margin: 0;
         }
 
         &--revert { 
@@ -49,6 +49,10 @@
         margin: 0 0 10px 0;
         font-weight: 400;
         font-size: 28px;
+
+        @include responsive ('mobile-h') {
+            font-size: 24px;
+        }
     }
 
     &__text {
@@ -59,6 +63,7 @@
 
         @include responsive ('mobile-h') {
             width: 100%;
+            font-size: 16px;
         }
     }
 

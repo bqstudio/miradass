@@ -9,6 +9,12 @@
         font-family: $secondary-font;
         font-weight: 300;
         font-size: 20px;
+        line-height: 1.8;
+
+        @include responsive ('mobile-h') {
+            font-size: 16px;
+            line-height: 1.4;
+        }
     }
     &__cont {
         display: grid;

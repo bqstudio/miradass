@@ -12,6 +12,10 @@
 
         @include responsive('desktop-s') {
             width: 130px;
-          }
+        }
+
+        @include responsive('mobile-h') {
+            width: 90px;
+        }
     }
 }

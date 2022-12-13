@@ -57,4 +57,9 @@
         z-index: 10;
         text-transform: capitalize;
     }
+
+    &__image {
+        aspect-ratio: 2;
+        display: block;
+    }
 }

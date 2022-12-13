@@ -54,11 +54,19 @@
     font-size: 22px;
     margin: 10px 0;
     font-weight: 700;
+
+    @include responsive ('mobile-h') {
+      font-size: 18px;
+    }
   }
 
   &__especializacion p{
     font-size: 20px;
     text-align: center;
+
+    @include responsive ('mobile-h') {
+      font-size: 16px;
+    }
   }
 
   &--home {
@@ -95,15 +103,16 @@
         aspect-ratio: inherit;
         min-height: auto;
       }
-
-      &:hover {
-        background: rgba(249, 206, 234, 0.90);
-      }
     }
 
     img {
       width: 150px;
       max-width: 100%;
+    }
+
+    .button {
+      margin: 0 auto;
+      display: table;
     }
   }
 }

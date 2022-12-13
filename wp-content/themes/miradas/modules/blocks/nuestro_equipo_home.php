@@ -9,7 +9,7 @@
                 <div class="nuestro_equipo__cont">
                     <?php foreach( $nuestro_equipo as $post ): 
                         setup_postdata($post); ?>
-                        <div class="nuestro_equipo__item js-open-equipo"  data-id="<?php the_ID(); ?>">
+                        <div class="nuestro_equipo__item">
                             <?php if( has_post_thumbnail() ): ?>
                                 <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail');?>" alt="<?php echo get_the_title();?>" />
                             <?php endif; ?>
@@ -18,11 +18,11 @@
                         </div>
                     
                     <?php endforeach;  wp_reset_postdata(); ?>
-                    <?php foreach( $nuestro_equipo as $post ): 
-                        setup_postdata($post); 
-                        get_template_part('modules/popup_equipo'); 
-                    endforeach; wp_reset_postdata(); ?>
                 </div>
+            <?php endif; ?>
+            <?php if ($button = get_sub_field('button')): ?>
+                <?php $target=(strlen($button['target'])>0)?$button['target']:'_self'; ?>
+                <a class="button" href="<?php echo $button['url']; ?>" target="<?php echo $target; ?>"><?php echo $button['title']; ?></a>
             <?php endif; ?>
     </div>
 </section>

@@ -138,6 +138,10 @@ strong * {
 .title {
   @include title();
   text-align: center;
+
+  @include responsive ('mobile-h') {
+    margin-bottom: 20px;
+  }
 }
 
 .subtitle {
@@ -290,6 +294,10 @@ strong * {
     position: relative;
     height: 600px;
 
+    @include responsive ('mobile-h') {
+      height: 600px;
+    }
+
   &::before {
     @include overlay();
   }
@@ -330,4 +338,12 @@ strong * {
 
 .wrapper {
   overflow: hidden;
+}
+
+.site-content {
+  padding-top: 122px;
+
+  @include responsive ('mobile-h') {
+    padding-top: 91px;
+  }
 }
