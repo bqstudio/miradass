@@ -40,13 +40,16 @@
 
     .overlay-text {
       @include center-position();
-      //background: rgba(249, 206, 234, 0.90);
       transition: all 0.3s ease-out;
       opacity: 0;
       text-align: center;
       height: 100%;
       padding: 50px 20px;
       overflow: hidden;
+
+      @include responsive ('desktop') {
+        padding: 20px;
+      }
 
       @include responsive ('desktop-s') {
         display: flex;
@@ -98,13 +101,12 @@
     margin-top: 40px;
     transition: all 0.3s ease-out;
 
-    @include responsive ('desktop-s') {
-      font-size: 28px;
+    @include responsive ('desktop') {
+      margin-top: 20px;
     }
 
     @include responsive ('mobile-h') {
       font-size: 16px;
-      margin-top: 20px;
     }
   }
 }

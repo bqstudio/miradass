@@ -223,12 +223,7 @@ strong * {
   align-items: center;
   //box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   background-color: $white;
-  padding: 20px;
   justify-content: center;
-
-  @include responsive('tablet-h') {
-      padding: 30px;
-  }
 
   img {
       object-fit: cover;

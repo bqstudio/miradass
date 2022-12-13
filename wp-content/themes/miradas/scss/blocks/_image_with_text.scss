@@ -14,6 +14,10 @@
         align-items: flex-start;
         margin: 60px 0 30px 0;
 
+        @include responsive('desktop') {
+            margin: 30px 0;     
+        }
+
         @include responsive('tablet-h') {
             flex-direction: column;
             grid-gap: 30px;
@@ -69,19 +73,12 @@
 
     &__img {
         width: 100%;
-        max-width: 100%;
-        aspect-ratio: 1;
-
-        @include responsive ('tablet-h') {
-            width: 100%;
-            aspect-ratio: 1.78;
-        }
 
         img {
             object-fit: cover;
             aspect-ratio: 1;
 
-            @include responsive ('tablet-h') {
+            @include responsive ('desktop') {
                 aspect-ratio: 1.78;
             }
         }

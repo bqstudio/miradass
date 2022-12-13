@@ -2,7 +2,7 @@
   <div class="hero-home__cont">
     <?php $media_type = get_field('media_type');?>
     <?php if ($media_type == ('video_file') && $video_file = get_field('video_file')): ?>
-      <div class="hero-home__cont">
+      <div class="hero-home__video">
           <video playsinline autoplay muted loop>
             <source src="<?php echo $video_file; ?>#t=0.1" type="video/mp4">
           </video>

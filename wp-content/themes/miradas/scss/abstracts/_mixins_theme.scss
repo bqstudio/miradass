@@ -33,8 +33,9 @@
   margin-bottom: 35px;
   text-transform: capitalize;
 
-  @include responsive('mobile-h') {
-    font-size: 42px
+  @include responsive('desktop') {
+    font-size: 42px;
+    margin-bottom: 25px
   }
 }
 
