@@ -24,6 +24,7 @@ Text Domain: twentysixteen
   'components/_button',
   'components/_forms',
   'components/_posts',
+  'components/_flickity',
   'components/_animations',
   'components/_breadcrumb';
 
@@ -39,6 +40,10 @@ Text Domain: twentysixteen
 // Footer
 @import
   'footer/_base';
+
+// Vendors
+@import
+  'vendors/_flickity';
 
 // Blocks
 @import

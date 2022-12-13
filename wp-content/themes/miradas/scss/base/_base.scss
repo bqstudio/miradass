@@ -347,3 +347,30 @@ strong * {
     padding-top: 91px;
   }
 }
+.flickity-prev-next-button {
+  background: url(images/arrow-right.svg) center/contain no-repeat;
+  width: 69px;
+  height: 69px;
+  background-size: 34px;
+  display: inline-block;
+  position: absolute;
+  transform: translate(0, -50%);
+  z-index: 2;
+  background-color: $white;
+  border-radius: 0;
+  box-shadow: none !important;
+
+  @include responsive('mobile-h') {
+      display: none;
+  }
+  
+  &.previous {
+      left: 0;
+      transform: rotate(180deg) translate(0, 50%);
+  }
+
+  &.next {
+      right: 0;
+  }
+
+}
