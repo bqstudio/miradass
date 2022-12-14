@@ -247,9 +247,13 @@ strong * {
   z-index: 101;
   border-radius: 5px;
 
+  @include responsive ('tablet-v') {
+    width: calc(100% - 30px);
+  }
+
   .close_popup {
     position: absolute;
-    right: 28%;
+    right: 2%;
     top: 3%;
     z-index: 100;
     cursor: pointer;
@@ -260,6 +264,7 @@ strong * {
     width: 40px;
     height: 40px;
     opacity: 1;
+    transform: none;
 
     &:hover {
       background: rgb(255, 255, 255) url(images/close-form-color.svg) center no-repeat;
@@ -368,4 +373,16 @@ strong * {
       right: 0;
   }
 
+}
+
+.instagram {
+  @include padding-section();
+}
+
+.logos + .notas_de_interes {
+  padding-top: 0;
+}
+
+.notas_de_interes + .instagram {
+  padding-top: 0;
 }

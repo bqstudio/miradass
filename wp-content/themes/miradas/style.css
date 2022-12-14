@@ -474,9 +474,14 @@ strong * {
   z-index: 101;
   border-radius: 5px;
 }
+@media only screen and (max-width: 900px) {
+  .popup {
+    width: calc(100% - 30px);
+  }
+}
 .popup .close_popup {
   position: absolute;
-  right: 28%;
+  right: 2%;
   top: 3%;
   z-index: 100;
   cursor: pointer;
@@ -487,6 +492,8 @@ strong * {
   width: 40px;
   height: 40px;
   opacity: 1;
+  -webkit-transform: none;
+          transform: none;
 }
 .popup .close_popup:hover {
   background: rgb(255, 255, 255) url(images/close-form-color.svg) center no-repeat;
@@ -753,6 +760,23 @@ strong * {
 }
 .flickity-prev-next-button.next {
   right: 0;
+}
+
+.instagram {
+  padding: 100px 0;
+}
+@media only screen and (max-width: 750px) {
+  .instagram {
+    padding: 40px 0;
+  }
+}
+
+.logos + .notas_de_interes {
+  padding-top: 0;
+}
+
+.notas_de_interes + .instagram {
+  padding-top: 0;
 }
 
 .site-logo {
@@ -1766,6 +1790,27 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 
 .flickity-page-dots {
   display: none;
+}
+
+.flickity-button {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: #333;
+}
+
+.flickity-prev-next-button {
+  width: 70px !important;
+  height: 70px !important;
+}
+
+.flickity-button-icon {
+  display: block;
+}
+
+.flickity-prev-next-button.previous {
+  -webkit-transform: rotate(360deg) translate(0, 50%);
+          transform: rotate(360deg) translate(0, 50%);
 }
 
 .breadcrumb,
@@ -3216,6 +3261,14 @@ body.js-popup-active .close_popup {
   margin: 10px;
 }
 
+.notas_de_interes {
+  padding: 100px 0;
+}
+@media only screen and (max-width: 750px) {
+  .notas_de_interes {
+    padding: 40px 0;
+  }
+}
 .notas_de_interes__cont {
   display: -ms-grid;
   display: grid;
@@ -3253,6 +3306,9 @@ body.js-popup-active .close_popup {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 10px #727887;
+          box-shadow: 5px 5px 10px #727887;
 }
 @media only screen and (max-width: 1050px) {
   .notas_de_interes__item {
