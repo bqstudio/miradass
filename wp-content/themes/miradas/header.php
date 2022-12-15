@@ -40,7 +40,6 @@
 						<span></span><span></span><span></span><span></span>
 					</div>
 					<?php get_template_part('modules/components/menu'); ?>
-					<?php echo ($buttom_suscribe = get_field('buttom_suscribe','options'))? '<div class="buttom_suscribe">'.$buttom_suscribe.'</div>':''; ?>
 					<?php get_template_part('modules/components/popup'); ?>
 				</div>
 			</div>
