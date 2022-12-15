@@ -770,6 +770,9 @@ strong * {
     padding: 40px 0;
   }
 }
+.instagram .title {
+  display: block;
+}
 
 .logos + .notas_de_interes {
   padding-top: 0;
@@ -1174,7 +1177,7 @@ strong * {
   opacity: 0.5;
 }
 
-.button, .header__top__right .buttom_suscribe,
+.button, .notas_de_interes .read_more, .header__top__right .buttom_suscribe,
 .woocommerce #respond input#submit,
 .woocommerce a.button,
 .woocommerce button.button,
@@ -1194,7 +1197,7 @@ strong * {
   border-radius: 25px;
   border: 1px solid #282570;
 }
-.button:hover, .header__top__right .buttom_suscribe:hover,
+.button:hover, .notas_de_interes .read_more:hover, .header__top__right .buttom_suscribe:hover,
 .woocommerce #respond input#submit:hover,
 .woocommerce a.button:hover,
 .woocommerce button.button:hover,
@@ -1799,18 +1802,23 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   color: #333;
 }
 
-.flickity-prev-next-button {
-  width: 70px !important;
-  height: 70px !important;
+.flickity-prev-next-button.previous {
+  -webkit-transform: rotate(360deg) translate(0%, -25%);
+          transform: rotate(360deg) translate(0%, -25%);
 }
 
 .flickity-button-icon {
   display: block;
 }
 
-.flickity-prev-next-button.previous {
-  -webkit-transform: rotate(360deg) translate(0, 50%);
-          transform: rotate(360deg) translate(0, 50%);
+.flickity-prev-next-button {
+  width: 70px !important;
+  height: 70px !important;
+}
+
+.slicker-instagram-placeholder {
+  -webkit-transform: none !important;
+          transform: none !important;
 }
 
 .breadcrumb,
@@ -3257,7 +3265,7 @@ body.js-popup-active .close_popup {
   margin-top: 90px;
   text-align: center;
 }
-.buttons-block .button, .buttons-block .header__top__right .buttom_suscribe, .header__top__right .buttons-block .buttom_suscribe {
+.buttons-block .button, .buttons-block .notas_de_interes .read_more, .notas_de_interes .buttons-block .read_more, .buttons-block .header__top__right .buttom_suscribe, .header__top__right .buttons-block .buttom_suscribe {
   margin: 10px;
 }
 
@@ -3307,8 +3315,8 @@ body.js-popup-active .close_popup {
      -moz-column-gap: 10px;
           column-gap: 10px;
   padding: 20px;
-  -webkit-box-shadow: 5px 5px 10px #727887;
-          box-shadow: 5px 5px 10px #727887;
+  -webkit-box-shadow: 5px 5px 10px #859D84;
+          box-shadow: 5px 5px 10px #859D84;
 }
 @media only screen and (max-width: 1050px) {
   .notas_de_interes__item {
@@ -3349,6 +3357,17 @@ body.js-popup-active .close_popup {
 }
 .notas_de_interes .read_more {
   font-size: 16px;
+  margin-top: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 22px;
+  height: 35px;
+  line-height: 33px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  background: #859D84;
+  border: 1px solid #859D84;
 }
 
 .video__cont {
@@ -3917,13 +3936,6 @@ body.js-popup-active .close_popup {
 .nuestro_equipo__item:hover {
   background-color: #D2E7A2;
   border-radius: 20px;
-  /* .nuestro_equipo__persona {
-    color: $white;
-  }
-
-  .nuestro_equipo__especializacion {
-    color: $white;
-  } */
 }
 .nuestro_equipo__persona {
   text-align: center;
@@ -3990,6 +4002,7 @@ body.js-popup-active .close_popup {
   aspect-ratio: 1;
   overflow: hidden;
   min-height: 310px;
+  cursor: default;
 }
 @media only screen and (max-width: 1050px) {
   .nuestro_equipo--home .nuestro_equipo__item {
@@ -3997,11 +4010,15 @@ body.js-popup-active .close_popup {
     min-height: auto;
   }
 }
+.nuestro_equipo--home .nuestro_equipo__item:hover {
+  background-color: transparent;
+  border-radius: none;
+}
 .nuestro_equipo--home img {
   width: 150px;
   max-width: 100%;
 }
-.nuestro_equipo--home .button, .nuestro_equipo--home .header__top__right .buttom_suscribe, .header__top__right .nuestro_equipo--home .buttom_suscribe {
+.nuestro_equipo--home .button, .nuestro_equipo--home .header__top__right .buttom_suscribe, .header__top__right .nuestro_equipo--home .buttom_suscribe, .nuestro_equipo--home .notas_de_interes .read_more, .notas_de_interes .nuestro_equipo--home .read_more {
   margin: 0 auto;
   display: table;
 }

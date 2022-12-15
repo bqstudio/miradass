@@ -13,15 +13,19 @@
     color: #333;
 }
 
-.flickity-prev-next-button {
-    width: 70px !important;
-    height: 70px !important;
-}
+.flickity-prev-next-button.previous {
+    transform: rotate(360deg) translate(0%, -25%);
+} 
 
 .flickity-button-icon {
     display: block;
 }
 
-.flickity-prev-next-button.previous {
-    transform: rotate(360deg) translate(0, 50%);
+.flickity-prev-next-button {
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.slicker-instagram-placeholder {
+    transform: none !important;
 }

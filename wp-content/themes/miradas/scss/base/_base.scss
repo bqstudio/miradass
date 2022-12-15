@@ -377,6 +377,10 @@ strong * {
 
 .instagram {
   @include padding-section();
+
+  .title {
+    display: block;
+  }
 }
 
 .logos + .notas_de_interes {

@@ -38,14 +38,6 @@
     &:hover {
       background-color: $dark-green;
       border-radius: 20px;
-
-      /* .nuestro_equipo__persona {
-        color: $white;
-      }
-
-      .nuestro_equipo__especializacion {
-        color: $white;
-      } */
     }
   }
 
@@ -98,10 +90,16 @@
       aspect-ratio: 1;
       overflow: hidden;
       min-height: 310px;
+      cursor: default;
 
       @include responsive ('tablet-h') {
         aspect-ratio: inherit;
         min-height: auto;
+      }
+
+      &:hover {
+        background-color: transparent;
+        border-radius: none;
       }
     }
 
