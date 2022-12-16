@@ -4230,6 +4230,36 @@ body.js-popup-active .close_popup {
   font-weight: 400;
 }
 
+.layout_instagram {
+  width: 100%;
+  padding: 81px 0 92px 0;
+}
+.layout_instagram__title {
+  text-align: center;
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+.layout_instagram__slider {
+  width: 100%;
+}
+.layout_instagram__slider .fts-instagram-scrollable {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+.layout_instagram__slider .flickity-enabled {
+  padding: 0 200px;
+}
+@media only screen and (max-width: 1050px) {
+  .layout_instagram__slider .flickity-enabled {
+    padding: 0 100px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .layout_instagram__slider .flickity-enabled {
+    padding: 0;
+  }
+}
+
 .single_post {
   padding: 20px 0 10px;
 }

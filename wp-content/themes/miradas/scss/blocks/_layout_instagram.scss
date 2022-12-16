@@ -1,0 +1,31 @@
+.layout_instagram {
+  width: 100%;
+  padding: 81px 0 92px 0;
+  
+  &__title {
+    text-align: center;
+    margin: 0 0 50px 0;
+    text-align: center;
+  }
+
+  &__slider {
+    width: 100%;
+
+    .fts-instagram-scrollable  {
+      height: 100% !important;
+      overflow: hidden !important;
+    }
+    .flickity-enabled {
+      padding: 0 200px;
+      @include responsive('tablet-h') {
+        padding: 0 100px;
+      }
+
+      @include responsive('mobile-h') {
+        padding: 0;
+      }
+    }
+  }
+
+  
+}
