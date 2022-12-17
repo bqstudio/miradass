@@ -27,12 +27,20 @@
     text-align: center;
     cursor: pointer;
 
+    @include responsive ('desktop-s') {
+      min-height: auto;
+    }
+
     img {
       border-radius: 50%;
       width: 100%;
       object-fit: cover;
       width: 350px;
       max-width: 100%;
+
+      @include responsive ('mobile-h') {
+        width: 250px;
+      }
     }
 
     &:hover {

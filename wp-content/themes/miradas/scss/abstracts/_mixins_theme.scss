@@ -35,7 +35,11 @@
 
   @include responsive('desktop') {
     font-size: 42px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+  }
+
+  @include responsive('mobile-h') {
+    font-size: 36px;
   }
 }
 

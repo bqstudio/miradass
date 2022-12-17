@@ -330,6 +330,11 @@ strong * {
 }
 @media only screen and (max-width: 750px) {
   .title {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .title {
     margin-bottom: 20px;
   }
 }
@@ -1979,7 +1984,6 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 
 .hero_simple {
-  margin-top: 30px;
   text-align: center;
   position: relative;
 }
@@ -2260,6 +2264,9 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
     width: 180px;
     text-align: center;
   }
+}
+.site-footer__column .buttom_suscribe {
+  display: none;
 }
 .site-footer__title {
   font-size: 12px;
@@ -3609,6 +3616,7 @@ body.js-popup-active .close_popup {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    opacity: 1;
   }
 }
 .que_ofrecemos__item:hover > .overlay-text {
@@ -3948,6 +3956,11 @@ body.js-popup-active .close_popup {
   text-align: center;
   cursor: pointer;
 }
+@media only screen and (max-width: 1280px) {
+  .nuestro_equipo__item {
+    min-height: auto;
+  }
+}
 .nuestro_equipo__item img {
   border-radius: 50%;
   width: 100%;
@@ -3955,6 +3968,11 @@ body.js-popup-active .close_popup {
      object-fit: cover;
   width: 350px;
   max-width: 100%;
+}
+@media only screen and (max-width: 750px) {
+  .nuestro_equipo__item img {
+    width: 250px;
+  }
 }
 .nuestro_equipo__item:hover {
   background-color: #D2E7A2;
