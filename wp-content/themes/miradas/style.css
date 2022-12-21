@@ -3410,9 +3410,9 @@ body.js-popup-active .close_popup {
           flex-direction: column;
   width: 100%;
   position: relative;
-  padding-top: 30%;
   overflow: hidden;
   width: 70%;
+  aspect-ratio: 1.83;
   margin: 0 auto;
 }
 @media only screen and (max-width: 1050px) {

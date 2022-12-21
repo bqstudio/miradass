@@ -3,9 +3,10 @@
   &__cont {
     @include row();
     position: relative;
-    padding-top: 30%;
+    //padding-top: 30%;
     overflow: hidden;
     width: 70%;
+    aspect-ratio: 1.83;
     margin: 0 auto;
 
     @include responsive('tablet-h') {
