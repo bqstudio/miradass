@@ -30,6 +30,9 @@
 					<?php endwhile; ?>
 				</div>
 			<?php endif; ?>
+			<div class="site-footer__bq">
+				By <a href="https://bq-studio.com/">BQ-Studio</a>
+			</div>
 		</div>
 	</footer><!-- #colophon -->
 
