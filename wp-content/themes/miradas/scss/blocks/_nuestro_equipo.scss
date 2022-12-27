@@ -22,10 +22,14 @@
   }
 
   &__item {
-    min-height: 500px;
+    min-height: 400px;
     padding: 20px;
     text-align: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 
     @include responsive ('desktop-s') {
       min-height: auto;

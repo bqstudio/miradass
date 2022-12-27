@@ -1,0 +1,44 @@
+.talleres {
+  @include padding-section();
+
+  &__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+    align-items: flex-start;
+    margin: 20px 0;
+    border: 1px solid red;
+  }
+
+  &__imagen {
+    width: 350px;
+    max-width: 100%;
+    aspect-ratio: 1;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .h3 {
+      @include h3();
+      padding-bottom: 20px;
+    }
+  }
+
+  &__description {
+    font-family: $third-font;
+    font-weight: 400;
+  }
+
+  &__email {
+    padding: 10px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

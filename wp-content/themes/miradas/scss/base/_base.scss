@@ -330,8 +330,9 @@ strong * {
     width: 1200px;
     max-width: 100%;
 
-    @include responsive ('mobile-h') {
+    @include responsive ('mobile-s') {
       width: 100%;
+      top: 10px
     }
     
   }

@@ -71,7 +71,7 @@
         @include responsive('mobile-h') {
             font-size: 10px;
             font-weight: 600;
-            bottom: 15px;
+            top: 15px;
             right: 15px;
         }
         &:hover {
@@ -96,10 +96,10 @@
       height: 60px;
     }
 
-    @include responsive('mobile-v') {
+   /*  @include responsive('mobile-v') {
       top: 50%;
       transform: translateX(-50%) scale(.5) translateY(-50%);
-    }
+    } */
     
     &:hover {
       .stroke-solid {
