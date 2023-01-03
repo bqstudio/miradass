@@ -4257,6 +4257,13 @@ body.js-popup-active .close_popup {
 .contacto ul li {
   font-size: 25px;
   font-weight: 400;
+  display: inline-block;
+  padding-left: 25px;
+}
+.contacto .tel {
+  background: url(images/icon/phone.svg) no-repeat center/contain;
+  width: 30px;
+  height: 30px;
 }
 
 .layout_instagram {

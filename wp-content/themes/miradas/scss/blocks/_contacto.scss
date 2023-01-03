@@ -28,5 +28,13 @@
   ul li {
     font-size: 25px; 
     font-weight: 400;
+    display: inline-block;
+    padding-left: 25px;
+  }
+
+  .tel {
+    background: url(images/icon/phone.svg) no-repeat center/contain;
+    width: 30px;
+    height: 30px;
   }
 } 
