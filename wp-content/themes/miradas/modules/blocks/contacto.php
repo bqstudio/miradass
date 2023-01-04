@@ -1,6 +1,5 @@
 <section class="contacto">
   <div class="container_big">
-  <?php echo ($title = get_sub_field('title'))? '<h3 class="title">'.$title.'</h3>':''?>
     <div class="contacto__cont">
       <div class="date">
         <ul>
@@ -13,9 +12,7 @@
       </div>
 
       <div class="date">
-       <div class="iframe_cont">
-        <p> formulario de contacto </p>
-       </div>
+        <?php echo ($maps = get_sub_field('maps'))? '<div class="iframe_cont">'.$maps.'</div>':''?>
       </div>
 
     </div>
