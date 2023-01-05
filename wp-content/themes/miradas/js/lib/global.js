@@ -12,16 +12,11 @@ jQuery(document).ready(function($){
 
 	$('a[href^="#"]').on('click', function(e){
 		e.preventDefault();
-		var $href   =   $(this).attr('href');
-		$($href).length && $($href).scrollTo(( $(this).data('scrolldiff') ? $(this).data('scrolldiff') : 0 ), $(this).data('duration'));
+		const el = $($(this).attr('href'));
+	    el.length && $('html, body').animate({ scrollTop: el.offset().top - 150}, 500);
 		return false;
 	});
-
-	$(".js-go-top").on('click', function() {
-		$([document.documentElement, document.body]).animate({
-			scrollTop: ($("body").offset().top)
-		}, 400);
-	});
+	
 
 
 	$('.responsive__btn').on('click',() => $('body').toggleClass('menu-responsive-open') );

@@ -1,21 +1,17 @@
 <section class="contacto">
   <div class="container_big">
-  <?php echo ($title = get_sub_field('title'))? '<h3 class="title">'.$title.'</h3>':''?>
+  
     <div class="contacto__cont">
       <div class="date">
-        <ul>
-          <li class="contacto__date__title">Datos de dontacto</li>
-          <li class="tel">Tel: 4315-0000</li>
-          <li class="whatsapp">Tel: 4315-0000</li>
-          <li class="email">Email: info@miradas.org</li>
-          <li class="direccion">Dirección: Maipú 1234</li> 
-        </ul>
+        <h2>Datos de contacto</h2>
+        <a href="" class="date__item tel">Tel 42315698965</a>
+        <a href="" class="date__item whatsapp">Tel 42315698965</a>
+        <a href="" class="date__item direccion">Tel 42315698965</a>
+        <a href="" class="date__item">Tel 42315698965</a>
       </div>
 
       <div class="date">
-       <div class="iframe_cont">
-        <p> formulario de contacto </p>
-       </div>
+        <?php echo ($map = get_sub_field('map'))? '<div class="iframe_cont">'.$map.'</div>':''?>
       </div>
 
     </div>
