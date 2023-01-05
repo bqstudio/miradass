@@ -1,6 +1,5 @@
 <section class="contacto">
   <div class="container_big">
-  
     <div class="contacto__cont">
       <div class="date">
         <h2>Datos de contacto</h2>
