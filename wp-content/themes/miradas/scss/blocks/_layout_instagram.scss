@@ -11,20 +11,7 @@
   &__slider {
     width: 100%;
 
-    .fts-instagram-scrollable  {
-      height: 100% !important;
-      overflow: hidden !important;
-    }
-    .flickity-enabled {
-      padding: 0 200px;
-      @include responsive('tablet-h') {
-        padding: 0 100px;
-      }
 
-      @include responsive('mobile-h') {
-        padding: 0;
-      }
-    }
   }
 
   

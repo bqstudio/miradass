@@ -4296,23 +4296,6 @@ body.js-popup-active .close_popup {
 .layout_instagram__slider {
   width: 100%;
 }
-.layout_instagram__slider .fts-instagram-scrollable {
-  height: 100% !important;
-  overflow: hidden !important;
-}
-.layout_instagram__slider .flickity-enabled {
-  padding: 0 200px;
-}
-@media only screen and (max-width: 1050px) {
-  .layout_instagram__slider .flickity-enabled {
-    padding: 0 100px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .layout_instagram__slider .flickity-enabled {
-    padding: 0;
-  }
-}
 
 .talleres {
   padding: 100px 0;
