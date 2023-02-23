@@ -471,7 +471,7 @@ strong * {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   width: 755px;
-  height: 40vh;
+  height: 60vh;
   background: #ffffff;
   padding: 30px;
   text-align: left;
@@ -660,6 +660,10 @@ strong * {
   .vision__cont p {
     font-size: 16px;
   }
+}
+.vision__cont p img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .vision__cont .wp-video {
   padding: 20px 0;
@@ -1648,6 +1652,10 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
     font-size: 16px;
   }
 }
+.single-content__cont p img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .single-content__cont .wp-video {
   padding: 20px 0;
 }
@@ -2579,6 +2587,10 @@ https://flickity.metafizzy.co
     font-size: 16px;
   }
 }
+.text_block__cont p img, .quienes_somos__cont p img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .text_block__cont .wp-video, .quienes_somos__cont .wp-video {
   padding: 20px 0;
 }
@@ -3201,6 +3213,10 @@ body.js-popup-active .close_popup {
   .contact__text p {
     font-size: 16px;
   }
+}
+.contact__text p img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .contact__text .wp-video {
   padding: 20px 0;
@@ -3871,6 +3887,10 @@ body.js-popup-active .close_popup {
     font-size: 16px;
   }
 }
+.nuestro_equipo__subtitle p img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .nuestro_equipo__subtitle .wp-video {
   padding: 20px 0;
 }
@@ -4063,6 +4083,7 @@ body.js-popup-active .close_popup {
 .nuestro_equipo--home img {
   width: 150px;
   max-width: 100%;
+  aspect-ratio: 1;
 }
 .nuestro_equipo--home .button, .nuestro_equipo--home .header__top__right .buttom_suscribe, .header__top__right .nuestro_equipo--home .buttom_suscribe {
   margin: 0 auto;
@@ -4183,6 +4204,10 @@ body.js-popup-active .close_popup {
   .contacto__cont p {
     font-size: 16px;
   }
+}
+.contacto__cont p img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .contacto__cont .wp-video {
   padding: 20px 0;
@@ -4466,6 +4491,10 @@ body.js-popup-active .close_popup {
   .single_post__text p {
     font-size: 16px;
   }
+}
+.single_post__text p img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .single_post__text .wp-video {
   padding: 20px 0;
