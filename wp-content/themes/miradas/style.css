@@ -2963,19 +2963,19 @@ https://flickity.metafizzy.co
 }
 .popup_equipo__cont__title {
   color: #282570;
-  font-size: 45px;
+  font-size: 30px;
   font-family: "Rosario", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   padding: 20px 0;
 }
 @media only screen and (max-width: 1050px) {
   .popup_equipo__cont__title {
-    font-size: 40px;
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 600px) {
   .popup_equipo__cont__title {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .popup_equipo__cont__text {
@@ -2998,10 +2998,12 @@ https://flickity.metafizzy.co
 }
 .popup_equipo__cont img {
   border-radius: 50%;
+  max-width: 250px;
 }
 .popup_equipo__cont__especializacion p {
-  font-weight: 700;
+  font-weight: 400;
   text-align: left;
+  font-size: 18px;
 }
 
 .close_popup {

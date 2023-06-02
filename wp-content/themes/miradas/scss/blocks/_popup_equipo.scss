@@ -60,8 +60,8 @@
 
         &__title {
             color: $primary-color; 
-            @include h2();
-            font-weight: 700;
+            @include h4();
+            font-weight: 400;
             padding: 20px 0;
         }
 
@@ -84,11 +84,13 @@
 
         img {
             border-radius: 50%;
+            max-width: 250px;
         }
 
         &__especializacion p {
-            font-weight: 700;
+            font-weight: 400;
             text-align: left;
+            font-size: 18px;
         }
     }
 }
