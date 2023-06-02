@@ -59,11 +59,12 @@
         }
     }
 
-    &__text {
+    &__text, p {
         margin-bottom: 25px;
         //width: 600px;
         max-width: 100%;
         line-height: 1.8;
+        font-size: 18px;
 
         @include responsive ('mobile-h') {
             width: 100%;

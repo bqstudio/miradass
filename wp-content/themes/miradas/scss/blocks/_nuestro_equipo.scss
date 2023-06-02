@@ -39,8 +39,7 @@
       border-radius: 50%;
       width: 100%;
       object-fit: cover;
-      width: 350px;
-      max-width: 100%;
+      max-width: 250px;
 
       @include responsive ('mobile-h') {
         width: 250px;
@@ -56,7 +55,7 @@
 
   &__persona {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     margin: 10px 0;
     font-weight: 700;
 
@@ -68,6 +67,7 @@
   &__especializacion p{
     font-size: 20px;
     text-align: center;
+    text-transform: capitalize;
 
     @include responsive ('mobile-h') {
       font-size: 16px;
@@ -113,7 +113,13 @@
       &:hover {
         background-color: transparent;
         border-radius: none;
+        transform: none;
       }
+    }
+
+    .nuestro_equipo__especializacion p {
+      font-size: 16px;
+      text-transform: capitalize;
     }
 
     img {

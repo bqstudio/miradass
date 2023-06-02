@@ -7,7 +7,7 @@
 
   &__layout__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
 
     @include responsive ('desktop-s') {
@@ -44,8 +44,12 @@
       opacity: 0;
       text-align: center;
       height: 100%;
-      padding: 50px 20px;
+      padding: 20px;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
 
       @include responsive ('desktop') {
         padding: 20px;
@@ -86,20 +90,28 @@
         
       }
     }
+
+    &:nth-child(4) {
+      .overlay-text {
+        background: rgba(249, 206, 234, 0.90);
+        
+      }
+    }
   }
 
   &__title {
     @include h3();
+    font-size: 28px;
     color: $third-color;
     font-weight: 700;
   }
 
   &__description {
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 16px;
+    line-height: 1.4;
     color: $primary-color;
     font-weight: 400;
-    margin-top: 40px;
+    margin-top: 20px;
     transition: all 0.3s ease-out;
 
     @include responsive ('desktop') {

@@ -131,7 +131,7 @@ select {
 }
 
 h1, .h1, .h1 p {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
@@ -313,7 +313,7 @@ strong * {
 }
 
 .title {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
   line-height: 1.09;
   font-weight: 600;
@@ -459,7 +459,7 @@ strong * {
 .item img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 200px;
+  max-width: 180px;
 }
 
 .popup {
@@ -554,21 +554,22 @@ strong * {
 }
 .vision__cont {
   position: absolute;
-  top: 26%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  left: 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+  left: 50%;
   width: 100%;
   z-index: 4;
   color: #ffffff;
-  width: 1200px;
+  text-align: center;
+  width: 1600px;
   max-width: 100%;
 }
 .vision__cont h1, .vision__cont h2, .vision__cont h3, .vision__cont h4, .vision__cont h5, .vision__cont h6 {
   margin-bottom: 20px;
 }
 .vision__cont h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
@@ -674,7 +675,7 @@ strong * {
   line-height: 1.6;
 }
 .vision__cont ul li {
-  list-style: none;
+  list-style: circle;
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -720,10 +721,14 @@ strong * {
     top: 10px;
   }
 }
+.vision__cont .container_big {
+  padding: 0 30px;
+}
 .vision__title {
   font-size: 45px;
   font-family: "Rosario", sans-serif;
   color: #D1F5AB;
+  text-transform: uppercase !important;
 }
 @media only screen and (max-width: 1050px) {
   .vision__title {
@@ -854,7 +859,7 @@ strong * {
   font-size: 22px;
   line-height: 0.9;
   color: #282570;
-  font-weight: 700;
+  font-weight: 400;
 }
 .site-menu .submenu {
   position: absolute;
@@ -1559,7 +1564,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   margin-bottom: 20px;
 }
 .single-content__cont h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
@@ -1665,7 +1670,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   line-height: 1.6;
 }
 .single-content__cont ul li {
-  list-style: none;
+  list-style: circle;
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -1929,7 +1934,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   }
 }
 .hero-home__big_text {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
   font-size: 100px;
   text-transform: capitalize;
@@ -1949,8 +1954,8 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .hero-home__big_text::after {
   content: "";
-  border-top: 4px solid #ffffff;
-  width: 150px;
+  border-top: 2px solid #ffffff;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2494,7 +2499,7 @@ https://flickity.metafizzy.co
   margin-bottom: 20px;
 }
 .text_block__cont h1, .quienes_somos__cont h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
@@ -2600,7 +2605,7 @@ https://flickity.metafizzy.co
   line-height: 1.6;
 }
 .text_block__cont ul li, .quienes_somos__cont ul li {
-  list-style: none;
+  list-style: circle;
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -2867,21 +2872,21 @@ https://flickity.metafizzy.co
 .logos__cont {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
+  grid-gap: 40px;
   padding: 30px 0 30px;
 }
 @media only screen and (max-width: 1680px) {
   .logos__cont {
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (max-width: 1050px) {
   .logos__cont {
     padding: 40px 0;
-    -ms-grid-columns: 1fr 20px 1fr;
+    -ms-grid-columns: 1fr 40px 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -3121,7 +3126,7 @@ body.js-popup-active .close_popup {
   margin-bottom: 20px;
 }
 .contact__text h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
@@ -3227,7 +3232,7 @@ body.js-popup-active .close_popup {
   line-height: 1.6;
 }
 .contact__text ul li {
-  list-style: none;
+  list-style: circle;
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -3423,6 +3428,7 @@ body.js-popup-active .close_popup {
   width: 70%;
   aspect-ratio: 1.83;
   margin: 0 auto;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 1050px) {
   .video__cont {
@@ -3441,6 +3447,7 @@ body.js-popup-active .close_popup {
      object-position: center;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 .video .image_placeholder {
   position: absolute;
@@ -3545,8 +3552,8 @@ body.js-popup-active .close_popup {
 .que_ofrecemos__layout__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
 }
 @media only screen and (max-width: 1280px) {
@@ -3599,8 +3606,21 @@ body.js-popup-active .close_popup {
   opacity: 0;
   text-align: center;
   height: 100%;
-  padding: 50px 20px;
+  padding: 20px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media only screen and (max-width: 1440px) {
   .que_ofrecemos__item .overlay-text {
@@ -3639,9 +3659,13 @@ body.js-popup-active .close_popup {
 .que_ofrecemos__item:nth-child(3) .overlay-text {
   background: rgba(249, 206, 234, 0.9);
 }
+.que_ofrecemos__item:nth-child(4) .overlay-text {
+  background: rgba(249, 206, 234, 0.9);
+}
 .que_ofrecemos__title {
   font-size: 36px;
   font-family: "Rosario", sans-serif;
+  font-size: 28px;
   color: #6A2263;
   font-weight: 700;
 }
@@ -3656,11 +3680,11 @@ body.js-popup-active .close_popup {
   }
 }
 .que_ofrecemos__description {
-  font-size: 20px;
-  line-height: 1.3;
+  font-size: 16px;
+  line-height: 1.4;
   color: #282570;
   font-weight: 400;
-  margin-top: 40px;
+  margin-top: 20px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -3754,13 +3778,14 @@ body.js-popup-active .close_popup {
     font-size: 24px;
   }
 }
-.image_with_text__text {
+.image_with_text__text, .image_with_text p {
   margin-bottom: 25px;
   max-width: 100%;
   line-height: 1.8;
+  font-size: 18px;
 }
 @media only screen and (max-width: 750px) {
-  .image_with_text__text {
+  .image_with_text__text, .image_with_text p {
     width: 100%;
     font-size: 16px;
   }
@@ -3794,7 +3819,7 @@ body.js-popup-active .close_popup {
   margin-bottom: 20px;
 }
 .nuestro_equipo__subtitle h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
@@ -3900,7 +3925,7 @@ body.js-popup-active .close_popup {
   line-height: 1.6;
 }
 .nuestro_equipo__subtitle ul li {
-  list-style: none;
+  list-style: circle;
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -3989,8 +4014,7 @@ body.js-popup-active .close_popup {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 350px;
-  max-width: 100%;
+  max-width: 250px;
 }
 @media only screen and (max-width: 750px) {
   .nuestro_equipo__item img {
@@ -4005,7 +4029,7 @@ body.js-popup-active .close_popup {
 }
 .nuestro_equipo__persona {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   margin: 10px 0;
   font-weight: 700;
 }
@@ -4017,6 +4041,7 @@ body.js-popup-active .close_popup {
 .nuestro_equipo__especializacion p {
   font-size: 20px;
   text-align: center;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 750px) {
   .nuestro_equipo__especializacion p {
@@ -4079,6 +4104,12 @@ body.js-popup-active .close_popup {
 .nuestro_equipo--home .nuestro_equipo__item:hover {
   background-color: transparent;
   border-radius: none;
+  -webkit-transform: none;
+          transform: none;
+}
+.nuestro_equipo--home .nuestro_equipo__especializacion p {
+  font-size: 16px;
+  text-transform: capitalize;
 }
 .nuestro_equipo--home img {
   width: 150px;
@@ -4112,7 +4143,7 @@ body.js-popup-active .close_popup {
   margin-bottom: 20px;
 }
 .contacto__cont h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
@@ -4218,7 +4249,7 @@ body.js-popup-active .close_popup {
   line-height: 1.6;
 }
 .contacto__cont ul li {
-  list-style: none;
+  list-style: circle;
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -4318,6 +4349,9 @@ body.js-popup-active .close_popup {
   margin: 0 0 50px 0;
   text-align: center;
 }
+.layout_instagram__title a {
+  text-transform: lowercase;
+}
 .layout_instagram__slider {
   width: 100%;
 }
@@ -4399,7 +4433,7 @@ body.js-popup-active .close_popup {
   margin-bottom: 20px;
 }
 .single_post__text h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Rosario", sans-serif;
 }
 @media only screen and (max-width: 1050px) {
@@ -4505,7 +4539,7 @@ body.js-popup-active .close_popup {
   line-height: 1.6;
 }
 .single_post__text ul li {
-  list-style: none;
+  list-style: circle;
   margin-bottom: 15px;
   font-size: 20px;
 }
