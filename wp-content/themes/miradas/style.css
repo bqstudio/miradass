@@ -718,11 +718,18 @@ strong * {
 @media only screen and (max-width: 400px) {
   .vision__cont {
     width: 100%;
-    top: 10px;
+  }
+  .vision__cont p {
+    font-size: 14px;
   }
 }
 .vision__cont .container_big {
   padding: 0 30px;
+}
+@media only screen and (max-width: 750px) {
+  .vision__cont .container_big {
+    padding: 0 15px;
+  }
 }
 .vision__title {
   font-size: 45px;

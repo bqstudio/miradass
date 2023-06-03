@@ -334,11 +334,18 @@ strong * {
 
     @include responsive ('mobile-s') {
       width: 100%;
-      top: 10px
+
+      p {
+        font-size: 14px;
+      }
     }
     
     .container_big {
       padding: 0 30px;
+
+      @include responsive ('mobile-h') {
+        padding: 0 15px;
+      }
     }
   }
 
