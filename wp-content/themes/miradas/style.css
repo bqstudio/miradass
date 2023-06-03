@@ -471,7 +471,7 @@ strong * {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   width: 755px;
-  height: 60vh;
+  height: 50vh;
   background: #ffffff;
   padding: 30px;
   text-align: left;
@@ -519,7 +519,7 @@ strong * {
           transform: translate(-50%, -50%);
   z-index: 2;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 .vision {
@@ -3769,6 +3769,15 @@ body.js-popup-active .close_popup {
     width: 100%;
   }
 }
+.image_with_text__content p {
+  line-height: 1.8;
+  font-size: 18px;
+}
+@media only screen and (max-width: 750px) {
+  .image_with_text__content p {
+    font-size: 16px;
+  }
+}
 .image_with_text__title {
   color: #282570;
   margin: 0 0 10px 0;
@@ -4021,6 +4030,7 @@ body.js-popup-active .close_popup {
 @media only screen and (max-width: 750px) {
   .nuestro_equipo__item img {
     width: 250px;
+    max-width: 100%;
   }
 }
 .nuestro_equipo__item:hover {
@@ -4037,11 +4047,11 @@ body.js-popup-active .close_popup {
 }
 @media only screen and (max-width: 750px) {
   .nuestro_equipo__persona {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .nuestro_equipo__especializacion p {
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   text-transform: capitalize;
 }
@@ -4299,6 +4309,7 @@ body.js-popup-active .close_popup {
 }
 .contacto__cont p {
   margin: 10px 0 30px 0;
+  font-size: 18px;
 }
 .contacto__cont h1, .contacto__cont h2, .contacto__cont h3, .contacto__cont h4, .contacto__cont h5, .contacto__cont h6 {
   margin-bottom: 0;
@@ -4334,6 +4345,9 @@ body.js-popup-active .close_popup {
   margin-bottom: 30px;
   color: #282570;
   font-family: "Merriweather", serif;
+}
+.contacto .date__titulo {
+  font-size: 28px;
 }
 .contacto ul li {
   font-size: 25px;

@@ -43,6 +43,7 @@
 
       @include responsive ('mobile-h') {
         width: 250px;
+        max-width: 100%;
       }
     }
 
@@ -60,12 +61,12 @@
     font-weight: 700;
 
     @include responsive ('mobile-h') {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 
   &__especializacion p{
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     text-transform: capitalize;
 
