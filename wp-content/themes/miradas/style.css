@@ -471,7 +471,7 @@ strong * {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   width: 755px;
-  height: 50vh;
+  height: 40vh;
   background: #ffffff;
   padding: 30px;
   text-align: left;
@@ -2812,10 +2812,6 @@ https://flickity.metafizzy.co
 @media only screen and (max-width: 1280px) {
   .stay_informed__text-cont .upper_title::before {
     left: 0px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .stay_informed__text-cont .upper_title::before {
     display: none;
   }
 }
@@ -2869,6 +2865,7 @@ https://flickity.metafizzy.co
   font-weight: 300;
   font-size: 20px;
   line-height: 1.8;
+  text-align: center;
 }
 @media only screen and (max-width: 750px) {
   .logos__text {
@@ -3565,6 +3562,12 @@ body.js-popup-active .close_popup {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
 }
+@media only screen and (max-width: 1680px) {
+  .que_ofrecemos__layout__grid {
+    -ms-grid-columns: 1fr 40px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media only screen and (max-width: 1280px) {
   .que_ofrecemos__layout__grid {
     -ms-grid-columns: 1fr;
@@ -3588,9 +3591,15 @@ body.js-popup-active .close_popup {
   width: 100%;
   overflow: hidden;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1px 1px rbga(0, 0, 0, 0.5);
-          box-shadow: 0 1px 1px rbga(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+}
+@media only screen and (max-width: 1280px) {
+  .que_ofrecemos__item figure {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 .que_ofrecemos__item figure img {
   width: 100%;
@@ -3700,12 +3709,18 @@ body.js-popup-active .close_popup {
 @media only screen and (max-width: 1440px) {
   .que_ofrecemos__description {
     margin-top: 20px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 750px) {
   .que_ofrecemos__description {
-    font-size: 16px;
+    font-size: 18px;
   }
+}
+
+.que_ofrecemos + .nuestro_equipo,
+.nuestro_equipo + .logos {
+  padding-top: 0;
 }
 
 .image_with_text {
@@ -4033,6 +4048,7 @@ body.js-popup-active .close_popup {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 250px;
+  aspect-ratio: 1;
 }
 @media only screen and (max-width: 750px) {
   .nuestro_equipo__item img {
@@ -4365,7 +4381,7 @@ body.js-popup-active .close_popup {
 
 .layout_instagram {
   width: 100%;
-  padding: 81px 0 92px 0;
+  padding: 0 0 100px 0;
 }
 .layout_instagram__title {
   text-align: center;
@@ -4373,7 +4389,7 @@ body.js-popup-active .close_popup {
   text-align: center;
 }
 .layout_instagram__title a {
-  text-transform: lowercase;
+  text-transform: inherit;
 }
 .layout_instagram__slider {
   width: 100%;
