@@ -1,0 +1,17 @@
+.error-404 {
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+
+    @include responsive('mobile-h') {
+        height: 80vw;
+    }
+
+    .page-header {
+        text-align: center;
+    }
+
+    .button {
+        margin: 20px auto;
+    }
+}

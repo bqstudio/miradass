@@ -1897,6 +1897,27 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
   color: #282570;
 }
 
+.error-404 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vw;
+}
+@media only screen and (max-width: 750px) {
+  .error-404 {
+    height: 80vw;
+  }
+}
+.error-404 .page-header {
+  text-align: center;
+}
+.error-404 .button, .error-404 .header__top__right .buttom_suscribe, .header__top__right .error-404 .buttom_suscribe {
+  margin: 20px auto;
+}
+
 .hero-home {
   min-height: 55vw;
   display: block;
