@@ -51,12 +51,15 @@ function palermo_scripts() {
 	wp_enqueue_script( 'jquery','https://code.jquery.com/jquery-3.6.0.min.js', '', '', false );
 	wp_enqueue_script( 'flickity','https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js', '', '', true );
 	wp_enqueue_script( 'theme-functions',get_template_directory_uri() . '/js/theme.min.js', '', '', true );
+	wp_enqueue_style( 'line-awesome', 'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css');
 
 	/* AOS */
 	wp_enqueue_script( 'aos','https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js', '', '', true );
 	wp_enqueue_style( 'aos', 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css',true);
 }
 add_action( 'wp_enqueue_scripts', 'palermo_scripts' );
+
+wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.10/css/all.css');
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
