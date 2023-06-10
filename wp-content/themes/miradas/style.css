@@ -524,6 +524,12 @@ strong * {
 
 .vision {
   position: relative;
+  padding-top: 100px;
+}
+@media only screen and (max-width: 750px) {
+  .vision {
+    padding-top: 40px;
+  }
 }
 .vision__image {
   position: relative;
@@ -531,7 +537,7 @@ strong * {
 }
 @media only screen and (max-width: 750px) {
   .vision__image {
-    height: 600px;
+    height: 650px;
   }
 }
 .vision__image::before {
@@ -555,8 +561,8 @@ strong * {
 .vision__cont {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%) !important;
-          transform: translate(-50%, -50%) !important;
+  -webkit-transform: translate(-50%, -35%) !important;
+          transform: translate(-50%, -35%) !important;
   left: 50%;
   width: 100%;
   z-index: 4;
@@ -714,6 +720,12 @@ strong * {
 .vision__cont .alignright {
   float: right;
   margin-left: 30px;
+}
+@media only screen and (max-width: 750px) {
+  .vision__cont {
+    -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+  }
 }
 @media only screen and (max-width: 400px) {
   .vision__cont {
@@ -1106,6 +1118,7 @@ strong * {
 }
 .header__top__right .buttom_suscribe {
   margin-left: 20px;
+  display: none;
 }
 
 .scrolled .site-menu .submenu--banners {
@@ -2219,6 +2232,9 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+.header__top__right .buttom_suscribe, .header__bottom__right .buttom_suscribe {
+  display: none;
+}
 @media only screen and (max-width: 1050px) {
   .header__top__right .buttom_suscribe, .header__bottom__right .buttom_suscribe {
     margin: 0 auto;
@@ -2372,6 +2388,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 .site-footer__bottom .copyright {
   color: #727887;
   line-height: 1.13;
+  font-size: 14px;
 }
 .site-footer__bottom .bottom_links__item {
   color: #727887;
@@ -2382,6 +2399,9 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 .site-footer__bottom .bottom_links__item:nth-last-child(1) {
   margin: 0;
+}
+.site-footer__bottom .site-footer__bq {
+  font-size: 14px;
 }
 
 /*! Flickity v2.3.0
@@ -3717,7 +3737,7 @@ body.js-popup-active .close_popup {
   background: rgba(249, 206, 234, 0.9);
 }
 .que_ofrecemos__item:nth-child(4) .overlay-text {
-  background: rgba(249, 206, 234, 0.9);
+  background: rgba(210, 231, 162, 0.9);
 }
 .que_ofrecemos__title {
   font-size: 36px;
@@ -4168,6 +4188,7 @@ body.js-popup-active .close_popup {
   overflow: hidden;
   min-height: 310px;
   cursor: default;
+  max-width: 310px;
 }
 @media only screen and (max-width: 1050px) {
   .nuestro_equipo--home .nuestro_equipo__item {

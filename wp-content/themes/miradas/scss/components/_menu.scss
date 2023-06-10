@@ -228,6 +228,7 @@
   .buttom_suscribe {
     @extend .button;
     margin-left: 20px;
+    display: none;
   }
 }
 .scrolled {

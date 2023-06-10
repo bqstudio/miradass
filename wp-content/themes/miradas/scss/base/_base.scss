@@ -295,13 +295,18 @@ strong * {
 //Styles Home
 .vision {
   position: relative;
+  padding-top: 100px;
+
+  @include responsive ('mobile-h') {
+    padding-top: 40px;
+  }
   
   &__image {
     position: relative;
     height: 600px;
 
     @include responsive ('mobile-h') {
-      height: 600px;
+      height: 650px;
     }
 
   &::before {
@@ -320,17 +325,20 @@ strong * {
     position: absolute;
     //top: 50%; sin AOS
     top: 50%;
-    transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -35%) !important;
     //right: 50%; sin AOS
     left: 50%;
     width: 100%;
     z-index: 4;
     color: $white;
     text-align: center;
-
     @include text_block();
     width: 1600px;
     max-width: 100%;
+
+    @include responsive ('mobile-h') {
+      transform: translate(-50%, -50%) !important;
+    }
 
     @include responsive ('mobile-s') {
       width: 100%;
