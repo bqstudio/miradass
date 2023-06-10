@@ -790,6 +790,24 @@ strong * {
   right: 0;
 }
 
+.btn-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #25d366;
+  text-align: center;
+  display: inline-block;
+  line-height: 50px;
+  color: #fff;
+  font-size: 30px;
+  -webkit-box-shadow: #333 0 0 10px;
+          box-shadow: #333 0 0 10px;
+  z-index: 1000;
+}
+
 .instagram {
   padding: 100px 0;
 }
