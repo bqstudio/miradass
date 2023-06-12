@@ -318,8 +318,9 @@ strong * {
   line-height: 1.09;
   font-weight: 600;
   color: #282570;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   text-transform: capitalize;
+  background-color: aqua;
   text-align: center;
 }
 @media only screen and (max-width: 1440px) {
@@ -331,10 +332,6 @@ strong * {
 @media only screen and (max-width: 750px) {
   .title {
     font-size: 36px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .title {
     margin-bottom: 20px;
   }
 }

@@ -138,10 +138,6 @@ strong * {
 .title {
   @include title();
   text-align: center;
-
-  @include responsive ('mobile-h') {
-    margin-bottom: 20px;
-  }
 }
 
 .subtitle {

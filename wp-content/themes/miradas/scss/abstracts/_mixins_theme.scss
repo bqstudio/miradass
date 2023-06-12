@@ -30,8 +30,9 @@
   line-height: 1.09;
   font-weight: 600;
   color: $primary-color;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   text-transform: capitalize;
+  background-color: aqua;
 
   @include responsive('desktop') {
     font-size: 42px;
@@ -40,6 +41,7 @@
 
   @include responsive('mobile-h') {
     font-size: 36px;
+    margin-bottom: 20px;
   }
 }
 
