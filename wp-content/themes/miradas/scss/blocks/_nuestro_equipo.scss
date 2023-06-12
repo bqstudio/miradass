@@ -80,16 +80,11 @@
 
     .nuestro_equipo__cont {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: baseline;
 
       @include responsive ('mobile-h') {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      @include responsive ('mobile-v') {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
       }
     }
 
@@ -106,11 +101,17 @@
       overflow: hidden;
       min-height: 310px;
       cursor: default;
-      max-width: 310px;
+      //max-width: 310px;
+      width: 310px;
+      max-width: 100%;
 
       @include responsive ('tablet-h') {
         aspect-ratio: inherit;
         min-height: auto;
+      }
+
+      @include responsive ('mobile-h') {
+        width: 100%;
       }
 
       &:hover {
@@ -129,11 +130,23 @@
       width: 150px;
       max-width: 100%;
       aspect-ratio: 1;
+
+      @include responsive ('mobile-v') {
+        width: 60%;
+      }
+      @include responsive ('mobile-s') {
+        width: 100%;
+      }
     }
 
     .button {
       margin: 0 auto;
       display: table;
+
+      @include responsive ('mobile-v') {
+        display: block;
+        text-align: center;
+      }
     }
   }
 }

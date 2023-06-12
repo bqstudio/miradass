@@ -79,6 +79,12 @@
                 }
             }
         }
+
+		.gform_button.button {
+			@include responsive ('mobile-v') {
+				width: 100%;
+			}
+		}
 }
 
 .stay_informed__form {

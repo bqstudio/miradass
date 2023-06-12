@@ -3,9 +3,9 @@
     display: block;
     position: relative;
 
-    /* @include responsive ('mobile-h') {
-        min-height: 70vw;
-    } */
+    @include responsive ('mobile-v') {
+        aspect-ratio: 1;
+    }
 
     &__video {
         aspect-ratio: 2.12;
@@ -15,6 +15,11 @@
         video {
             width: 100%;
             display: block;
+
+            @include responsive('mobile-v') {
+                aspect-ratio: 1;
+                object-fit: cover;
+            }
         }
     }
 
@@ -30,10 +35,6 @@
         right: 50%;
         z-index: 4;
         width: 100%;
-
-        @include responsive ('mobile-h') {
-            transform: translate(50%, -6%);
-        }
     }
 
     &__big_text {

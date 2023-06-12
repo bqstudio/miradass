@@ -3,9 +3,9 @@
     <title>pause</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="pause">
-            <rect id="Rectangle" fill="#FFD200" fill-rule="nonzero" x="0" y="0" width="32" height="32"></rect>
-            <rect id="Rectangle" fill="#000000" x="10" y="8" width="3" height="16"></rect>
-            <rect id="Rectangle-Copy" fill="#000000" x="19" y="8" width="3" height="16"></rect>
+            <rect id="Rectangle" fill="#282570" fill-rule="nonzero" x="0" y="0" width="32" height="32"></rect>
+            <rect id="Rectangle" fill="#ffffff" x="10" y="8" width="3" height="16"></rect>
+            <rect id="Rectangle-Copy" fill="#ffffff" x="19" y="8" width="3" height="16"></rect>
         </g>
     </g>
 </svg>

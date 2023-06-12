@@ -37,7 +37,7 @@
     }
 
     @include responsive('mobile-v') {
-        width: 100%;
+        width: calc(100% - 15px);
         max-width: 100%;
     }
     
@@ -53,10 +53,6 @@
         padding: 100px 0;
         z-index: 10;
         position: relative;
-
-        @include responsive('mobile-v') {
-            padding: 220px 0 90px 0;
-        }
 
         &__title {
             color: $primary-color; 
@@ -91,6 +87,10 @@
             font-weight: 400;
             text-align: left;
             font-size: 18px;
+
+            @include responsive ('mobile-v') {
+                font-size: 16px;
+            }
         }
     }
 }
