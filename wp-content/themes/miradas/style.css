@@ -4466,6 +4466,11 @@ body.js-popup-active .close_popup {
 .contacto__cont h1, .contacto__cont h2, .contacto__cont h3, .contacto__cont h4, .contacto__cont h5, .contacto__cont h6 {
   margin-bottom: 0;
 }
+@media only screen and (max-width: 1050px) {
+  .contacto__cont iframe {
+    width: 100%;
+  }
+}
 .contacto .date {
   display: -webkit-box;
   display: -ms-flexbox;
