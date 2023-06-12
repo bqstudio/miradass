@@ -32,7 +32,6 @@
   color: $primary-color;
   margin-bottom: 50px;
   text-transform: capitalize;
-  background-color: aqua;
 
   @include responsive('desktop') {
     font-size: 42px;
