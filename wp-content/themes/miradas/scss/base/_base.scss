@@ -190,6 +190,10 @@ strong * {
   @include responsive('tablet-h') {
     font-size: 16px;
   }
+
+  @include responsive('mobile-h') {
+    font-size: 20px;
+  }
 }
 
 .mejs-overlay-button {
@@ -302,7 +306,7 @@ strong * {
     height: 600px;
 
     @include responsive ('mobile-h') {
-      height: 650px;
+      height: 850px;
     }
 
   &::before {
@@ -340,7 +344,7 @@ strong * {
       width: 100%;
 
       p {
-        font-size: 14px;
+        font-size: 18px;
       }
     }
     

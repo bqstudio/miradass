@@ -417,6 +417,11 @@ strong * {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 750px) {
+  .upper_title {
+    font-size: 20px;
+  }
+}
 
 .mejs-overlay-button {
   background: url("images/play.svg") no-repeat !important;
@@ -533,7 +538,7 @@ strong * {
 }
 @media only screen and (max-width: 750px) {
   .vision__image {
-    height: 650px;
+    height: 850px;
   }
 }
 .vision__image::before {
@@ -661,7 +666,7 @@ strong * {
 }
 @media only screen and (max-width: 750px) {
   .vision__cont p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .vision__cont p img {
@@ -683,7 +688,7 @@ strong * {
 }
 @media only screen and (max-width: 750px) {
   .vision__cont ul li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .vision__cont a {
@@ -733,7 +738,7 @@ strong * {
     width: 100%;
   }
   .vision__cont p {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 .vision__cont .container_big {
@@ -1319,13 +1324,13 @@ strong * {
 }
 @media only screen and (max-width: 1050px) {
   .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.formBox textarea {
+  .formBox textarea {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 600px) {
   .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.formBox textarea {
+  .formBox textarea {
     font-size: 16px;
   }
 }
@@ -1708,7 +1713,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 @media only screen and (max-width: 750px) {
   .single-content__cont p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .single-content__cont p img {
@@ -1730,7 +1735,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 @media only screen and (max-width: 750px) {
   .single-content__cont ul li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .single-content__cont a {
@@ -1907,13 +1912,13 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 }
 @media only screen and (max-width: 1050px) {
   .breadcrumb,
-.woocommerce-breadcrumb {
+  .woocommerce-breadcrumb {
     font-size: 12px;
   }
 }
 @media only screen and (max-width: 600px) {
   .breadcrumb,
-.woocommerce-breadcrumb {
+  .woocommerce-breadcrumb {
     font-size: 12px;
   }
 }
@@ -2474,7 +2479,7 @@ https://flickity.metafizzy.co
 /* ---- flickity-button ---- */
 .flickity-button {
   position: absolute;
-  background: hsla(0deg, 0%, 100%, 0.75);
+  background: hsla(0, 0%, 100%, 0.75);
   border: none;
   color: #333;
 }
@@ -2679,7 +2684,7 @@ https://flickity.metafizzy.co
 }
 @media only screen and (max-width: 750px) {
   .text_block__cont p, .quienes_somos__cont p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .text_block__cont p img, .quienes_somos__cont p img {
@@ -2701,7 +2706,7 @@ https://flickity.metafizzy.co
 }
 @media only screen and (max-width: 750px) {
   .text_block__cont ul li, .quienes_somos__cont ul li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .text_block__cont a, .quienes_somos__cont a {
@@ -3310,7 +3315,7 @@ body.js-popup-active .close_popup {
 }
 @media only screen and (max-width: 750px) {
   .contact__text p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .contact__text p img {
@@ -3332,7 +3337,7 @@ body.js-popup-active .close_popup {
 }
 @media only screen and (max-width: 750px) {
   .contact__text ul li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .contact__text a {
@@ -4040,7 +4045,7 @@ body.js-popup-active .close_popup {
 }
 @media only screen and (max-width: 750px) {
   .nuestro_equipo__subtitle p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .nuestro_equipo__subtitle p img {
@@ -4062,7 +4067,7 @@ body.js-popup-active .close_popup {
 }
 @media only screen and (max-width: 750px) {
   .nuestro_equipo__subtitle ul li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .nuestro_equipo__subtitle a {
@@ -4388,7 +4393,7 @@ body.js-popup-active .close_popup {
 }
 @media only screen and (max-width: 750px) {
   .contacto__cont p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .contacto__cont p img {
@@ -4410,7 +4415,7 @@ body.js-popup-active .close_popup {
 }
 @media only screen and (max-width: 750px) {
   .contacto__cont ul li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .contacto__cont a {
@@ -4692,7 +4697,7 @@ body.js-popup-active .close_popup {
 }
 @media only screen and (max-width: 750px) {
   .single_post__text p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .single_post__text p img {
@@ -4714,7 +4719,7 @@ body.js-popup-active .close_popup {
 }
 @media only screen and (max-width: 750px) {
   .single_post__text ul li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .single_post__text a {
