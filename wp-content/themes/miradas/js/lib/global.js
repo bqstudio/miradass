@@ -68,4 +68,19 @@ jQuery(document).ready(function($){
 	$(document).on('click', 'a[href^="#"]', function (event) {
 		event.preventDefault();
 	});
+
+	$('a').click(function(event) {
+		event.preventDefault();
+		
+		var href = $.attr(this, 'href');
+		if (href !== undefined) {
+			var targetElement = $(href);
+			if (targetElement.length > 0) {
+				$('html, body').animate({
+					scrollTop: targetElement.offset().top
+				}, 500);
+			}
+		}
+	});
+	
 });
