@@ -82,6 +82,10 @@
         img {
             border-radius: 50%;
             max-width: 200px;
+
+            @include responsive('mobile-v') {
+                max-width: 175px;
+            }
         }
 
         &__especializacion p {

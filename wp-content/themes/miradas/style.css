@@ -3093,6 +3093,11 @@ https://flickity.metafizzy.co
   border-radius: 50%;
   max-width: 200px;
 }
+@media only screen and (max-width: 600px) {
+  .popup_equipo__cont img {
+    max-width: 175px;
+  }
+}
 .popup_equipo__cont__especializacion p {
   font-weight: 400;
   text-align: left;
