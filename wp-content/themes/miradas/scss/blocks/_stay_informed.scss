@@ -70,11 +70,11 @@
             font-weight: 700;
 
             @include responsive ('desktop-s') {
-                padding-left: 50px;
+                padding-left: 0;
             }
 
             @include responsive ('tablet-h') {
-                padding-left: 0;
+                display: none;
             }
 
             &::before {
@@ -96,6 +96,10 @@
 
         @include responsive('tablet-h') {
             margin-bottom: 15px;
+        }
+
+        @include responsive('mobile-h') {
+            font-size: 30px;
         }
     }
 
